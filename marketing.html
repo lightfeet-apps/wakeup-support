@@ -7,8 +7,6 @@
     <title>WakeUp – Alarm Clock for Changing Plans</title>
 
     <meta name="description" content="WakeUp is an alarm clock designed for changing plans. Dismiss, adjust, or pause repeating alarms without changing your regular schedule.">
-    <meta name="keywords" content="alarm clock, repeating, sleep, morning, snooze, daily, weekly, custom sounds, schedule, pause, skip, recurring">
-
     <style>
         * {
             box-sizing: border-box;
@@ -67,26 +65,45 @@
             font-size: 28px;
         }
 
+        h3 {
+            margin: 0 0 10px;
+            font-size: 21px;
+        }
+
         p {
             font-size: 18px;
             line-height: 1.6;
             color: #444;
         }
 
-        ul {
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .feature {
+            padding: 22px;
+            border-radius: 16px;
+            background: #f6f7f9;
+        }
+
+        .feature p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .compact-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px 32px;
             padding-left: 22px;
+            margin-bottom: 0;
         }
 
-        li {
-            margin-bottom: 12px;
-            font-size: 18px;
+        .compact-list li {
+            font-size: 17px;
             line-height: 1.5;
-        }
-
-        .highlight {
-            font-size: 21px;
-            font-weight: 600;
-            color: #1d1d1f;
         }
 
         .links {
@@ -109,6 +126,19 @@
         .secondary {
             background: #e8e8ed;
             color: #1d1d1f;
+        }
+
+        .closing {
+            text-align: center;
+        }
+
+        .closing p {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        .closing .links {
+            justify-content: center;
         }
 
         footer {
@@ -134,114 +164,71 @@
             .section {
                 padding: 26px;
             }
+
+            .feature-grid,
+            .compact-list {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
+    <main class="container">
 
         <section class="hero">
             <h1>WakeUp</h1>
 
             <p class="tagline">
-                An alarm clock designed for changing plans.
+                Change the next alarm. Keep your schedule.
             </p>
 
             <p class="subtitle">
-                Change tomorrow without changing your regular schedule.
+                Skip it, adjust it once, or pause it for a while. WakeUp
+                automatically returns to your regular routine afterward.
             </p>
         </section>
 
         <section class="section">
-            <h2>Your schedule stays the same. Tomorrow doesn't have to.</h2>
+            <h2>Plans change. Your schedule doesn't have to.</h2>
 
-            <p>
-                WakeUp lets you dismiss the next occurrence of a repeating alarm,
-                fine-tune its time, or pause it for a date range without changing
-                your regular weekly schedule.
-            </p>
+            <div class="feature-grid">
+                <article class="feature">
+                    <h3>Skip the next alarm</h3>
+                    <p>Sleep in or dismiss it when you're already awake.</p>
+                </article>
 
-            <p>
-                Sleeping in tomorrow or already awake? Dismiss the next alarm
-                with one tap.
-            </p>
+                <article class="feature">
+                    <h3>Adjust it once</h3>
+                    <p>Move the next alarm earlier or later in adjustable steps.</p>
+                </article>
 
-            <p>
-                Need to wake up earlier or later just once? Move the next alarm
-                in adjustable 5, 10, 15, or 30-minute steps. Going on vacation?
-                Pause a repeating alarm between selected dates. WakeUp automatically
-                returns to your normal weekly schedule afterward.
-            </p>
+                <article class="feature">
+                    <h3>Pause for a while</h3>
+                    <p>Pause a repeating alarm between selected dates.</p>
+                </article>
+            </div>
         </section>
 
         <section class="section">
-            <h2>Know exactly what's next</h2>
+            <h2>Everything you need to wake up your way</h2>
 
-            <p class="highlight">
-                See when your next alarm will ring and how much time remains.
-            </p>
-
-            <p>
-                WakeUp keeps your upcoming alarm clear so you always know
-                what is scheduled next.
-            </p>
-        </section>
-
-        <section class="section">
-            <h2>Features</h2>
-
-            <ul>
-                <li>Dismiss the next occurrence of a repeating alarm</li>
-                <li>Choose when the dismiss button becomes available</li>
-                <li>Move only the next alarm earlier or later</li>
-                <li>Choose 5, 10, 15, or 30-minute adjustment steps</li>
-                <li>Pause a repeating alarm for a selected date range</li>
-                <li>Automatically return to your regular schedule afterward</li>
+            <ul class="compact-list">
                 <li>See the next alarm time and how long remains until it rings</li>
-                <li>Create one-time and repeating alarms</li>
-                <li>Select individual days, weekdays, weekends, or every day</li>
-                <li>Choose the system sound or one of seven sounds created for WakeUp</li>
-                <li>Import your own AIF, AIFF, CAF, M4A, MP3, or WAV audio</li>
-                <li>Preview sounds before selecting them</li>
-                <li>Choose a different sound for each alarm</li>
-                <li>Set the default sound for new alarms</li>
-                <li>Adjust the snooze duration from 1 to 30 minutes</li>
-                <li>Follow alarm and snooze status with Live Activities and Dynamic Island</li>
-                <li>Choose between 12-hour and 24-hour time when using English</li>
-                <li>Start the week on Monday or Sunday</li>
+                <li>Create flexible one-time and repeating alarms</li>
+                <li>Use built-in sounds or import your own audio</li>
+                <li>Set the snooze duration from 1 to 30 minutes</li>
+                <li>Follow alarms with Live Activities and Dynamic Island</li>
+                <li>Use WakeUp in English, Finnish, Swedish, German, Spanish, or French</li>
             </ul>
         </section>
 
-        <section class="section">
-            <h2>Available in six languages</h2>
+        <section class="section closing">
+            <h2>Coming to the App Store</h2>
 
             <p>
-                WakeUp is available in English, Finnish, Swedish, German,
-                Spanish, and French.
-            </p>
-
-            <p>
-                Follow your device language or choose the app language separately.
-            </p>
-        </section>
-
-        <section class="section">
-            <h2>Built for real life</h2>
-
-            <p>
-                Keep regular mornings predictable and make changes when you
-                need them—without disabling an entire alarm or remembering
-                to restore your schedule later.
-            </p>
-        </section>
-
-        <section class="section">
-            <h2>Privacy &amp; Support</h2>
-
-            <p>
-                Learn more about WakeUp or get help with the app.
+                WakeUp is designed for iPhone and is being prepared for release.
             </p>
 
             <div class="links">
@@ -255,19 +242,11 @@
             </div>
         </section>
 
-        <section class="section">
-            <h2>Coming to the App Store</h2>
-
-            <p>
-                WakeUp is designed for iPhone and is being prepared for release.
-            </p>
-        </section>
-
         <footer>
             © 2026 WakeUp
         </footer>
 
-    </div>
+    </main>
 
 </body>
 </html>
