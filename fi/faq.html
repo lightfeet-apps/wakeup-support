@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WakeUp UKK – Usein kysytyt kysymykset</title>
-    <meta name="description" content="Usein kysytyt kysymykset ja käyttöohjeet WakeUp-sovellukselle iPhonessa ja iPadissa: omat äänet, aikavyöhykkeet, kategoriat, lajittelu, ohitus, pikasäätö ja herätysten tauottaminen.">
+    <meta name="description" content="Usein kysytyt kysymykset ja käyttöohjeet WakeUp-sovellukselle iPhonessa ja iPadissa: herätysten luotettavuus, omat äänet, aikavyöhykkeet, kategoriat, lajittelu, ohitus ja pikasäätö.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://lightfeet-apps.github.io/wakeup-support/fi/faq.html">
     <link rel="alternate" hreflang="x-default" href="https://lightfeet-apps.github.io/wakeup-support/faq.html">
@@ -122,6 +122,19 @@
 
     <h1>Usein kysytyt kysymykset</h1>
     <p class="subtitle">Ohjeita, vinkkejä ja vastauksia WakeUpin käyttöön.</p>
+
+    <div class="faq-item">
+        <h2>Soiko herätys, jos laite on äänettömällä, Älä häiritse -tilassa tai sovellus on suljettu?</h2>
+        <p><strong>Kyllä, ehdottomasti.</strong> WakeUp käyttää Applen virallista <strong>AlarmKit</strong>-järjestelmää, jonka ansiosta herätykset ajastetaan aitoina järjestelmäherätyksinä:</p>
+        <ul>
+            <li><strong>Sovellus suljettuna:</strong> Herätykset soivat aina ajallaan riippumatta siitä, onko sovellus auki, taustalla vai kokonaan suljettuna. Sovellusta ei tarvitse pitää auki yön yli.</li>
+            <li><strong>Äänetön tila ja mykistyskytkin:</strong> Järjestelmäherätykset ohittavat laitteen mykistyksen ja soivat herätysäänellä myös silloin, kun laite on asetettu äänettömälle.</li>
+            <li><strong>Älä häiritse ja Keskity-tilat:</strong> Herätykset hälyttävät normaalisti myös silloin, kun Älä häiritse, Nukkuminen tai jokin muu Keskity-tila on päällä.</li>
+        </ul>
+        <div class="note">
+            <strong>Tärkeää:</strong> Varmista, että herätysten käyttöoikeus on sallittu laitteesi asetuksissa (<strong>Asetukset → WakeUp → Herätykset</strong>), jotta sovelluksella on oikeus luoda luotettavia järjestelmäherätyksiä.
+        </div>
+    </div>
 
     <div class="faq-item">
         <h2>Oman herätysäänen tuominen WakeUpiin</h2>

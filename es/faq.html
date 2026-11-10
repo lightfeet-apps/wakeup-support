@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WakeUp FAQ – Preguntas frecuentes</title>
-    <meta name="description" content="Preguntas frecuentes y guías para WakeUp en iPhone y iPad: tonos personalizados, zonas horarias, categorías, ordenación, omisión, ajuste rápido y pausar alarmas.">
+    <meta name="description" content="Preguntas frecuentes y guías para WakeUp en iPhone y iPad: fiabilidad de alarmas, tonos personalizados, zonas horarias, categorías, ordenación, omisión y ajuste rápido.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://lightfeet-apps.github.io/wakeup-support/es/faq.html">
     <link rel="alternate" hreflang="x-default" href="https://lightfeet-apps.github.io/wakeup-support/faq.html">
@@ -122,6 +122,19 @@
 
     <h1>Preguntas frecuentes</h1>
     <p class="subtitle">Ayuda, consejos y guías para WakeUp.</p>
+
+    <div class="faq-item">
+        <h2>¿Sonará la alarma si el dispositivo está en silencio, en No molestar o con la app cerrada?</h2>
+        <p><strong>Sí, con total seguridad.</strong> WakeUp utiliza el framework oficial <strong>AlarmKit</strong> de Apple, por lo que tus alarmas se programan como alarmas del sistema:</p>
+        <ul>
+            <li><strong>App cerrada:</strong> Tus alarmas siempre sonarán a tiempo, ya esté WakeUp abierta, en segundo plano o completamente cerrada. No necesitas dejar la app abierta durante la noche.</li>
+            <li><strong>Modo silencioso:</strong> Las alarmas del sistema anulan el modo silencioso y el interruptor de silencio, sonando con audio aunque el dispositivo esté silenciado.</li>
+            <li><strong>No molestar y modos de concentración:</strong> Las alarmas suenan normalmente incluso con el modo No molestar, Sueño o cualquier otro modo de concentración activado.</li>
+        </ul>
+        <div class="note">
+            <strong>Importante:</strong> Asegúrate de que los permisos de alarma estén permitidos en los ajustes del dispositivo (<strong>Ajustes → WakeUp → Alarmas</strong>) para que WakeUp pueda programar alarmas fiables del sistema.
+        </div>
+    </div>
 
     <div class="faq-item">
         <h2>Cómo importar tu propio tono de alarma a WakeUp</h2>

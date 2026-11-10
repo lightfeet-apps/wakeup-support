@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WakeUp FAQ – Vanliga frågor</title>
-    <meta name="description" content="Vanliga frågor och guider för WakeUp på iPhone och iPad: egna larmljud, tidszoner, kategorier, sortering, avfärda, snabbjustering och pausa alarm.">
+    <meta name="description" content="Vanliga frågor och guider för WakeUp på iPhone och iPad: alarmens tillförlitlighet, egna larmljud, tidszoner, kategorier, sortering, avfärda och snabbjustering.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://lightfeet-apps.github.io/wakeup-support/sv/faq.html">
     <link rel="alternate" hreflang="x-default" href="https://lightfeet-apps.github.io/wakeup-support/faq.html">
@@ -122,6 +122,19 @@
 
     <h1>Vanliga frågor</h1>
     <p class="subtitle">Hjälp, tips och guider för WakeUp.</p>
+
+    <div class="faq-item">
+        <h2>Ringer alarmet om enheten är i ljudlöst läge, i Stör ej eller om appen är stängd?</h2>
+        <p><strong>Ja, absolut.</strong> WakeUp använder Apples officiella <strong>AlarmKit</strong>, vilket innebär att dina alarm schemaläggs som fullständiga systemalarm:</p>
+        <ul>
+            <li><strong>Stängd app:</strong> Dina alarm ringer alltid i tid oavsett om WakeUp är öppet, körs i bakgrunden eller är helt stängt. Du behöver inte ha appen öppen över natten.</li>
+            <li><strong>Ljudlöst läge och tyst reglage:</strong> Systemalarm åsidosätter ljudlöst läge och ringer med full ljudvolym även när enheten är satt på ljudlös.</li>
+            <li><strong>Stör ej och Fokus-lägen:</strong> Alarm ringer som vanligt även när Stör ej, Stilla natt eller något annat Fokus-läge är aktivt.</li>
+        </ul>
+        <div class="note">
+            <strong>Viktigt:</strong> Se till att alarmbehörigheten är aktiverad i enhetens inställningar (<strong>Inställningar → WakeUp → Alarm</strong>) så att WakeUp har rätt att schemalägga tillförlitliga systemalarm.
+        </div>
+    </div>
 
     <div class="faq-item">
         <h2>Importera ett eget larmljud till WakeUp</h2>

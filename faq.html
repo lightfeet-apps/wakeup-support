@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WakeUp FAQ – Frequently Asked Questions</title>
-    <meta name="description" content="Frequently asked questions and guides for WakeUp on iPhone and iPad: custom sounds, time zones, categories, sorting, dismissing, Quick Adjust, and pausing alarms.">
+    <meta name="description" content="Frequently asked questions and guides for WakeUp on iPhone and iPad: alarm reliability, custom sounds, time zones, categories, sorting, dismissing, and Quick Adjust.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://lightfeet-apps.github.io/wakeup-support/faq.html">
     <link rel="alternate" hreflang="x-default" href="https://lightfeet-apps.github.io/wakeup-support/faq.html">
@@ -122,6 +122,19 @@
 
     <h1>Frequently Asked Questions</h1>
     <p class="subtitle">Help, tips, and guides for WakeUp.</p>
+
+    <div class="faq-item">
+        <h2>Will my alarm ring if my device is on silent, in Do Not Disturb, or the app is closed?</h2>
+        <p><strong>Yes, absolutely.</strong> WakeUp is powered by Apple's official <strong>AlarmKit</strong> framework, which schedules your alarms as full system alarms:</p>
+        <ul>
+            <li><strong>App closed:</strong> Your alarms will always ring on time whether WakeUp is open, running in the background, or completely closed. You do not need to keep the app open overnight.</li>
+            <li><strong>Silent mode & mute switch:</strong> System alarms override silent mode, ringing with audio even when your device is silenced.</li>
+            <li><strong>Do Not Disturb & Focus modes:</strong> Alarms ring normally even when Do Not Disturb, Sleep Focus, or any other Focus mode is active.</li>
+        </ul>
+        <div class="note">
+            <strong>Important:</strong> Make sure alarm permissions are enabled on your device (<strong>Settings → WakeUp → Alarms</strong>) so WakeUp can schedule reliable system alarms.
+        </div>
+    </div>
 
     <div class="faq-item">
         <h2>How to import custom alarm sounds to WakeUp</h2>
