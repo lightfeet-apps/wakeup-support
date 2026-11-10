@@ -7,6 +7,13 @@
     <meta name="description" content="Get help with WakeUp, the flexible alarm clock for iPhone and iPad, or contact the WakeUp support team.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://lightfeet-apps.github.io/wakeup-support/">
+    <link rel="alternate" hreflang="x-default" href="https://lightfeet-apps.github.io/wakeup-support/">
+    <link rel="alternate" hreflang="en" href="https://lightfeet-apps.github.io/wakeup-support/">
+    <link rel="alternate" hreflang="fi" href="https://lightfeet-apps.github.io/wakeup-support/fi/">
+    <link rel="alternate" hreflang="sv" href="https://lightfeet-apps.github.io/wakeup-support/sv/">
+    <link rel="alternate" hreflang="de" href="https://lightfeet-apps.github.io/wakeup-support/de/">
+    <link rel="alternate" hreflang="es" href="https://lightfeet-apps.github.io/wakeup-support/es/">
+    <link rel="alternate" hreflang="fr" href="https://lightfeet-apps.github.io/wakeup-support/fr/">
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -54,6 +61,33 @@
             font-size: 14px;
             color: #666;
         }
+
+        .lang-nav {
+            margin-bottom: 12px;
+            font-size: 13px;
+        }
+
+        .lang-nav a {
+            color: #666;
+            text-decoration: none;
+            padding: 2px 4px;
+        }
+
+        .lang-nav a:hover {
+            color: #007aff;
+            text-decoration: underline;
+        }
+
+        .lang-nav a.active {
+            font-weight: 600;
+            color: #111;
+        }
+
+        .copyright {
+            margin: 0;
+            color: #888;
+            font-size: 13px;
+        }
     </style>
 </head>
 <body>
@@ -69,23 +103,17 @@
 
         <p>
             <strong>Alarm permissions:</strong>
-            WakeUp uses Apple's AlarmKit to schedule reliable system alarms.
-            To ensure alarms always ring on time even when the app is closed,
-            make sure alarm permissions are enabled in Settings.
+            WakeUp uses Apple's AlarmKit to schedule reliable system alarms. To ensure alarms always ring on time even when the app is closed, make sure alarm permissions are enabled in Settings.
         </p>
 
         <p>
             <strong>Changing time zones:</strong>
-            Repeating alarms with temporary exceptions (such as an adjusted time
-            or a skipped alarm) are scheduled in Apple's AlarmKit using a
-            fixed point in time. When changing time zones, simply open WakeUp
-            and your alarms will update automatically to your new local time.
+            Repeating alarms with temporary exceptions (such as an adjusted time or a skipped alarm) are scheduled in Apple's AlarmKit using a fixed point in time. When changing time zones, simply open WakeUp and your alarms will update automatically to your new local time.
         </p>
     </div>
 
     <p>
-        If you experience a problem with the app, have a question,
-        or would like to provide feedback, please contact:
+        If you experience a problem with the app, have a question, or would like to provide feedback, please contact:
     </p>
 
     <p>
@@ -96,9 +124,7 @@
     </p>
 
     <p>
-        When reporting a problem, it may be helpful to include your
-        device model (iPhone or iPad), iOS version, and a
-        short description of the issue.
+        When reporting a problem, it may be helpful to include your device model (iPhone or iPad), iOS version, and a short description of the issue.
     </p>
 
     <p>
@@ -108,7 +134,20 @@
     </p>
 
     <footer>
-        WakeUp
+        <nav class="lang-nav" aria-label="Language selection">
+            <a href="./" class="active">English</a>
+            &middot;
+            <a href="fi/">Suomi</a>
+            &middot;
+            <a href="sv/">Svenska</a>
+            &middot;
+            <a href="de/">Deutsch</a>
+            &middot;
+            <a href="es/">Español</a>
+            &middot;
+            <a href="fr/">Français</a>
+        </nav>
+        <p class="copyright">WakeUp &copy; 2026</p>
     </footer>
 
 </body>

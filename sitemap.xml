@@ -1,12 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://lightfeet-apps.github.io/wakeup-support/marketing.html</loc>
+        <loc>https://lightfeet-apps.github.io/wakeup-support/</loc>
+        <lastmod>2026-11-10</lastmod>
     </url>
     <url>
-        <loc>https://lightfeet-apps.github.io/wakeup-support/</loc>
+        <loc>https://lightfeet-apps.github.io/wakeup-support/fi/</loc>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeet-apps.github.io/wakeup-support/sv/</loc>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeet-apps.github.io/wakeup-support/de/</loc>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeet-apps.github.io/wakeup-support/es/</loc>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeet-apps.github.io/wakeup-support/fr/</loc>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeet-apps.github.io/wakeup-support/marketing.html</loc>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeet-apps.github.io/wakeup-support/fi/marketing.html</loc>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeet-apps.github.io/wakeup-support/sv/marketing.html</loc>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeet-apps.github.io/wakeup-support/de/marketing.html</loc>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeet-apps.github.io/wakeup-support/es/marketing.html</loc>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeet-apps.github.io/wakeup-support/fr/marketing.html</loc>
+        <lastmod>2026-11-10</lastmod>
     </url>
     <url>
         <loc>https://lightfeet-apps.github.io/wakeup-support/privacy.html</loc>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeet-apps.github.io/wakeup-support/fi/privacy.html</loc>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeet-apps.github.io/wakeup-support/sv/privacy.html</loc>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeet-apps.github.io/wakeup-support/de/privacy.html</loc>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeet-apps.github.io/wakeup-support/es/privacy.html</loc>
+        <lastmod>2026-11-10</lastmod>
+    </url>
+    <url>
+        <loc>https://lightfeet-apps.github.io/wakeup-support/fr/privacy.html</loc>
+        <lastmod>2026-11-10</lastmod>
     </url>
 </urlset>
