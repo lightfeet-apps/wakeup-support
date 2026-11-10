@@ -259,6 +259,7 @@
             <li><a href="#faq-15">¿Cómo ajusto la duración de la posposición o desactivo la opción de posponer?</a></li>
             <li><a href="#faq-16">¿Cómo cambio el aspecto de la aplicación (modo oscuro o claro)?</a></li>
             <li><a href="#faq-17">¿Qué idiomas admite WakeUp y cómo puedo cambiar de idioma?</a></li>
+            <li><a href="#faq-18">¿Por qué WakeUp requiere iOS 26 o posterior?</a></li>
         </ol>
         <p class="toc-contact-tip">
             ¿No encuentras lo que buscas? <a href="index.html">Contactar con el soporte de WakeUp &rarr;</a>
@@ -519,6 +520,20 @@
         <p><strong>Cómo cambiar el idioma:</strong> Abre <strong>WakeUp → Ajustes → General → Idioma</strong> y selecciona el idioma que prefieras. Puedes elegir <strong>Predeterminado del sistema</strong> para seguir la configuración del sistema iOS.</p>
         <div class="note">
             <strong>Consejo:</strong> El cambio de idioma se aplica al instante en toda la interfaz, incluidos los días de repetición, etiquetas y Actividades en vivo, sin necesidad de reiniciar la app.
+        </div>
+        <a href="#top" class="back-to-top">↑ Volver arriba</a>
+    </div>
+
+    <div class="faq-item" id="faq-18">
+        <h2>¿Por qué WakeUp requiere iOS 26 o posterior?</h2>
+        <p>WakeUp está diseñado específicamente para aprovechar el marco nativo <strong>AlarmKit</strong> de Apple, introducido en iOS 26:</p>
+        <ul>
+            <li><strong>Alarmas nativas del sistema:</strong> Antes de iOS 26, las aplicaciones de terceros no podían programar alarmas reales del sistema. Tenían que depender de notificaciones estándar (que pueden silenciarse o retrasarse) o requerir mantener la pantalla encendida toda la noche.</li>
+            <li><strong>Fiabilidad absoluta sin concesiones:</strong> AlarmKit permite a WakeUp crear alarmas integradas directamente en iOS, garantizando que suenen con sonido incluso si el dispositivo está en silencio, en modo No molestar o con la app cerrada.</li>
+            <li><strong>Integración moderna con el sistema:</strong> iOS 26 y AlarmKit también permiten disfrutar de cuentas atrás en la pantalla de bloqueo, actividades en vivo (Live Activities) y Dynamic Island.</li>
+        </ul>
+        <div class="note">
+            <strong>Nota:</strong> Para garantizar la máxima fiabilidad sin soluciones provisionales, WakeUp requiere un iPhone o iPad con iOS 26 o posterior.
         </div>
         <a href="#top" class="back-to-top">↑ Volver arriba</a>
     </div>
