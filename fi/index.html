@@ -26,13 +26,14 @@
 
         h1 {
             font-size: 32px;
+            margin-bottom: 8px;
         }
 
         .card {
             background: #f6f7f9;
             border-radius: 16px;
             padding: 24px;
-            margin: 32px 0;
+            margin: 28px 0;
         }
 
         .card h2 {
@@ -52,6 +53,27 @@
             margin-bottom: 0;
         }
 
+        .faq-card {
+            background: #ffffff;
+            border: 1.5px solid #007aff;
+            box-shadow: 0 2px 8px rgba(0, 122, 255, 0.06);
+        }
+
+        .faq-card h2 {
+            color: #007aff;
+        }
+
+        .faq-card-link {
+            display: inline-block;
+            font-weight: 600;
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        .faq-card-link:hover {
+            text-decoration: underline;
+        }
+
         a {
             color: #007aff;
         }
@@ -60,6 +82,10 @@
             margin-top: 50px;
             font-size: 14px;
             color: #666;
+        }
+
+        .links-nav {
+            margin: 40px 0 20px;
         }
 
         .lang-nav {
@@ -98,6 +124,16 @@
         Kiitos, että käytät WakeUpia.
     </p>
 
+    <div class="card faq-card">
+        <h2>Tarkista ensin usein kysytyt kysymykset</h2>
+        <p>
+            Ennen sähköpostin lähettämistä suosittelemme tarkistamaan kattavan UKK-sivumme (FAQ). Löydät sieltä välittömät vastaukset ja ohjeet mm. herätysten luotettavuuteen, omiin herätysääniin, torkkuaikaan, aikavyöhykkeisiin, tauotukseen ja muihin ominaisuuksiin.
+        </p>
+        <p>
+            <a href="faq.html" class="faq-card-link">Siirry usein kysyttyihin kysymyksiin (UKK) &rarr;</a>
+        </p>
+    </div>
+
     <div class="card">
         <h2>Hyvä tietää</h2>
 
@@ -113,7 +149,7 @@
     </div>
 
     <p>
-        Jos kohtaat ongelmia sovelluksen kanssa, sinulla on kysyttävää tai haluat antaa palautetta, ota yhteyttä:
+        Jos et löytänyt vastausta UKK:sta, kohtaat ongelmia sovelluksen kanssa tai haluat antaa palautetta, ota yhteyttä:
     </p>
 
     <p>
@@ -127,7 +163,7 @@
         Ongelmaa ilmoittaessasi voi olla hyödyllistä kertoa laitemalli (iPhone tai iPad), iOS-versio sekä lyhyt kuvaus tilanteesta.
     </p>
 
-    <p>
+    <p class="links-nav">
         <a href="marketing.html">Tietoa WakeUpista</a>
         &middot;
         <a href="faq.html">UKK (FAQ)</a>

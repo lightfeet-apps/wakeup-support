@@ -26,13 +26,14 @@
 
         h1 {
             font-size: 32px;
+            margin-bottom: 8px;
         }
 
         .card {
             background: #f6f7f9;
             border-radius: 16px;
             padding: 24px;
-            margin: 32px 0;
+            margin: 28px 0;
         }
 
         .card h2 {
@@ -52,6 +53,27 @@
             margin-bottom: 0;
         }
 
+        .faq-card {
+            background: #ffffff;
+            border: 1.5px solid #007aff;
+            box-shadow: 0 2px 8px rgba(0, 122, 255, 0.06);
+        }
+
+        .faq-card h2 {
+            color: #007aff;
+        }
+
+        .faq-card-link {
+            display: inline-block;
+            font-weight: 600;
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        .faq-card-link:hover {
+            text-decoration: underline;
+        }
+
         a {
             color: #007aff;
         }
@@ -60,6 +82,10 @@
             margin-top: 50px;
             font-size: 14px;
             color: #666;
+        }
+
+        .links-nav {
+            margin: 40px 0 20px;
         }
 
         .lang-nav {
@@ -98,6 +124,16 @@
         Merci d'utiliser WakeUp.
     </p>
 
+    <div class="card faq-card">
+        <h2>Consultez d'abord la foire aux questions</h2>
+        <p>
+            Avant de nous envoyer un e-mail, nous vous recommandons de consulter notre foire aux questions (FAQ). Vous y trouverez des réponses immédiates et des guides pratiques sur la fiabilité des alarmes, les sons personnalisés, le rappel, les fuseaux horaires et bien plus.
+        </p>
+        <p>
+            <a href="faq.html" class="faq-card-link">Consulter la foire aux questions (FAQ) &rarr;</a>
+        </p>
+    </div>
+
     <div class="card">
         <h2>Bon à savoir</h2>
 
@@ -113,7 +149,7 @@
     </div>
 
     <p>
-        Si vous rencontrez un problème avec l'application, avez une question ou souhaitez faire part de vos commentaires, contactez :
+        Si vous n'avez pas trouvé de réponse dans la FAQ, si vous rencontrez un problème ou si vous souhaitez nous faire part de vos commentaires, contactez-nous :
     </p>
 
     <p>
@@ -127,7 +163,7 @@
         Lors du signalement d'un problème, il peut être utile d'indiquer le modèle de votre appareil (iPhone ou iPad), la version d'iOS et une brève description du problème.
     </p>
 
-    <p>
+    <p class="links-nav">
         <a href="marketing.html">À propos de WakeUp</a>
         &middot;
         <a href="faq.html">FAQ</a>

@@ -26,13 +26,14 @@
 
         h1 {
             font-size: 32px;
+            margin-bottom: 8px;
         }
 
         .card {
             background: #f6f7f9;
             border-radius: 16px;
             padding: 24px;
-            margin: 32px 0;
+            margin: 28px 0;
         }
 
         .card h2 {
@@ -52,6 +53,27 @@
             margin-bottom: 0;
         }
 
+        .faq-card {
+            background: #ffffff;
+            border: 1.5px solid #007aff;
+            box-shadow: 0 2px 8px rgba(0, 122, 255, 0.06);
+        }
+
+        .faq-card h2 {
+            color: #007aff;
+        }
+
+        .faq-card-link {
+            display: inline-block;
+            font-weight: 600;
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        .faq-card-link:hover {
+            text-decoration: underline;
+        }
+
         a {
             color: #007aff;
         }
@@ -60,6 +82,10 @@
             margin-top: 50px;
             font-size: 14px;
             color: #666;
+        }
+
+        .links-nav {
+            margin: 40px 0 20px;
         }
 
         .lang-nav {
@@ -98,6 +124,16 @@
         Vielen Dank, dass du WakeUp nutzt.
     </p>
 
+    <div class="card faq-card">
+        <h2>Prüfe zuerst die häufig gestellten Fragen</h2>
+        <p>
+            Bevor du uns eine E-Mail schreibst, wirf bitte einen Blick in unsere ausführlichen FAQ. Dort findest du sofortige Antworten und Anleitungen zu Zuverlässigkeit, eigenen Wecktönen, Schlummerzeit, Zeitzonen, Pausieren und vielem mehr.
+        </p>
+        <p>
+            <a href="faq.html" class="faq-card-link">Zu den häufig gestellten Fragen (FAQ) &rarr;</a>
+        </p>
+    </div>
+
     <div class="card">
         <h2>Gut zu wissen</h2>
 
@@ -113,7 +149,7 @@
     </div>
 
     <p>
-        Wenn du ein Problem hast, Fragen stellen oder Feedback geben möchtest, kontaktiere uns gerne:
+        Wenn du in den FAQ keine Antwort gefunden hast, ein Problem auftritt oder du Feedback geben möchtest, kontaktiere uns gerne:
     </p>
 
     <p>
@@ -127,7 +163,7 @@
         Bei Problemmeldungen ist es hilfreich, dein Gerätemodell (iPhone oder iPad), die iOS-Version und eine kurze Beschreibung des Problems anzugeben.
     </p>
 
-    <p>
+    <p class="links-nav">
         <a href="marketing.html">Über WakeUp</a>
         &middot;
         <a href="faq.html">FAQ</a>

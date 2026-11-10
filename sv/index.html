@@ -26,13 +26,14 @@
 
         h1 {
             font-size: 32px;
+            margin-bottom: 8px;
         }
 
         .card {
             background: #f6f7f9;
             border-radius: 16px;
             padding: 24px;
-            margin: 32px 0;
+            margin: 28px 0;
         }
 
         .card h2 {
@@ -52,6 +53,27 @@
             margin-bottom: 0;
         }
 
+        .faq-card {
+            background: #ffffff;
+            border: 1.5px solid #007aff;
+            box-shadow: 0 2px 8px rgba(0, 122, 255, 0.06);
+        }
+
+        .faq-card h2 {
+            color: #007aff;
+        }
+
+        .faq-card-link {
+            display: inline-block;
+            font-weight: 600;
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        .faq-card-link:hover {
+            text-decoration: underline;
+        }
+
         a {
             color: #007aff;
         }
@@ -60,6 +82,10 @@
             margin-top: 50px;
             font-size: 14px;
             color: #666;
+        }
+
+        .links-nav {
+            margin: 40px 0 20px;
         }
 
         .lang-nav {
@@ -98,6 +124,16 @@
         Tack för att du använder WakeUp.
     </p>
 
+    <div class="card faq-card">
+        <h2>Läs våra vanliga frågor först</h2>
+        <p>
+            Innan du skickar ett e-postmeddelande rekommenderar vi att du kollar vår sida med vanliga frågor (FAQ). Där hittar du snabba svar och guider om alarmens tillförlitlighet, egna larmljud, slumringstid, tidszoner, pausning och mycket mer.
+        </p>
+        <p>
+            <a href="faq.html" class="faq-card-link">Gå till vanliga frågor (FAQ) &rarr;</a>
+        </p>
+    </div>
+
     <div class="card">
         <h2>Bra att veta</h2>
 
@@ -113,7 +149,7 @@
     </div>
 
     <p>
-        Om du stöter på problem med appen, har frågor eller vill ge feedback, kontakta oss gärna:
+        Om du inte hittade svar i FAQ:n, stöter på problem eller vill ge feedback är du välkommen att kontakta oss:
     </p>
 
     <p>
@@ -127,7 +163,7 @@
         När du rapporterar ett problem kan det underlätta att ange din enhetsmodell (iPhone eller iPad), iOS-version samt en kort beskrivning av problemet.
     </p>
 
-    <p>
+    <p class="links-nav">
         <a href="marketing.html">Om WakeUp</a>
         &middot;
         <a href="faq.html">FAQ</a>
