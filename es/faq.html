@@ -244,22 +244,22 @@
         <ol>
             <li><a href="#faq-1">¿Sonará la alarma si el dispositivo está en silencio, en No molestar o con la app cerrada?</a></li>
             <li><a href="#faq-2">¿Cómo sigo las alarmas y la cuenta atrás en la pantalla de bloqueo o en Dynamic Island?</a></li>
-            <li><a href="#faq-3">¿Cómo funciona la función para omitir la próxima alarma (Dismiss)?</a></li>
-            <li><a href="#faq-4">¿Cómo funciona el ajuste rápido (Quick Adjust +/-)?</a></li>
-            <li><a href="#faq-5">Voy a viajar. ¿Qué debo tener en cuenta?</a></li>
-            <li><a href="#faq-6">¿Qué son las categorías de alarma y cómo se usan?</a></li>
-            <li><a href="#faq-7">¿Cómo funcionan el destacado de la próxima alarma y la cuenta atrás?</a></li>
-            <li><a href="#faq-8">¿Cómo funciona la pausa de una alarma periódica?</a></li>
-            <li><a href="#faq-9">¿Cómo cambio el método de introducción de la hora (editor de hora)?</a></li>
-            <li><a href="#faq-10">¿Cómo puedo ordenar mis alarmas?</a></li>
-            <li><a href="#faq-11">Cómo importar tu propio tono de alarma a WakeUp</a></li>
-            <li><a href="#faq-12">¿Qué requisitos y limitaciones tienen los sonidos de alarma personalizados?</a></li>
-            <li><a href="#faq-13">¿Cómo cambio el sonido predeterminado o actualizo todas las alarmas a la vez?</a></li>
-            <li><a href="#faq-14">¿Cómo edito varias alarmas a la vez (edición por lotes)?</a></li>
-            <li><a href="#faq-15">¿Cómo ajusto la duración de la posposición o desactivo la opción de posponer?</a></li>
-            <li><a href="#faq-16">¿Cómo cambio el aspecto de la aplicación (modo oscuro o claro)?</a></li>
-            <li><a href="#faq-17">¿Qué idiomas admite WakeUp y cómo puedo cambiar de idioma?</a></li>
-            <li><a href="#faq-18">¿Por qué WakeUp requiere iOS 26 o posterior?</a></li>
+            <li><a href="#faq-3">¿Por qué WakeUp requiere iOS 26 o posterior?</a></li>
+            <li><a href="#faq-4">¿Cómo funciona la función para omitir la próxima alarma (Dismiss)?</a></li>
+            <li><a href="#faq-5">¿Cómo funciona el ajuste rápido (Quick Adjust +/-)?</a></li>
+            <li><a href="#faq-6">Voy a viajar. ¿Qué debo tener en cuenta?</a></li>
+            <li><a href="#faq-7">¿Qué son las categorías de alarma y cómo se usan?</a></li>
+            <li><a href="#faq-8">¿Cómo funcionan el destacado de la próxima alarma y la cuenta atrás?</a></li>
+            <li><a href="#faq-9">¿Cómo funciona la pausa de una alarma periódica?</a></li>
+            <li><a href="#faq-10">¿Cómo cambio el método de introducción de la hora (editor de hora)?</a></li>
+            <li><a href="#faq-11">¿Cómo puedo ordenar mis alarmas?</a></li>
+            <li><a href="#faq-12">Cómo importar tu propio tono de alarma a WakeUp</a></li>
+            <li><a href="#faq-13">¿Qué requisitos y limitaciones tienen los sonidos de alarma personalizados?</a></li>
+            <li><a href="#faq-14">¿Cómo cambio el sonido predeterminado o actualizo todas las alarmas a la vez?</a></li>
+            <li><a href="#faq-15">¿Cómo edito varias alarmas a la vez (edición por lotes)?</a></li>
+            <li><a href="#faq-16">¿Cómo ajusto la duración de la posposición o desactivo la opción de posponer?</a></li>
+            <li><a href="#faq-17">¿Cómo cambio el aspecto de la aplicación (modo oscuro o claro)?</a></li>
+            <li><a href="#faq-18">¿Qué idiomas admite WakeUp y cómo puedo cambiar de idioma?</a></li>
         </ol>
         <p class="toc-contact-tip">
             ¿No encuentras lo que buscas? <a href="index.html">Contactar con el soporte de WakeUp &rarr;</a>
@@ -296,6 +296,20 @@
     </div>
 
     <div class="faq-item" id="faq-3">
+        <h2>¿Por qué WakeUp requiere iOS 26 o posterior?</h2>
+        <p>WakeUp está diseñado específicamente para aprovechar el marco nativo <strong>AlarmKit</strong> de Apple, introducido en iOS 26:</p>
+        <ul>
+            <li><strong>Alarmas nativas del sistema:</strong> Antes de iOS 26, las aplicaciones de terceros no podían programar alarmas reales del sistema. Tenían que depender de notificaciones estándar (que pueden silenciarse o retrasarse) o requerir mantener la pantalla encendida toda la noche.</li>
+            <li><strong>Fiabilidad absoluta sin concesiones:</strong> AlarmKit permite a WakeUp crear alarmas integradas directamente en iOS, garantizando que suenen con audio incluso si el dispositivo está en silencio, en modo No molestar o con la app cerrada.</li>
+            <li><strong>Integración moderna con el sistema:</strong> iOS 26 y AlarmKit también permiten disfrutar de cuentas atrás en la pantalla de bloqueo, actividades en vivo (Live Activities) y Dynamic Island.</li>
+        </ul>
+        <div class="note">
+            <strong>Nota:</strong> Para garantizar la máxima fiabilidad sin soluciones provisionales, WakeUp requiere un iPhone o iPad con iOS 26 o posterior.
+        </div>
+        <a href="#top" class="back-to-top">↑ Volver arriba</a>
+    </div>
+
+    <div class="faq-item" id="faq-4">
         <h2>¿Cómo funciona la función para omitir la próxima alarma (Dismiss)?</h2>
         <p>La función para omitir la próxima alarma te permite saltarte solo el siguiente toque de una alarma periódica (por ejemplo, si ya te has despertado o tienes el día libre) sin modificar tu horario habitual:</p>
         <ul>
@@ -309,7 +323,7 @@
         <a href="#top" class="back-to-top">↑ Volver arriba</a>
     </div>
 
-    <div class="faq-item" id="faq-4">
+    <div class="faq-item" id="faq-5">
         <h2>¿Cómo funciona el ajuste rápido (Quick Adjust +/-)?</h2>
         <p>El ajuste rápido te permite adelantar o retrasar solo el próximo toque de una alarma periódica sin modificar tu horario regular:</p>
         <ul>
@@ -324,7 +338,7 @@
         <a href="#top" class="back-to-top">↑ Volver arriba</a>
     </div>
 
-    <div class="faq-item" id="faq-5">
+    <div class="faq-item" id="faq-6">
         <h2>Voy a viajar. ¿Qué debo tener en cuenta?</h2>
         <p>Al viajar entre distintas zonas horarias, mantener tus alarmas al día es muy sencillo:</p>
         <ul>
@@ -339,7 +353,7 @@
         <a href="#top" class="back-to-top">↑ Volver arriba</a>
     </div>
 
-    <div class="faq-item" id="faq-6">
+    <div class="faq-item" id="faq-7">
         <h2>¿Qué son las categorías de alarma y cómo se usan?</h2>
         <p>Las categorías de alarma te ayudan a agrupar y organizar tus alarmas según diferentes rutinas y momentos (como Trabajo, Mañana, Ejercicio, Medicación o Fin de semana):</p>
         <ul>
@@ -353,7 +367,7 @@
         <a href="#top" class="back-to-top">↑ Volver arriba</a>
     </div>
 
-    <div class="faq-item" id="faq-7">
+    <div class="faq-item" id="faq-8">
         <h2>¿Cómo funcionan el destacado de la próxima alarma y la cuenta atrás?</h2>
         <p>WakeUp puede destacar automáticamente la próxima alarma programada para sonar en tu lista de alarmas y mostrar una cuenta atrás en directo con el tiempo restante (por ejemplo, <em>Próxima · 7 h 25 min</em>):</p>
         <ul>
@@ -368,7 +382,7 @@
         <a href="#top" class="back-to-top">↑ Volver arriba</a>
     </div>
 
-    <div class="faq-item" id="faq-8">
+    <div class="faq-item" id="faq-9">
         <h2>¿Cómo funciona la pausa de una alarma periódica?</h2>
         <p>La función de pausa te permite suspender temporalmente una alarma periódica durante un período de fechas determinado (por ejemplo, durante las vacaciones o viajes) sin desactivarla por completo:</p>
         <ul>
@@ -383,7 +397,7 @@
         <a href="#top" class="back-to-top">↑ Volver arriba</a>
     </div>
 
-    <div class="faq-item" id="faq-9">
+    <div class="faq-item" id="faq-10">
         <h2>¿Cómo cambio el método de introducción de la hora (editor de hora)?</h2>
         <p>WakeUp ofrece tres formas distintas de configurar la hora de la alarma para que elijas la que te resulte más cómoda:</p>
         <ul>
@@ -398,7 +412,7 @@
         <a href="#top" class="back-to-top">↑ Volver arriba</a>
     </div>
 
-    <div class="faq-item" id="faq-10">
+    <div class="faq-item" id="faq-11">
         <h2>¿Cómo puedo ordenar mis alarmas?</h2>
         <p>Puedes personalizar el orden de tus alarmas en la lista tocando el botón de menú (•••) en la esquina superior de la pantalla principal:</p>
         <ul>
@@ -414,7 +428,7 @@
         <a href="#top" class="back-to-top">↑ Volver arriba</a>
     </div>
 
-    <div class="faq-item" id="faq-11">
+    <div class="faq-item" id="faq-12">
         <h2>Cómo importar tu propio tono de alarma a WakeUp</h2>
         <ol>
             <li>Localiza el archivo de audio en tu Mac o en la app Música.</li>
@@ -429,7 +443,7 @@
         <a href="#top" class="back-to-top">↑ Volver arriba</a>
     </div>
 
-    <div class="faq-item" id="faq-12">
+    <div class="faq-item" id="faq-13">
         <h2>¿Qué requisitos y limitaciones tienen los sonidos de alarma personalizados?</h2>
         <p>Puedes personalizar tus alarmas con tus propios archivos de audio. Estos son los requisitos clave, los formatos admitidos y las opciones de gestión:</p>
         <ul>
@@ -445,7 +459,7 @@
         <a href="#top" class="back-to-top">↑ Volver arriba</a>
     </div>
 
-    <div class="faq-item" id="faq-13">
+    <div class="faq-item" id="faq-14">
         <h2>¿Cómo cambio el sonido predeterminado o actualizo todas las alarmas a la vez?</h2>
         <p>WakeUp te permite definir un sonido predeterminado para todas las alarmas nuevas e incluso actualizar todas las alarmas existentes con un solo toque:</p>
         <ul>
@@ -460,7 +474,7 @@
         <a href="#top" class="back-to-top">↑ Volver arriba</a>
     </div>
 
-    <div class="faq-item" id="faq-14">
+    <div class="faq-item" id="faq-15">
         <h2>¿Cómo edito varias alarmas a la vez (edición por lotes)?</h2>
         <p>La edición por lotes te permite actualizar ajustes en varias alarmas simultáneamente sin tener que editar cada una por separado:</p>
         <ul>
@@ -476,7 +490,7 @@
         <a href="#top" class="back-to-top">↑ Volver arriba</a>
     </div>
 
-    <div class="faq-item" id="faq-15">
+    <div class="faq-item" id="faq-16">
         <h2>¿Cómo ajusto la duración de la posposición o desactivo la opción de posponer?</h2>
         <p>A diferencia de las alarmas tradicionales con un tiempo de posposición fijo de 9 minutos, WakeUp te permite elegir la duración para cada alarma o desactivarla por completo:</p>
         <ul>
@@ -491,7 +505,7 @@
         <a href="#top" class="back-to-top">↑ Volver arriba</a>
     </div>
 
-    <div class="faq-item" id="faq-16">
+    <div class="faq-item" id="faq-17">
         <h2>¿Cómo cambio el aspecto de la aplicación (modo oscuro o claro)?</h2>
         <p>WakeUp está pensada para ofrecer una legibilidad óptima tanto de día como de noche. De forma predeterminada sigue el sistema de tu iPhone, pero puedes fijar tu preferencia en cualquier momento:</p>
         <ul>
@@ -506,7 +520,7 @@
         <a href="#top" class="back-to-top">↑ Volver arriba</a>
     </div>
 
-    <div class="faq-item" id="faq-17">
+    <div class="faq-item" id="faq-18">
         <h2>¿Qué idiomas admite WakeUp y cómo puedo cambiar de idioma?</h2>
         <p>WakeUp está completamente traducida a 6 idiomas. De forma predeterminada, coincide automáticamente con el idioma de tu iPhone, pero puedes elegir un idioma diferente directamente en los ajustes de la app:</p>
         <ul>
@@ -520,20 +534,6 @@
         <p><strong>Cómo cambiar el idioma:</strong> Abre <strong>WakeUp → Ajustes → General → Idioma</strong> y selecciona el idioma que prefieras. Puedes elegir <strong>Predeterminado del sistema</strong> para seguir la configuración del sistema iOS.</p>
         <div class="note">
             <strong>Consejo:</strong> El cambio de idioma se aplica al instante en toda la interfaz, incluidos los días de repetición, etiquetas y Actividades en vivo, sin necesidad de reiniciar la app.
-        </div>
-        <a href="#top" class="back-to-top">↑ Volver arriba</a>
-    </div>
-
-    <div class="faq-item" id="faq-18">
-        <h2>¿Por qué WakeUp requiere iOS 26 o posterior?</h2>
-        <p>WakeUp está diseñado específicamente para aprovechar el marco nativo <strong>AlarmKit</strong> de Apple, introducido en iOS 26:</p>
-        <ul>
-            <li><strong>Alarmas nativas del sistema:</strong> Antes de iOS 26, las aplicaciones de terceros no podían programar alarmas reales del sistema. Tenían que depender de notificaciones estándar (que pueden silenciarse o retrasarse) o requerir mantener la pantalla encendida toda la noche.</li>
-            <li><strong>Fiabilidad absoluta sin concesiones:</strong> AlarmKit permite a WakeUp crear alarmas integradas directamente en iOS, garantizando que suenen con sonido incluso si el dispositivo está en silencio, en modo No molestar o con la app cerrada.</li>
-            <li><strong>Integración moderna con el sistema:</strong> iOS 26 y AlarmKit también permiten disfrutar de cuentas atrás en la pantalla de bloqueo, actividades en vivo (Live Activities) y Dynamic Island.</li>
-        </ul>
-        <div class="note">
-            <strong>Nota:</strong> Para garantizar la máxima fiabilidad sin soluciones provisionales, WakeUp requiere un iPhone o iPad con iOS 26 o posterior.
         </div>
         <a href="#top" class="back-to-top">↑ Volver arriba</a>
     </div>
