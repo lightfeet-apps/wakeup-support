@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WakeUp FAQ – Preguntas frecuentes</title>
-    <meta name="description" content="Preguntas frecuentes y guías para WakeUp en iPhone y iPad, incluido cómo importar tus propios tonos de alarma.">
+    <meta name="description" content="Preguntas frecuentes y guías para WakeUp en iPhone y iPad, incluido cómo importar tus propios tonos de alarma y el cambio de zona horaria.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://lightfeet-apps.github.io/wakeup-support/es/faq.html">
     <link rel="alternate" hreflang="x-default" href="https://lightfeet-apps.github.io/wakeup-support/faq.html">
@@ -49,12 +49,18 @@
             color: #111;
         }
 
-        ol {
+        .faq-item p {
+            margin: 0 0 12px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        ol, ul {
             padding-left: 20px;
             margin: 0 0 16px;
         }
 
-        ol li {
+        ol li, ul li {
             margin-bottom: 8px;
             font-size: 16px;
             line-height: 1.5;
@@ -127,6 +133,20 @@
         </ol>
         <div class="note">
             <strong>Nota:</strong> Debes ser propietario del archivo de audio que importes. Solo se admiten archivos sin DRM (como música comprada o tus propias grabaciones). Las canciones protegidas de servicios de streaming no se pueden importar.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <h2>Voy a viajar. ¿Qué debo tener en cuenta?</h2>
+        <p>Al viajar entre distintas zonas horarias, mantener tus alarmas al día es muy sencillo:</p>
+        <ul>
+            <li><strong>Las alarmas periódicas normales</strong> siguen automáticamente la hora local de tu dispositivo.</li>
+            <li><strong>Las alarmas con excepciones temporales</strong> (como una próxima alarma ajustada o una alarma omitida) se programan en AlarmKit de Apple en un punto fijo en el tiempo. En la app, se indican con el icono de una chincheta.</li>
+        </ul>
+        <p><strong>Qué debes hacer:</strong> Al llegar a una nueva zona horaria, <strong>simplemente abre WakeUp</strong>. La app detectará automáticamente la nueva zona horaria y actualizará tus alarmas a la hora local.</p>
+        <p><strong>Mostrar la zona horaria:</strong> Si una alarma está programada en una zona horaria distinta a tu ubicación actual, su zona horaria se muestra automáticamente junto al icono de la chincheta. Si deseas mostrar siempre la zona horaria junto a la chincheta, activa <strong>WakeUp → Ajustes → ¿Cambias de zona horaria? → Mostrar detalles de la zona horaria</strong>.</p>
+        <div class="note">
+            <strong>Consejo:</strong> WakeUp mostrará una breve confirmación en la app una vez que tus alarmas se hayan actualizado para la nueva zona horaria.
         </div>
     </div>
 

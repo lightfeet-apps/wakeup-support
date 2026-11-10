@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WakeUp UKK – Usein kysytyt kysymykset</title>
-    <meta name="description" content="Usein kysytyt kysymykset ja käyttöohjeet WakeUp-sovellukselle iPhonessa ja iPadissa, mukaan lukien omien herätysäänien tuominen.">
+    <meta name="description" content="Usein kysytyt kysymykset ja käyttöohjeet WakeUp-sovellukselle iPhonessa ja iPadissa, mukaan lukien omien herätysäänien tuominen ja aikavyöhykkeen vaihtuminen.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://lightfeet-apps.github.io/wakeup-support/fi/faq.html">
     <link rel="alternate" hreflang="x-default" href="https://lightfeet-apps.github.io/wakeup-support/faq.html">
@@ -49,12 +49,18 @@
             color: #111;
         }
 
-        ol {
+        .faq-item p {
+            margin: 0 0 12px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        ol, ul {
             padding-left: 20px;
             margin: 0 0 16px;
         }
 
-        ol li {
+        ol li, ul li {
             margin-bottom: 8px;
             font-size: 16px;
             line-height: 1.5;
@@ -127,6 +133,20 @@
         </ol>
         <div class="note">
             <strong>Huom:</strong> Sinun tulee omistaa tuomasi äänitiedosto. Vain DRM-suojaamattomat tiedostot (kuten ostettu musiikki tai omat äänitteet) ovat tuettuja. Suoratoistopalveluiden suojattuja kappaleita ei voi tuoda.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <h2>Olen matkustamassa. Mitä minun tulee huomioida?</h2>
+        <p>Kun matkustat aikavyöhykkeeltä toiselle, herätysten pitäminen ajantasalla on helppoa:</p>
+        <ul>
+            <li><strong>Tavalliset toistuvat herätykset</strong> seuraavat automaattisesti laitteesi uutta paikallisaikaa.</li>
+            <li><strong>Toistuvat herätykset, joissa on poikkeus</strong> (kuten kertaluontoisesti siirretty herätysaika tai ohitettu kerta), ajastetaan Applen AlarmKitiin kiinteänä ajanhetkenä. Tällaiset herätykset on merkitty sovelluksessa nuppineulakuvakkeella.</li>
+        </ul>
+        <p><strong>Mitä sinun tulee tehdä:</strong> Saavuttuasi uudelle aikavyöhykkeelle <strong>avaa vain WakeUp-sovellus</strong>. Sovellus tunnistaa uuden aikavyöhykkeen automaattisesti ja päivittää herätyksesi uuteen paikallisaikaan.</p>
+        <p><strong>Aikavyöhykkeen näyttäminen:</strong> Jos herätys on ajastettu eri aikavyöhykkeeseen kuin missä parhaillaan olet, sen aikavyöhyke näkyy nuppineulan vieressä automaattisesti. Jos haluat nähdä aikavyöhykkeen nuppineulan vieressä aina, ota asetus käyttöön kohdassa <strong>WakeUp → Asetukset → Vaihdatko aikavyöhykettä? → Näytä aikavyöhyketiedot</strong>.</p>
+        <div class="note">
+            <strong>Vinkki:</strong> WakeUp näyttää sovelluksessa vahvistuksen, kun herätykset on päivitetty uuden aikavyöhykkeen mukaiseksi.
         </div>
     </div>
 

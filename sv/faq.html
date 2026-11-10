@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WakeUp FAQ – Vanliga frågor</title>
-    <meta name="description" content="Vanliga frågor och guider för WakeUp på iPhone och iPad, inklusive hur du importerar egna larmljud.">
+    <meta name="description" content="Vanliga frågor och guider för WakeUp på iPhone och iPad, inklusive hur du importerar egna larmljud och ändrar tidszon.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://lightfeet-apps.github.io/wakeup-support/sv/faq.html">
     <link rel="alternate" hreflang="x-default" href="https://lightfeet-apps.github.io/wakeup-support/faq.html">
@@ -49,12 +49,18 @@
             color: #111;
         }
 
-        ol {
+        .faq-item p {
+            margin: 0 0 12px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        ol, ul {
             padding-left: 20px;
             margin: 0 0 16px;
         }
 
-        ol li {
+        ol li, ul li {
             margin-bottom: 8px;
             font-size: 16px;
             line-height: 1.5;
@@ -127,6 +133,20 @@
         </ol>
         <div class="note">
             <strong>Obs:</strong> Du måste äga ljudfilen du importerar. Endast DRM-fria filer (såsom köpt musik eller egna inspelningar) stöds. Skyddade låtar från strömningstjänster kan inte importeras.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <h2>Jag ska resa. Vad behöver jag tänka på?</h2>
+        <p>När du reser mellan tidszoner är det enkelt att hålla dina alarm i fas:</p>
+        <ul>
+            <li><strong>Vanliga återkommande alarm</strong> följer automatiskt enhetens lokala tid.</li>
+            <li><strong>Alarm med tillfälliga undantag</strong> (som ett justerat nästa alarm eller ett avfärdat alarm) schemaläggs i Apples AlarmKit vid en fast tidpunkt. I appen markeras dessa med en knappnål.</li>
+        </ul>
+        <p><strong>Vad du ska göra:</strong> När du anländer till en ny tidszon, <strong>öppna bara WakeUp</strong>. Appen känner automatiskt av den nya tidszonen och uppdaterar dina alarm till lokal tid.</p>
+        <p><strong>Visa tidszon:</strong> Om ett alarm är schemalagt i en annan tidszon än din nuvarande plats visas dess tidszon automatiskt bredvid knappnålen. Om du alltid vill visa tidszonen bredvid knappnålen aktiverar du <strong>WakeUp → Inställningar → Byter du tidszon? → Visa tidszonsdetaljer</strong>.</p>
+        <div class="note">
+            <strong>Tips:</strong> WakeUp visar en kort bekräftelse i appen när dina alarm har uppdaterats för den nya tidszonen.
         </div>
     </div>
 

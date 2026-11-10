@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WakeUp FAQ – Foire aux questions</title>
-    <meta name="description" content="Foire aux questions et guides pour WakeUp sur iPhone et iPad, y compris comment importer vos propres sons d'alarme.">
+    <meta name="description" content="Foire aux questions et guides pour WakeUp sur iPhone et iPad, y compris l'importation de sons d'alarme et le changement de fuseau horaire.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://lightfeet-apps.github.io/wakeup-support/fr/faq.html">
     <link rel="alternate" hreflang="x-default" href="https://lightfeet-apps.github.io/wakeup-support/faq.html">
@@ -49,12 +49,18 @@
             color: #111;
         }
 
-        ol {
+        .faq-item p {
+            margin: 0 0 12px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        ol, ul {
             padding-left: 20px;
             margin: 0 0 16px;
         }
 
-        ol li {
+        ol li, ul li {
             margin-bottom: 8px;
             font-size: 16px;
             line-height: 1.5;
@@ -127,6 +133,20 @@
         </ol>
         <div class="note">
             <strong>Remarque :</strong> Vous devez posséder le fichier audio importé. Seuls les fichiers sans DRM (tels que la musique achetée ou vos propres enregistrements) sont pris en charge. Les morceaux protégés provenant de services de streaming ne peuvent pas être importés.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <h2>Je voyage. Que dois-je savoir ?</h2>
+        <p>Lorsque vous changez de fuseau horaire, garder vos alarmes à l'heure est très simple :</p>
+        <ul>
+            <li><strong>Les alarmes récurrentes habituelles</strong> s'adaptent automatiquement à l'heure locale de votre appareil.</li>
+            <li><strong>Les alarmes avec des exceptions temporaires</strong> (comme une prochaine alarme décalée ou une alarme ignorée) sont programmées dans l'AlarmKit d'Apple à un moment fixe dans le temps. Dans l'application, elles sont signalées par une icône d'épingle.</li>
+        </ul>
+        <p><strong>Ce qu'il faut faire :</strong> À votre arrivée dans un nouveau fuseau horaire, <strong>ouvrez simplement WakeUp</strong>. L'application détecte automatiquement le nouveau fuseau horaire et met à jour vos alarmes à l'heure locale.</p>
+        <p><strong>Afficher le fuseau horaire :</strong> Si une alarme est programmée dans un fuseau horaire différent de votre position actuelle, son fuseau horaire s'affiche automatiquement à côté de l'épingle. Si vous souhaitez toujours afficher le fuseau horaire à côté de l'épingle, activez <strong>WakeUp → Réglages → Vous changez de fuseau horaire ? → Afficher les détails du fuseau horaire</strong>.</p>
+        <div class="note">
+            <strong>Astuce :</strong> WakeUp affiche une confirmation dans l'application dès que vos alarmes ont été mises à jour pour le nouveau fuseau horaire.
         </div>
     </div>
 

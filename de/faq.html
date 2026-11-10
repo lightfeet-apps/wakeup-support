@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WakeUp FAQ – Häufig gestellte Fragen</title>
-    <meta name="description" content="Häufig gestellte Fragen und Anleitungen für WakeUp auf iPhone und iPad, einschließlich des Imports eigener Wecktöne.">
+    <meta name="description" content="Häufig gestellte Fragen und Anleitungen für WakeUp auf iPhone und iPad, einschließlich des Imports eigener Wecktöne und Zeitzonenwechsel.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://lightfeet-apps.github.io/wakeup-support/de/faq.html">
     <link rel="alternate" hreflang="x-default" href="https://lightfeet-apps.github.io/wakeup-support/faq.html">
@@ -49,12 +49,18 @@
             color: #111;
         }
 
-        ol {
+        .faq-item p {
+            margin: 0 0 12px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        ol, ul {
             padding-left: 20px;
             margin: 0 0 16px;
         }
 
-        ol li {
+        ol li, ul li {
             margin-bottom: 8px;
             font-size: 16px;
             line-height: 1.5;
@@ -127,6 +133,20 @@
         </ol>
         <div class="note">
             <strong>Hinweis:</strong> Du musst die importierte Audiodatei besitzen. Es werden nur DRM-freie Dateien unterstützt (z. B. gekaufte Musik oder eigene Aufnahmen). Geschützte Titel von Streaming-Diensten können nicht importiert werden.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <h2>Ich verreise. Was muss ich beachten?</h2>
+        <p>Wenn du in eine andere Zeitzone reist, bleiben deine Wecker ganz unkompliziert aktuell:</p>
+        <ul>
+            <li><strong>Normale wiederkehrende Wecker</strong> folgen automatisch der lokalen Uhrzeit deines Geräts.</li>
+            <li><strong>Wecker mit vorübergehenden Ausnahmen</strong> (z. B. eine einmalig angepasste Weckzeit oder ein übersprungener Wecker) werden in Apples AlarmKit zu einem festen Zeitpunkt geplant. In der App sind diese mit einer Stecknadel markiert.</li>
+        </ul>
+        <p><strong>Was du tun musst:</strong> Nach der Ankunft in einer neuen Zeitzone <strong>öffne einfach WakeUp</strong>. Die App erkennt die neue Zeitzone automatisch und passt deine Wecker an die lokale Zeit an.</p>
+        <p><strong>Zeitzone anzeigen:</strong> Wenn ein Wecker für eine andere Zeitzone als deinen aktuellen Standort geplant ist, wird seine Zeitzone automatisch neben der Stecknadel angezeigt. Wenn du die Zeitzone immer neben der Stecknadel sehen möchtest, aktiviere <strong>WakeUp → Einstellungen → Wechselst du die Zeitzone? → Zeitzonendetails anzeigen</strong>.</p>
+        <div class="note">
+            <strong>Tipp:</strong> WakeUp zeigt in der App eine kurze Bestätigung an, sobald deine Wecker für die neue Zeitzone aktualisiert wurden.
         </div>
     </div>
 
