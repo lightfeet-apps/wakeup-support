@@ -78,6 +78,52 @@
             text-decoration: none;
         }
 
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 28px;
+            font-size: 14px;
+        }
+
+        .top-nav a {
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        .top-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .top-nav .back-link {
+            font-weight: 600;
+        }
+
+        .top-nav-links {
+            color: #888;
+        }
+
+        .toc-contact-tip {
+            margin: 18px 0 0;
+            padding-top: 14px;
+            border-top: 1px solid #e5e5ea;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.45;
+        }
+
+        .toc-contact-tip a {
+            font-weight: 600;
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        .toc-contact-tip a:hover {
+            text-decoration: underline;
+        }
+
         .toc a:hover {
             text-decoration: underline;
         }
@@ -181,6 +227,15 @@
 </head>
 <body id="top">
 
+    <nav class="top-nav" aria-label="Site navigation">
+        <a href="index.html" class="back-link">← Assistance WakeUp</a>
+        <span class="top-nav-links">
+            <a href="marketing.html">À propos de WakeUp</a>
+            &middot;
+            <a href="privacy.html">Politique de confidentialité</a>
+        </span>
+    </nav>
+
     <h1>Foire aux questions</h1>
     <p class="subtitle">Aide, astuces et guides pour WakeUp.</p>
 
@@ -205,6 +260,9 @@
             <li><a href="#faq-16">Comment modifier l'apparence de l'application (mode sombre ou clair) ?</a></li>
             <li><a href="#faq-17">Quelles langues sont prises en charge par WakeUp et comment changer la langue ?</a></li>
         </ol>
+        <p class="toc-contact-tip">
+            Vous ne trouvez pas ce que vous cherchez ? <a href="index.html">Contacter l’assistance WakeUp &rarr;</a>
+        </p>
     </nav>
 
     <div class="faq-item" id="faq-1">
