@@ -21,6 +21,30 @@
             font-size: 32px;
         }
 
+        .card {
+            background: #f6f7f9;
+            border-radius: 16px;
+            padding: 24px;
+            margin: 32px 0;
+        }
+
+        .card h2 {
+            margin: 0 0 12px;
+            font-size: 19px;
+            color: #111;
+        }
+
+        .card p {
+            margin: 0 0 14px;
+            font-size: 15px;
+            line-height: 1.5;
+            color: #444;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
         a {
             color: #007aff;
         }
@@ -40,6 +64,25 @@
         Thank you for using WakeUp.
     </p>
 
+    <div class="card">
+        <h2>Good to know</h2>
+
+        <p>
+            <strong>Alarm permissions:</strong>
+            WakeUp uses Apple's AlarmKit to schedule reliable system alarms.
+            To ensure alarms always ring on time even when the app is closed,
+            make sure alarm permissions are enabled in Settings.
+        </p>
+
+        <p>
+            <strong>Changing time zones:</strong>
+            Repeating alarms with temporary exceptions (such as an adjusted time
+            or a skipped alarm) are scheduled in Apple's AlarmKit using a
+            fixed point in time. When changing time zones, simply open WakeUp
+            and your alarms will update automatically to your new local time.
+        </p>
+    </div>
+
     <p>
         If you experience a problem with the app, have a question,
         or would like to provide feedback, please contact:
@@ -50,12 +93,6 @@
         <a href="mailto:wakeup.alarmclock.app@gmail.com">
             wakeup.alarmclock.app@gmail.com
         </a>
-    </p>
-
-    <p>
-        WakeUp uses Apple's AlarmKit to schedule reliable system alarms.
-        To ensure alarms always ring on time even when the app is closed,
-        make sure alarm permissions are enabled in Settings.
     </p>
 
     <p>
