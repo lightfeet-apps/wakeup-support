@@ -15,6 +15,10 @@
     <link rel="alternate" hreflang="es" href="https://lightfeet-apps.github.io/wakeup-support/es/faq.html">
     <link rel="alternate" hreflang="fr" href="https://lightfeet-apps.github.io/wakeup-support/fr/faq.html">
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             max-width: 700px;
@@ -33,7 +37,49 @@
             font-size: 18px;
             color: #666;
             margin-top: 0;
-            margin-bottom: 40px;
+            margin-bottom: 32px;
+        }
+
+        .toc {
+            background: #ffffff;
+            border: 1px solid #e5e5ea;
+            border-radius: 16px;
+            padding: 22px 28px;
+            margin-bottom: 36px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+        }
+
+        .toc-title {
+            margin: 0 0 14px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .toc ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+            font-size: 15px;
+            line-height: 1.45;
+        }
+
+        .toc li:last-child {
+            margin-bottom: 0;
+        }
+
+        .toc a {
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
         }
 
         .faq-item {
@@ -41,6 +87,7 @@
             border-radius: 16px;
             padding: 24px 28px;
             margin-bottom: 24px;
+            scroll-margin-top: 24px;
         }
 
         .faq-item h2 {
@@ -74,6 +121,20 @@
             font-size: 14px;
             color: #444;
             margin-top: 16px;
+        }
+
+        .back-to-top {
+            display: inline-block;
+            margin-top: 14px;
+            font-size: 13px;
+            color: #8e8e93;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-to-top:hover {
+            color: #007aff;
+            text-decoration: underline;
         }
 
         a {
@@ -118,12 +179,35 @@
         }
     </style>
 </head>
-<body>
+<body id="top">
 
     <h1>Häufig gestellte Fragen</h1>
     <p class="subtitle">Hilfe, Tipps und Anleitungen für WakeUp.</p>
 
-    <div class="faq-item">
+    <nav class="toc" aria-label="Auf dieser Seite">
+        <h2 class="toc-title">Auf dieser Seite</h2>
+        <ol>
+            <li><a href="#faq-1">Klingelt der Wecker, wenn das Gerät stummgeschaltet ist, im „Nicht stören“-Modus ist oder die App geschlossen ist?</a></li>
+            <li><a href="#faq-2">Eigenen Weckton in WakeUp importieren</a></li>
+            <li><a href="#faq-3">Welche Anforderungen und Beschränkungen gelten für eigene Wecktöne?</a></li>
+            <li><a href="#faq-4">Wie ändere ich den Standardton oder aktualisiere alle Wecker auf einmal?</a></li>
+            <li><a href="#faq-5">Ich verreise. Was muss ich beachten?</a></li>
+            <li><a href="#faq-6">Was sind Weckerkategorien und wie verwende ich sie?</a></li>
+            <li><a href="#faq-7">Wie kann ich meine Wecker sortieren?</a></li>
+            <li><a href="#faq-8">Wie bearbeite ich mehrere Wecker gleichzeitig?</a></li>
+            <li><a href="#faq-9">Wie funktioniert die Funktion „Nächsten Wecker auslassen“ (Dismiss)?</a></li>
+            <li><a href="#faq-10">Wie funktioniert die Schnellanpassung (Quick Adjust +/-)?</a></li>
+            <li><a href="#faq-11">Wie funktioniert das Pausieren eines wiederkehrenden Weckers?</a></li>
+            <li><a href="#faq-12">Wie passe ich die Schlummerdauer an oder deaktiviere das Schlummern?</a></li>
+            <li><a href="#faq-13">Wie ändere ich die Methode zur Uhrzeiteingabe (Zeiteditor)?</a></li>
+            <li><a href="#faq-14">Wie funktionieren die Hervorhebung des nächsten Weckers und der Countdown?</a></li>
+            <li><a href="#faq-15">Wie verfolge ich Wecker und den Countdown auf dem Sperrbildschirm oder in der Dynamic Island?</a></li>
+            <li><a href="#faq-16">Wie ändere ich das Erscheinungsbild der App (Dunkel- oder Hellmodus)?</a></li>
+            <li><a href="#faq-17">Welche Sprachen unterstützt WakeUp und wie ändere ich die Sprache?</a></li>
+        </ol>
+    </nav>
+
+    <div class="faq-item" id="faq-1">
         <h2>Klingelt der Wecker, wenn das Gerät stummgeschaltet ist, im „Nicht stören“-Modus ist oder die App geschlossen ist?</h2>
         <p><strong>Ja, absolut.</strong> WakeUp nutzt das offizielle <strong>AlarmKit</strong> von Apple, wodurch deine Wecker als vollwertige Systemwecker geplant werden:</p>
         <ul>
@@ -134,9 +218,10 @@
         <div class="note">
             <strong>Wichtig:</strong> Stelle sicher, dass die Weckerberechtigung in den Geräteeinstellungen aktiviert ist (<strong>Einstellungen → WakeUp → Wecker</strong>), damit WakeUp zuverlässige Systemwecker planen kann.
         </div>
+        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-2">
         <h2>Eigenen Weckton in WakeUp importieren</h2>
         <ol>
             <li>Suche die Audiodatei auf deinem Mac oder in der Musik-App.</li>
@@ -148,9 +233,10 @@
         <div class="note">
             <strong>Hinweis:</strong> Du musst die importierte Audiodatei besitzen. Es werden nur DRM-freie Dateien unterstützt (z. B. gekaufte Musik oder eigene Aufnahmen). Geschützte Titel von Streaming-Diensten können nicht importiert werden.
         </div>
+        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-3">
         <h2>Welche Anforderungen und Beschränkungen gelten für eigene Wecktöne?</h2>
         <p>Du kannst deine Wecker mit deinen eigenen Audiodateien personalisieren. Hier sind die wichtigsten Vorgaben, unterstützten Formate und Verwaltungsfunktionen:</p>
         <ul>
@@ -163,9 +249,10 @@
         <div class="note">
             <strong>Tipp:</strong> Alle importierten Töne werden lokal in einem von Apple optimierten Audioformat gespeichert – für zuverlässige Wiedergabe ohne Internetverbindung.
         </div>
+        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-4">
         <h2>Wie ändere ich den Standardton oder aktualisiere alle Wecker auf einmal?</h2>
         <p>In WakeUp kannst du einen Standardton für alle neu erstellten Wecker festlegen und auf Wunsch alle vorhandenen Wecker mit einem Fingertipp aktualisieren:</p>
         <ul>
@@ -177,9 +264,10 @@
         <div class="note">
             <strong>Tipp:</strong> Wenn du den Ton nur für bestimmte ausgewählte Wecker ändern möchtest, nutze stattdessen <strong>Mehrere bearbeiten…</strong> im Hauptmenü.
         </div>
+        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-5">
         <h2>Ich verreise. Was muss ich beachten?</h2>
         <p>Wenn du in eine andere Zeitzone reist, bleiben deine Wecker ganz unkompliziert aktuell:</p>
         <ul>
@@ -191,9 +279,10 @@
         <div class="note">
             <strong>Tipp:</strong> WakeUp zeigt in der App eine kurze Bestätigung an, sobald deine Wecker für die neue Zeitzone aktualisiert wurden.
         </div>
+        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-6">
         <h2>Was sind Weckerkategorien und wie verwende ich sie?</h2>
         <p>Weckerkategorien helfen dir, deine Wecker nach Lebensbereichen und Routinen zu organisieren (z. B. Arbeit, Morgen, Sport, Medikamente oder Wochenende):</p>
         <ul>
@@ -204,9 +293,10 @@
         <div class="note">
             <strong>Tipp:</strong> Das Filtern nach Kategorien sorgt für eine aufgeräumte Weckerliste und hilft dir, schnell die Wecker zu finden, die du gerade brauchst.
         </div>
+        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-7">
         <h2>Wie kann ich meine Wecker sortieren?</h2>
         <p>Du kannst die Reihenfolge deiner Wecker in der Weckerliste anpassen, indem du oben rechts auf die Menüschaltfläche (•••) tippst:</p>
         <ul>
@@ -219,9 +309,10 @@
         <div class="note">
             <strong>Tipp:</strong> Die Sortierung nach "Nächster Wecker" ist besonders praktisch, um bei vielen Weckern immer den unmittelbar bevorstehenden Wecker ganz oben zu sehen.
         </div>
+        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-8">
         <h2>Wie bearbeite ich mehrere Wecker gleichzeitig?</h2>
         <p>Mit der Funktion „Mehrere Wecker bearbeiten“ kannst du Einstellungen für mehrere Wecker gleichzeitig anpassen, ohne jeden Wecker einzeln öffnen zu müssen:</p>
         <ul>
@@ -234,9 +325,10 @@
         <div class="note">
             <strong>Tipp:</strong> Die Massenbearbeitung spart viel Zeit, wenn du beispielsweise den Weckton für alle deine Arbeitswecker auf einmal ändern möchtest.
         </div>
+        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-9">
         <h2>Wie funktioniert die Funktion „Nächsten Wecker auslassen“ (Dismiss)?</h2>
         <p>Mit „Nächsten Wecker auslassen“ kannst du ein einzelnes Klingeln eines wiederkehrenden Weckers überspringen (z. B. wenn du bereits wach bist oder frei hast), ohne deinen regulären Weckplan zu verändern:</p>
         <ul>
@@ -247,9 +339,10 @@
         <div class="note">
             <strong>Tipp:</strong> Du musst wiederkehrende Wecker nicht komplett deaktivieren und daran denken, sie wieder einzuschalten – das Auslassen betrifft nur das nächste Mal.
         </div>
+        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-10">
         <h2>Wie funktioniert die Schnellanpassung (Quick Adjust +/-)?</h2>
         <p>Mit der Schnellanpassung kannst du die nächste Weckzeit eines wiederkehrenden Weckers einmalig vorverlegen oder nach hinten verschieben, ohne deinen regulären Zeitplan zu verändern:</p>
         <ul>
@@ -261,9 +354,10 @@
         <div class="note">
             <strong>Tipp:</strong> Die Schnellanpassung ist ideal, wenn du morgen 15 Minuten länger schlafen möchtest oder etwas früher aufstehen musst, ohne den wöchentlichen Weckplan zu verändern.
         </div>
+        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-11">
         <h2>Wie funktioniert das Pausieren eines wiederkehrenden Weckers?</h2>
         <p>Mit der Pause-Funktion kannst du einen wiederkehrenden Wecker für einen bestimmten Zeitraum (z. B. während des Urlaubs oder auf Reisen) vorübergehend aussetzen, ohne ihn dauerhaft ausschalten zu müssen:</p>
         <ul>
@@ -275,9 +369,10 @@
         <div class="note">
             <strong>Tipp:</strong> Du musst nach dem Urlaub keine Angst haben, das Wiedereinschalten des Weckers zu vergessen – WakeUp reaktiviert ihn pünktlich von selbst.
         </div>
+        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-12">
         <h2>Wie passe ich die Schlummerdauer an oder deaktiviere das Schlummern?</h2>
         <p>Im Gegensatz zur vorinstallierten Apple-Uhr, bei der die Schlummerzeit fest auf 9 Minuten eingestellt ist, bietet WakeUp volle Flexibilität für jeden einzelnen Wecker oder ermöglicht das komplette Deaktivieren:</p>
         <ul>
@@ -289,9 +384,10 @@
         <div class="note">
             <strong>Tipp:</strong> Während des Schlummerns zeigt WakeUp den Live-Countdown direkt in der Sperrbildschirm-Live-Aktivität und in der Dynamic Island an.
         </div>
+        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-13">
         <h2>Wie ändere ich die Methode zur Uhrzeiteingabe (Zeiteditor)?</h2>
         <p>WakeUp bietet drei verschiedene Möglichkeiten zur Eingabe der Weckzeit, sodass du die für dich angenehmste Methode wählen kannst:</p>
         <ul>
@@ -303,9 +399,10 @@
         <div class="note">
             <strong>Tipp:</strong> Du kannst die Eingabemethode jederzeit in den Einstellungen wechseln, um auszuprobieren, was für dich am schnellsten funktioniert.
         </div>
+        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-14">
         <h2>Wie funktionieren die Hervorhebung des nächsten Weckers und der Countdown?</h2>
         <p>WakeUp kann den Wecker, der als Nächstes klingelt, in deiner Weckerliste automatisch hervorheben und einen Live-Countdown mit der verbleibenden Zeit anzeigen (z. B. <em>Nächster · 7 Std. 25 Min.</em>):</p>
         <ul>
@@ -317,9 +414,10 @@
         <div class="note">
             <strong>Tipp:</strong> Der Countdown berücksichtigt automatisch Sommerzeitumstellungen und Zeitzonenänderungen, sodass du stets die exakte verbleibende Restzeit siehst.
         </div>
+        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-15">
         <h2>Wie verfolge ich Wecker und den Countdown auf dem Sperrbildschirm oder in der Dynamic Island?</h2>
         <p>WakeUp nutzt die iOS Live-Aktivitäten (Live Activities) und die Dynamic Island über AlarmKit und ActivityKit, sodass du aktive Wecker und Schlummer-Countdowns direkt im Blick hast, ohne dein iPhone zu entsperren:</p>
         <ul>
@@ -331,9 +429,10 @@
         <div class="note">
             <strong>Tipp:</strong> Du kannst die Schlummerfunktion direkt über das Banner auf dem Sperrbildschirm oder in der erweiterten Dynamic Island steuern, ohne die App zu öffnen.
         </div>
+        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-16">
         <h2>Wie ändere ich das Erscheinungsbild der App (Dunkel- oder Hellmodus)?</h2>
         <p>WakeUp sieht sowohl in dunklen als auch in hellen Umgebungen übersichtlich und elegant aus. Standardmäßig passt sich die App deinem iOS-System an, du kannst den Modus jedoch jederzeit festlegen:</p>
         <ul>
@@ -345,9 +444,10 @@
         <div class="note">
             <strong>Tipp:</strong> Der Dunkelmodus schont die Augen besonders abends vor dem Einschlafen, wenn du deine Wecker einstellst.
         </div>
+        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-17">
         <h2>Welche Sprachen unterstützt WakeUp und wie ändere ich die Sprache?</h2>
         <p>WakeUp ist vollständig in 6 Sprachen lokalisiert. Standardmäßig passt sich die App automatisch der Sprache deines iPhones an, du kannst die Sprache jedoch jederzeit direkt in den App-Einstellungen anpassen:</p>
         <ul>
@@ -362,6 +462,7 @@
         <div class="note">
             <strong>Tipp:</strong> Die Sprachänderung wird sofort in der gesamten Benutzeroberfläche, den Wiederholungstagen, Weckerbeschriftungen und Live-Aktivitäten aktiv, ohne dass ein Neustart erforderlich ist.
         </div>
+        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
     </div>
 
     <p class="links-nav">

@@ -15,6 +15,10 @@
     <link rel="alternate" hreflang="es" href="https://lightfeet-apps.github.io/wakeup-support/es/faq.html">
     <link rel="alternate" hreflang="fr" href="https://lightfeet-apps.github.io/wakeup-support/fr/faq.html">
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             max-width: 700px;
@@ -33,7 +37,49 @@
             font-size: 18px;
             color: #666;
             margin-top: 0;
-            margin-bottom: 40px;
+            margin-bottom: 32px;
+        }
+
+        .toc {
+            background: #ffffff;
+            border: 1px solid #e5e5ea;
+            border-radius: 16px;
+            padding: 22px 28px;
+            margin-bottom: 36px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+        }
+
+        .toc-title {
+            margin: 0 0 14px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .toc ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+            font-size: 15px;
+            line-height: 1.45;
+        }
+
+        .toc li:last-child {
+            margin-bottom: 0;
+        }
+
+        .toc a {
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
         }
 
         .faq-item {
@@ -41,6 +87,7 @@
             border-radius: 16px;
             padding: 24px 28px;
             margin-bottom: 24px;
+            scroll-margin-top: 24px;
         }
 
         .faq-item h2 {
@@ -74,6 +121,20 @@
             font-size: 14px;
             color: #444;
             margin-top: 16px;
+        }
+
+        .back-to-top {
+            display: inline-block;
+            margin-top: 14px;
+            font-size: 13px;
+            color: #8e8e93;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-to-top:hover {
+            color: #007aff;
+            text-decoration: underline;
         }
 
         a {
@@ -118,12 +179,35 @@
         }
     </style>
 </head>
-<body>
+<body id="top">
 
     <h1>Foire aux questions</h1>
     <p class="subtitle">Aide, astuces et guides pour WakeUp.</p>
 
-    <div class="faq-item">
+    <nav class="toc" aria-label="Sur cette page">
+        <h2 class="toc-title">Sur cette page</h2>
+        <ol>
+            <li><a href="#faq-1">Mon alarme sonnera-t-elle si mon appareil est en silencieux, en mode Ne pas déranger ou si l'app est fermée ?</a></li>
+            <li><a href="#faq-2">Comment importer votre propre son d'alarme dans WakeUp</a></li>
+            <li><a href="#faq-3">Quelles sont les exigences et limites pour les sons d'alarme personnalisés ?</a></li>
+            <li><a href="#faq-4">Comment changer le son par défaut ou mettre à jour toutes les alarmes en une fois ?</a></li>
+            <li><a href="#faq-5">Je voyage. Que dois-je savoir ?</a></li>
+            <li><a href="#faq-6">Que sont les catégories d'alarmes et comment les utiliser ?</a></li>
+            <li><a href="#faq-7">Comment trier mes alarmes ?</a></li>
+            <li><a href="#faq-8">Comment modifier plusieurs alarmes à la fois ?</a></li>
+            <li><a href="#faq-9">Comment fonctionne la fonction pour ignorer la prochaine alarme (Dismiss) ?</a></li>
+            <li><a href="#faq-10">Comment fonctionne l'ajustement rapide (Quick Adjust +/-) ?</a></li>
+            <li><a href="#faq-11">Comment fonctionne la mise en pause d'une alarme récurrente ?</a></li>
+            <li><a href="#faq-12">Comment régler la durée du rappel ou désactiver le rappel d'alarme ?</a></li>
+            <li><a href="#faq-13">Comment changer le mode de saisie de l'heure (éditeur d'heure) ?</a></li>
+            <li><a href="#faq-14">Comment fonctionnent la mise en évidence de la prochaine alarme et le compte à rebours ?</a></li>
+            <li><a href="#faq-15">Comment suivre les alarmes et le compte à rebours sur l'écran verrouillé ou dans la Dynamic Island ?</a></li>
+            <li><a href="#faq-16">Comment modifier l'apparence de l'application (mode sombre ou clair) ?</a></li>
+            <li><a href="#faq-17">Quelles langues sont prises en charge par WakeUp et comment changer la langue ?</a></li>
+        </ol>
+    </nav>
+
+    <div class="faq-item" id="faq-1">
         <h2>Mon alarme sonnera-t-elle si mon appareil est en silencieux, en mode Ne pas déranger ou si l'app est fermée ?</h2>
         <p><strong>Oui, absolument.</strong> WakeUp utilise le framework officiel <strong>AlarmKit</strong> d'Apple, ce qui permet de programmer vos alarmes comme de véritables alarmes système :</p>
         <ul>
@@ -134,9 +218,10 @@
         <div class="note">
             <strong>Important :</strong> Assurez-vous que l'autorisation d'alarme est activée dans les réglages de votre appareil (<strong>Réglages → WakeUp → Alarmes</strong>) afin que WakeUp puisse planifier des alarmes système fiables.
         </div>
+        <a href="#top" class="back-to-top">↑ Haut de page</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-2">
         <h2>Comment importer votre propre son d'alarme dans WakeUp</h2>
         <ol>
             <li>Localisez le fichier audio sur votre Mac ou dans votre application Musique.</li>
@@ -148,9 +233,10 @@
         <div class="note">
             <strong>Remarque :</strong> Vous devez posséder le fichier audio importé. Seuls les fichiers sans DRM (tels que la musique achetée ou vos propres enregistrements) sont pris en charge. Les morceaux protégés provenant de services de streaming ne peuvent pas être importés.
         </div>
+        <a href="#top" class="back-to-top">↑ Haut de page</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-3">
         <h2>Quelles sont les exigences et limites pour les sons d'alarme personnalisés ?</h2>
         <p>Vous pouvez personnaliser vos alarmes avec vos propres fichiers audio. Voici les règles essentielles, les formats compatibles et les fonctions de gestion :</p>
         <ul>
@@ -163,9 +249,10 @@
         <div class="note">
             <strong>Astuce :</strong> Tous les sons importés sont convertis et stockés localement sur votre appareil dans un format optimisé par Apple, garantissant une lecture immédiate et sans connexion réseau.
         </div>
+        <a href="#top" class="back-to-top">↑ Haut de page</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-4">
         <h2>Comment changer le son par défaut ou mettre à jour toutes les alarmes en une fois ?</h2>
         <p>WakeUp vous permet de choisir un son par défaut pour toutes vos nouvelles alarmes et même de mettre à jour toutes vos alarmes existantes en un seul geste :</p>
         <ul>
@@ -177,9 +264,10 @@
         <div class="note">
             <strong>Astuce :</strong> Si vous souhaitez modifier le son de quelques alarmes spécifiques seulement, utilisez plutôt l'option <strong>Modification groupée…</strong> dans le menu principal.
         </div>
+        <a href="#top" class="back-to-top">↑ Haut de page</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-5">
         <h2>Je voyage. Que dois-je savoir ?</h2>
         <p>Lorsque vous changez de fuseau horaire, garder vos alarmes à l'heure est très simple :</p>
         <ul>
@@ -191,9 +279,10 @@
         <div class="note">
             <strong>Astuce :</strong> WakeUp affiche une confirmation dans l'application dès que vos alarmes ont été mises à jour pour le nouveau fuseau horaire.
         </div>
+        <a href="#top" class="back-to-top">↑ Haut de page</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-6">
         <h2>Que sont les catégories d'alarmes et comment les utiliser ?</h2>
         <p>Les catégories d'alarmes vous aident à regrouper et à organiser vos alarmes selon vos différentes routines (comme Travail, Matin, Sport, Médicaments ou Week-end) :</p>
         <ul>
@@ -204,9 +293,10 @@
         <div class="note">
             <strong>Astuce :</strong> Filtrer par catégorie vous permet de garder une liste d'alarmes claire et d'accéder instantanément aux alarmes dont vous avez besoin.
         </div>
+        <a href="#top" class="back-to-top">↑ Haut de page</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-7">
         <h2>Comment trier mes alarmes ?</h2>
         <p>Vous pouvez personnaliser l'ordre de vos alarmes dans la liste en touchant le bouton de menu (•••) dans le coin supérieur de l'écran principal :</p>
         <ul>
@@ -219,9 +309,10 @@
         <div class="note">
             <strong>Astuce :</strong> Le tri par "Prochaine alarme" est particulièrement pratique pour garder en haut de liste l'alarme qui retentira le plus tôt.
         </div>
+        <a href="#top" class="back-to-top">↑ Haut de page</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-8">
         <h2>Comment modifier plusieurs alarmes à la fois ?</h2>
         <p>La modification de plusieurs alarmes vous permet de mettre à jour les réglages de plusieurs alarmes en une seule fois, sans devoir les modifier individuellement :</p>
         <ul>
@@ -234,9 +325,10 @@
         <div class="note">
             <strong>Astuce :</strong> Cette fonction est particulièrement pratique pour changer la sonnerie de toutes vos alarmes professionnelles d'un coup ou uniformiser les durées de rappel.
         </div>
+        <a href="#top" class="back-to-top">↑ Haut de page</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-9">
         <h2>Comment fonctionne la fonction pour ignorer la prochaine alarme (Dismiss) ?</h2>
         <p>La fonction Ignorer la prochaine alarme vous permet de passer uniquement la prochaine sonnerie d'une alarme récurrente (par exemple si vous êtes déjà réveillé ou en congé) sans modifier votre programme habituel :</p>
         <ul>
@@ -247,9 +339,10 @@
         <div class="note">
             <strong>Astuce :</strong> Vous n'avez plus besoin d'éteindre une alarme récurrente puis de penser à la rallumer : l'annulation ne s'applique qu'à la prochaine occurrence.
         </div>
+        <a href="#top" class="back-to-top">↑ Haut de page</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-10">
         <h2>Comment fonctionne l'ajustement rapide (Quick Adjust +/-) ?</h2>
         <p>L'ajustement rapide vous permet d'avancer ou de reculer uniquement la prochaine sonnerie d'une alarme récurrente sans modifier votre planning régulier :</p>
         <ul>
@@ -261,9 +354,10 @@
         <div class="note">
             <strong>Astuce :</strong> L'ajustement rapide est idéal pour dormir 15 minutes de plus demain ou vous lever un peu plus tôt sans dérégler votre routine.
         </div>
+        <a href="#top" class="back-to-top">↑ Haut de page</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-11">
         <h2>Comment fonctionne la mise en pause d'une alarme récurrente ?</h2>
         <p>La mise en pause vous permet de suspendre temporairement une alarme récurrente pour une plage de dates précise (par exemple pendant vos vacances ou vos déplacements) sans devoir la désactiver entièrement :</p>
         <ul>
@@ -275,9 +369,10 @@
         <div class="note">
             <strong>Astuce :</strong> Plus besoin de penser à réactiver votre réveil au retour de vacances : WakeUp reprend son fonctionnement tout seul dès la fin de la pause.
         </div>
+        <a href="#top" class="back-to-top">↑ Haut de page</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-12">
         <h2>Comment régler la durée du rappel ou désactiver le rappel d'alarme ?</h2>
         <p>Contrairement à l'application Horloge d'Apple où le rappel est bloqué à 9 minutes, WakeUp vous offre un contrôle total sur la durée du rappel pour chaque alarme, ou vous permet de le désactiver complètement :</p>
         <ul>
@@ -289,9 +384,10 @@
         <div class="note">
             <strong>Astuce :</strong> Lorsqu'une alarme est en rappel, WakeUp affiche le compte à rebours en temps réel sur l'écran verrouillé et dans la Dynamic Island.
         </div>
+        <a href="#top" class="back-to-top">↑ Haut de page</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-13">
         <h2>Comment changer le mode de saisie de l'heure (éditeur d'heure) ?</h2>
         <p>WakeUp propose trois façons différentes de régler l'heure de vos alarmes pour s'adapter à vos préférences :</p>
         <ul>
@@ -303,9 +399,10 @@
         <div class="note">
             <strong>Astuce :</strong> Vous pouvez changer de mode de saisie à tout moment dans les Réglages pour trouver celui qui vous convient le mieux.
         </div>
+        <a href="#top" class="back-to-top">↑ Haut de page</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-14">
         <h2>Comment fonctionnent la mise en évidence de la prochaine alarme et le compte à rebours ?</h2>
         <p>WakeUp peut mettre automatiquement en évidence la prochaine alarme qui sonnera dans votre liste d'alarmes et afficher un compte à rebours en direct du temps restant (par exemple, <em>Prochaine · 7 h 25 min</em>) :</p>
         <ul>
@@ -317,9 +414,10 @@
         <div class="note">
             <strong>Astuce :</strong> Le compte à rebours prend automatiquement en charge les passages à l'heure d'été/d'hiver ainsi que les fuseaux horaires pour un affichage toujours précis du temps restant.
         </div>
+        <a href="#top" class="back-to-top">↑ Haut de page</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-15">
         <h2>Comment suivre les alarmes et le compte à rebours sur l'écran verrouillé ou dans la Dynamic Island ?</h2>
         <p>WakeUp intègre les Activités en direct (Live Activities) d'iOS et la Dynamic Island via AlarmKit et ActivityKit pour suivre vos alarmes actives et le compte à rebours du rappel d'alarme sans déverrouiller votre iPhone :</p>
         <ul>
@@ -331,9 +429,10 @@
         <div class="note">
             <strong>Astuce :</strong> Vous pouvez suivre ou gérer le rappel d'alarme directement depuis la bannière de l'écran verrouillé ou depuis la Dynamic Island sans ouvrir l'application.
         </div>
+        <a href="#top" class="back-to-top">↑ Haut de page</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-16">
         <h2>Comment modifier l'apparence de l'application (mode sombre ou clair) ?</h2>
         <p>WakeUp est pensée pour offrir une visibilité parfaite de jour comme de nuit. Par défaut, elle suit le réglage global de votre iPhone, mais vous pouvez choisir manuellement son thème :</p>
         <ul>
@@ -345,9 +444,10 @@
         <div class="note">
             <strong>Astuce :</strong> Le mode sombre est particulièrement confortable pour les yeux lorsque vous réglez vos alarmes au lit avant de dormir.
         </div>
+        <a href="#top" class="back-to-top">↑ Haut de page</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-17">
         <h2>Quelles langues sont prises en charge par WakeUp et comment changer la langue ?</h2>
         <p>WakeUp est entièrement traduite en 6 langues. Par défaut, l'application utilise automatiquement la langue de votre iPhone, mais vous pouvez sélectionner une autre langue à tout moment directement dans les réglages de l'application :</p>
         <ul>
@@ -362,6 +462,7 @@
         <div class="note">
             <strong>Astuce :</strong> Le changement de langue prend effet instantanément dans toute l'application, y compris pour les jours de répétition, les libellés et les Activités en direct, sans redémarrer l'application.
         </div>
+        <a href="#top" class="back-to-top">↑ Haut de page</a>
     </div>
 
     <p class="links-nav">

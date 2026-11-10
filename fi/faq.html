@@ -15,6 +15,10 @@
     <link rel="alternate" hreflang="es" href="https://lightfeet-apps.github.io/wakeup-support/es/faq.html">
     <link rel="alternate" hreflang="fr" href="https://lightfeet-apps.github.io/wakeup-support/fr/faq.html">
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             max-width: 700px;
@@ -33,7 +37,49 @@
             font-size: 18px;
             color: #666;
             margin-top: 0;
-            margin-bottom: 40px;
+            margin-bottom: 32px;
+        }
+
+        .toc {
+            background: #ffffff;
+            border: 1px solid #e5e5ea;
+            border-radius: 16px;
+            padding: 22px 28px;
+            margin-bottom: 36px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+        }
+
+        .toc-title {
+            margin: 0 0 14px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .toc ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+            font-size: 15px;
+            line-height: 1.45;
+        }
+
+        .toc li:last-child {
+            margin-bottom: 0;
+        }
+
+        .toc a {
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
         }
 
         .faq-item {
@@ -41,6 +87,7 @@
             border-radius: 16px;
             padding: 24px 28px;
             margin-bottom: 24px;
+            scroll-margin-top: 24px;
         }
 
         .faq-item h2 {
@@ -74,6 +121,20 @@
             font-size: 14px;
             color: #444;
             margin-top: 16px;
+        }
+
+        .back-to-top {
+            display: inline-block;
+            margin-top: 14px;
+            font-size: 13px;
+            color: #8e8e93;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-to-top:hover {
+            color: #007aff;
+            text-decoration: underline;
         }
 
         a {
@@ -118,12 +179,35 @@
         }
     </style>
 </head>
-<body>
+<body id="top">
 
     <h1>Usein kysytyt kysymykset</h1>
     <p class="subtitle">Ohjeita, vinkkejä ja vastauksia WakeUpin käyttöön.</p>
 
-    <div class="faq-item">
+    <nav class="toc" aria-label="Aiheet tällä sivulla">
+        <h2 class="toc-title">Aiheet tällä sivulla</h2>
+        <ol>
+            <li><a href="#faq-1">Soiko herätys, jos laite on äänettömällä, Älä häiritse -tilassa tai sovellus on suljettu?</a></li>
+            <li><a href="#faq-2">Oman herätysäänen tuominen WakeUpiin</a></li>
+            <li><a href="#faq-3">Mitä vaatimuksia ja rajoituksia omilla herätysäänillä on?</a></li>
+            <li><a href="#faq-4">Miten vaihdan oletusäänen tai päivitän kaikkien herätysten äänen kerralla?</a></li>
+            <li><a href="#faq-5">Olen matkustamassa. Mitä minun tulee huomioida?</a></li>
+            <li><a href="#faq-6">Mitä ovat herätyskategoriat ja kuinka niitä käytetään?</a></li>
+            <li><a href="#faq-7">Miten voin lajitella herätyksiä?</a></li>
+            <li><a href="#faq-8">Miten muokkaan useita herätyksiä kerralla (massamuokkaus)?</a></li>
+            <li><a href="#faq-9">Miten seuraavan herätyksen ohitus (Dismiss) toimii?</a></li>
+            <li><a href="#faq-10">Miten ajan pikasäätö (Quick Adjust +/-) toimii?</a></li>
+            <li><a href="#faq-11">Miten toistuvan herätyksen tauottaminen (Pause) toimii?</a></li>
+            <li><a href="#faq-12">Miten säädän torkkuaikaa tai poistan torkun käytöstä?</a></li>
+            <li><a href="#faq-13">Miten vaihdan kellonajan syöttötapaa (aikaeditoria)?</a></li>
+            <li><a href="#faq-14">Miten seuraavan herätyksen korostus ja laskuri toimivat?</a></li>
+            <li><a href="#faq-15">Miten herätyksiä ja laskuria voi seurata lukitusnäytöltä tai Dynamic Islandilta?</a></li>
+            <li><a href="#faq-16">Miten vaihdan WakeUpin ulkoasua (tumma tai vaalea tila)?</a></li>
+            <li><a href="#faq-17">Mitä kieliä WakeUp tukee ja miten kielen voi vaihtaa?</a></li>
+        </ol>
+    </nav>
+
+    <div class="faq-item" id="faq-1">
         <h2>Soiko herätys, jos laite on äänettömällä, Älä häiritse -tilassa tai sovellus on suljettu?</h2>
         <p><strong>Kyllä, ehdottomasti.</strong> WakeUp käyttää Applen virallista <strong>AlarmKit</strong>-järjestelmää, jonka ansiosta herätykset ajastetaan aitoina järjestelmäherätyksinä:</p>
         <ul>
@@ -134,9 +218,10 @@
         <div class="note">
             <strong>Tärkeää:</strong> Varmista, että herätysten käyttöoikeus on sallittu laitteesi asetuksissa (<strong>Asetukset → WakeUp → Herätykset</strong>), jotta sovelluksella on oikeus luoda luotettavia järjestelmäherätyksiä.
         </div>
+        <a href="#top" class="back-to-top">↑ Takaisin alkuun</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-2">
         <h2>Oman herätysäänen tuominen WakeUpiin</h2>
         <ol>
             <li>Etsi haluamasi äänitiedosto Mac-tietokoneeltasi tai Musiikki-sovelluksesta.</li>
@@ -148,9 +233,10 @@
         <div class="note">
             <strong>Huom:</strong> Sinun tulee omistaa tuomasi äänitiedosto. Vain DRM-suojaamattomat tiedostot (kuten ostettu musiikki tai omat äänitteet) ovat tuettuja. Suoratoistopalveluiden suojattuja kappaleita ei voi tuoda.
         </div>
+        <a href="#top" class="back-to-top">↑ Takaisin alkuun</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-3">
         <h2>Mitä vaatimuksia ja rajoituksia omilla herätysäänillä on?</h2>
         <p>Voit personoida herätyksiäsi omilla äänitiedostoillasi. Tässä ovat tärkeimmät vaatimukset, tuetut tiedostomuodot sekä äänten hallintaominaisuudet:</p>
         <ul>
@@ -163,9 +249,10 @@
         <div class="note">
             <strong>Vinkki:</strong> Tuodut äänet käsitellään ja tallennetaan suoraan laitteesi muistiin Applen optimoimassa muodossa, jolloin ne soivat luotettavasti ilman verkkoyhteyttä.
         </div>
+        <a href="#top" class="back-to-top">↑ Takaisin alkuun</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-4">
         <h2>Miten vaihdan oletusäänen tai päivitän kaikkien herätysten äänen kerralla?</h2>
         <p>WakeUpissa voit asettaa oletusäänen kaikille uusille herätyksille sekä päivittää halutessasi kaikkien olemassa olevien herätysten äänen yhdellä napautuksella:</p>
         <ul>
@@ -177,9 +264,10 @@
         <div class="note">
             <strong>Vinkki:</strong> Jos haluat vaihtaa äänen vain tietyille valituille herätyksille etkä aivan kaikille, käytä päänäkymän valikosta löytyvää <strong>Muokkaa useita…</strong> (Massamuokkaus) -toimintoa.
         </div>
+        <a href="#top" class="back-to-top">↑ Takaisin alkuun</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-5">
         <h2>Olen matkustamassa. Mitä minun tulee huomioida?</h2>
         <p>Kun matkustat aikavyöhykkeeltä toiselle, herätysten pitäminen ajantasalla on helppoa:</p>
         <ul>
@@ -191,9 +279,10 @@
         <div class="note">
             <strong>Vinkki:</strong> WakeUp näyttää sovelluksessa vahvistuksen, kun herätykset on päivitetty uuden aikavyöhykkeen mukaiseksi.
         </div>
+        <a href="#top" class="back-to-top">↑ Takaisin alkuun</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-6">
         <h2>Mitä ovat herätyskategoriat ja kuinka niitä käytetään?</h2>
         <p>Herätyskategoriat auttavat järjestämään ja ryhmittelemään herätykset eri tilanteiden ja rutiinien mukaan (kuten Työ, Aamu, Kuntoilu, Lääkkeet tai Viikonloppu):</p>
         <ul>
@@ -204,9 +293,10 @@
         <div class="note">
             <strong>Vinkki:</strong> Kategoriasuodatuksen avulla pidät herätysluettelosi selkeänä ja löydät nopeasti esimerkiksi vain työ- tai treeniherätykset.
         </div>
+        <a href="#top" class="back-to-top">↑ Takaisin alkuun</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-7">
         <h2>Miten voin lajitella herätyksiä?</h2>
         <p>Voit mukauttaa herätysten järjestystä herätysluettelossa napauttamalla päänäkymän yläkulman valikkopainiketta (•••):</p>
         <ul>
@@ -219,9 +309,10 @@
         <div class="note">
             <strong>Vinkki:</strong> "Seuraava herätys" -lajittelu on erityisen kätevä, jos sinulla on useita herätyksiä ja haluat nähdä aina ensimmäisenä lähimpänä soivan herätyksen.
         </div>
+        <a href="#top" class="back-to-top">↑ Takaisin alkuun</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-8">
         <h2>Miten muokkaan useita herätyksiä kerralla (massamuokkaus)?</h2>
         <p>Herätysten massamuokkauksen avulla voit muuttaa useiden herätysten asetuksia yhdellä kertaa ilman, että jokaista herätystä tarvitsee muokata erikseen:</p>
         <ul>
@@ -234,9 +325,10 @@
         <div class="note">
             <strong>Vinkki:</strong> Massamuokkaus säästää paljon aikaa, jos haluat esimerkiksi vaihtaa kaikkien työherätystesi herätysäänen kerralla tai siirtää useita herätyksiä uuteen kategoriaan sekunneissa.
         </div>
+        <a href="#top" class="back-to-top">↑ Takaisin alkuun</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-9">
         <h2>Miten seuraavan herätyksen ohitus (Dismiss) toimii?</h2>
         <p>Seuraavan herätyksen ohituksen avulla voit jättää toistuvan herätyksen seuraavan soittokerran väliin (esimerkiksi silloin, kun olet jo herännyt tai sinulla on vapaapäivä) muuttamatta säännöllistä aikatauluasi:</p>
         <ul>
@@ -247,9 +339,10 @@
         <div class="note">
             <strong>Vinkki:</strong> Sinun ei tarvitse kytkeä toistuvaa herätystä pois päältä ja muistaa kytkeä sitä takaisin päälle – ohitus koskee vain yhtä soittokertaa.
         </div>
+        <a href="#top" class="back-to-top">↑ Takaisin alkuun</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-10">
         <h2>Miten ajan pikasäätö (Quick Adjust +/-) toimii?</h2>
         <p>Ajan pikasäädön avulla voit siirtää toistuvan herätyksen seuraavaa soittokertaa aiemmaksi tai myöhemmäksi ilman, että perusaikataulusi muuttuu:</p>
         <ul>
@@ -261,9 +354,10 @@
         <div class="note">
             <strong>Vinkki:</strong> Pikasäätö on täydellinen esimerkiksi silloin, kun haluat nukkua huomenna 20 minuuttia pidempään tai herätä hieman aikaisemmin ilman tarvetta asettaa herätysaikaa uusiksi seuraavaa päivää varten.
         </div>
+        <a href="#top" class="back-to-top">↑ Takaisin alkuun</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-11">
         <h2>Miten toistuvan herätyksen tauottaminen (Pause) toimii?</h2>
         <p>Herätyksen tauottamisen avulla voit laittaa toistuvan herätyksen tauolle tietylle ajanjaksolle (esimerkiksi loman, työmatkan tai sairasloman ajaksi) ilman, että sinun tarvitsee kytkeä herätystä kokonaan pois päältä:</p>
         <ul>
@@ -275,9 +369,10 @@
         <div class="note">
             <strong>Vinkki:</strong> Sinun ei tarvitse pelätä loman jälkeen herätyskellon unohtumista pois päältä – herätys aloittaa soimisen itsestään heti tauon päätyttyä.
         </div>
+        <a href="#top" class="back-to-top">↑ Takaisin alkuun</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-12">
         <h2>Miten säädän torkkuaikaa tai poistan torkun käytöstä?</h2>
         <p>Toisin kuin Applen oma Kello-sovellus, jossa torkku on lukittu aina 9 minuuttiin, WakeUpissa voit määrittää torkkuajan vapaasti jokaiselle herätykselle tai poistaa torkun kokonaan käytöstä:</p>
         <ul>
@@ -289,9 +384,10 @@
         <div class="note">
             <strong>Vinkki:</strong> Kun herätys on torkulla, näet reaaliaikaisen torkkulaskurin suoraan lukitusnäytön Live-toiminnosta ja Dynamic Islandilta.
         </div>
+        <a href="#top" class="back-to-top">↑ Takaisin alkuun</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-13">
         <h2>Miten vaihdan kellonajan syöttötapaa (aikaeditoria)?</h2>
         <p>WakeUpissa voit valita kolmesta erilaisesta tavasta asettaa herätysaika sen mukaan, mikä tuntuu sinulle luontevimmalta:</p>
         <ul>
@@ -303,9 +399,10 @@
         <div class="note">
             <strong>Vinkki:</strong> Voit vaihtaa syöttötapaa milloin tahansa Asetuksissa kokeillaksesi, mikä editori sopii nopeimmin sormillesi.
         </div>
+        <a href="#top" class="back-to-top">↑ Takaisin alkuun</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-14">
         <h2>Miten seuraavan herätyksen korostus ja laskuri toimivat?</h2>
         <p>WakeUp voi automaattisesti korostaa päänäkymän herätyslistasta sen herätyksen, joka soi seuraavaksi, ja näyttää reaaliaikaisen laskurin jäljellä olevasta uniajasta (esimerkiksi <em>Seuraava · 7 t 25 min</em>):</p>
         <ul>
@@ -317,9 +414,10 @@
         <div class="note">
             <strong>Vinkki:</strong> Laskuri huomioi automaattisesti myös kellojen siirrot (kesä- ja talviaikaan siirtymiset) sekä aikavyöhykemuutokset, joten näet aina täsmällisen todellisen ajan herätykseen.
         </div>
+        <a href="#top" class="back-to-top">↑ Takaisin alkuun</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-15">
         <h2>Miten herätyksiä ja laskuria voi seurata lukitusnäytöltä tai Dynamic Islandilta?</h2>
         <p>WakeUp hyödyntää iOS:n Live-toimintoja (Live Activities) ja Dynamic Islandia AlarmKitin ja ActivityKitin kautta, jotta näet aktiiviset herätykset ja torkkulaskurit suoraan avaamatta iPhoneasi:</p>
         <ul>
@@ -331,9 +429,10 @@
         <div class="note">
             <strong>Vinkki:</strong> Voit seurata torkkua suoraan lukitusnäytön ilmoituksesta tai Dynamic Islandilta ilman erillistä sovelluksen avaamista.
         </div>
+        <a href="#top" class="back-to-top">↑ Takaisin alkuun</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-16">
         <h2>Miten vaihdan WakeUpin ulkoasua (tumma tai vaalea tila)?</h2>
         <p>WakeUp on suunniteltu näyttämään selkeältä sekä pimeässä että kirkkaassa valaistuksessa. Oletuksena sovellus noudattaa iPhonesi järjestelmän ulkoasua, mutta voit lukita haluamasi teeman suoraan WakeUpin asetuksista:</p>
         <ul>
@@ -345,9 +444,10 @@
         <div class="note">
             <strong>Vinkki:</strong> Tumma tila säästää silmiäsi ja akkua (erityisesti OLED-näytöllisissä iPhoneissa), kun asetat herätystä myöhään illalla tai tarkistat kellonajan yöllä.
         </div>
+        <a href="#top" class="back-to-top">↑ Takaisin alkuun</a>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" id="faq-17">
         <h2>Mitä kieliä WakeUp tukee ja miten kielen voi vaihtaa?</h2>
         <p>WakeUp on täysin lokalisoitu kuudelle eri kielelle. Sovellus noudattaa oletuksena iPhonesi järjestelmäkieltä, mutta voit vaihtaa kielen vapaasti suoraan sovelluksen omista asetuksista:</p>
         <ul>
@@ -362,6 +462,7 @@
         <div class="note">
             <strong>Vinkki:</strong> Kielen vaihtaminen päivittää välittömästi koko käyttöliittymän, herätysten toistopäivät, ilmoitukset ja Live-toiminnot ilman, että laitetta tai sovellusta tarvitsee käynnistää uudelleen.
         </div>
+        <a href="#top" class="back-to-top">↑ Takaisin alkuun</a>
     </div>
 
     <p class="links-nav">
