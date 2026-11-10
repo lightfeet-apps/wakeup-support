@@ -135,16 +135,21 @@
     </div>
 
     <div class="card">
-        <h2>Bra att veta</h2>
+        <h2>Felsökning och bra att veta</h2>
 
         <p>
-            <strong>Alarmbehörigheter:</strong>
-            WakeUp använder Apples AlarmKit för pålitliga systemalarm. Tillåt alarm i Inställningar så att dina alarm alltid ringer i tid även när appen är stängd.
+            <strong>Kan inte skapa eller spara larm (Behörighet saknas):</strong>
+            WakeUp schemalägger systemalarm med Apples AlarmKit. Om behörigheten inte har beviljats förhindrar appen avsiktligt att alarm skapas eller sparas, så att du aldrig har ett alarm som inte kan ringa. För att tillåta det, öppna <strong>Inställningar → WakeUp → Alarm</strong> på din enhet och aktivera behörigheten.
         </p>
 
         <p>
-            <strong>Byte av tidszon:</strong>
-            Återkommande alarm med tillfälliga undantag (som en justerad tid eller ett avfärdat alarm) schemaläggs i Apple AlarmKit vid en fast tidpunkt. När du byter tidszon, öppna bara WakeUp så uppdateras dina alarm automatiskt till din nya lokala tid.
+            <strong>Byte av tidszon (Återkommande larm med undantag):</strong>
+            Återkommande alarm med tillfälliga ändringar (som Quick Adjust eller avfärdande av nästa alarm) schemaläggs i Apple AlarmKit vid en fast tidpunkt och uppdateras inte i bakgrunden av sig själva. När du anländer till en ny tidszon, öppna bara WakeUp en gång så uppdateras dina alarm automatiskt till den nya lokala tiden.
+        </p>
+
+        <p>
+            <strong>Larmvolym (Ljudet är för lågt eller enheten vibrerar bara):</strong>
+            WakeUp använder enhetens systemvolym för ringsignaler och påminnelser. Om larmet låter för tyst, justera volymreglaget i <strong>Inställningar → Ljud och haptik → Ringsignal och varningar</strong>. (Tips: Om 'Ändra med knappar' är aktiverat i iOS kan volymen oavsiktligt ha sänkts med de fysiska sidoknapparna).
         </p>
     </div>
 

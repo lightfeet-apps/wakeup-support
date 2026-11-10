@@ -135,16 +135,21 @@
     </div>
 
     <div class="card">
-        <h2>Good to know</h2>
+        <h2>Troubleshooting & Good to know</h2>
 
         <p>
-            <strong>Alarm permissions:</strong>
-            WakeUp uses Apple's AlarmKit to schedule reliable system alarms. To ensure alarms always ring on time even when the app is closed, make sure alarm permissions are enabled in Settings.
+            <strong>Cannot create or save alarms (Missing permission):</strong>
+            WakeUp schedules system alarms using Apple's AlarmKit. If alarm permissions have not been granted, the app intentionally prevents creating or saving alarms so you never end up with an alarm that cannot ring. To enable it, open your device's <strong>Settings → WakeUp → Alarms</strong> and allow permissions.
         </p>
 
         <p>
-            <strong>Changing time zones:</strong>
-            Repeating alarms with temporary exceptions (such as an adjusted time or a skipped alarm) are scheduled in Apple's AlarmKit using a fixed point in time. When changing time zones, simply open WakeUp and your alarms will update automatically to your new local time.
+            <strong>Changing time zones (Repeating alarms with exceptions):</strong>
+            Repeating alarms with temporary adjustments (such as Quick Adjust or Dismiss Next Alarm) are scheduled in Apple's AlarmKit at a fixed point in time and do not update in the background on their own. When you arrive in a new time zone, simply open WakeUp once and your alarms will automatically update to your new local time.
+        </p>
+
+        <p>
+            <strong>Alarm volume (Sound is too quiet or device only vibrates):</strong>
+            WakeUp uses your device's native system ringtone and alert volume. If your alarm sounds too quiet, adjust the volume slider in <strong>Settings → Sounds & Haptics → Ringtone and Alerts</strong>. (Tip: If 'Change with Buttons' is turned on in iOS, the volume may have been turned down inadvertently using the physical side buttons).
         </p>
     </div>
 

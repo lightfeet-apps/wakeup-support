@@ -135,16 +135,21 @@
     </div>
 
     <div class="card">
-        <h2>Gut zu wissen</h2>
+        <h2>Fehlerbehebung und nützliche Hinweise</h2>
 
         <p>
-            <strong>Wecker-Berechtigungen:</strong>
-            WakeUp nutzt Apples AlarmKit für zuverlässige Systemwecker. Erlaube Wecker in den Einstellungen, damit deine Wecker auch bei geschlossener App pünktlich klingeln.
+            <strong>Wecker kann nicht erstellt oder gespeichert werden (Fehlende Berechtigung):</strong>
+            WakeUp plant Systemwecker über Apples AlarmKit. Wenn die Wecker-Berechtigung nicht erteilt wurde, verhindert die App das Erstellen oder Speichern von Weckern absichtlich, damit kein Wecker unbemerkt stumm bleibt. Öffne <strong>Einstellungen → WakeUp → Wecker</strong> auf deinem Gerät, um die Berechtigung zu aktivieren.
         </p>
 
         <p>
-            <strong>Zeitzonenwechsel:</strong>
-            Wiederkehrende Wecker mit vorübergehenden Ausnahmen (wie einer angepassten Zeit oder einem ausgelassenen Wecker) werden in Apple AlarmKit zu einem festen Zeitpunkt geplant. Öffne nach einem Zeitzonenwechsel einfach WakeUp, damit deine Wecker automatisch auf die Ortszeit aktualisiert werden.
+            <strong>Zeitzonenwechsel (Wiederkehrende Wecker mit Ausnahmen):</strong>
+            Wiederkehrende Wecker mit vorübergehenden Ausnahmen (wie Quick Adjust oder dem Auslassen des nächsten Weckers) werden in Apple AlarmKit zu einem festen Zeitpunkt geplant und aktualisieren sich im Hintergrund nicht von selbst. Öffne nach der Ankunft in einer neuen Zeitzone einfach einmal WakeUp, damit sich deine Wecker automatisch an die neue Ortszeit anpassen.
+        </p>
+
+        <p>
+            <strong>Weckerlautstärke (Ton ist zu leise oder das Gerät vibriert nur):</strong>
+            WakeUp verwendet die native Systemlautstärke für Klingel- und Hinweistöne deines Geräts. Wenn der Wecker zu leise ist, passe den Lautstärkeregler unter <strong>Einstellungen → Töne & Haptik → Klingel- und Hinweistöne</strong> an. (Tipp: Wenn in iOS 'Mit Tasten ändern' aktiv ist, wurde die Lautstärke möglicherweise versehentlich über die physischen Seitentasten verringert).
         </p>
     </div>
 

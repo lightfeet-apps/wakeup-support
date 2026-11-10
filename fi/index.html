@@ -135,16 +135,21 @@
     </div>
 
     <div class="card">
-        <h2>Hyvä tietää</h2>
+        <h2>Vianmääritys ja pikaohjeet</h2>
 
         <p>
-            <strong>Herätysten käyttöoikeudet:</strong>
-            WakeUp käyttää Applen AlarmKitiä luotettavien järjestelmäherätysten ajastamiseen. Varmista, että herätysten käyttöoikeus on sallittu Asetuksissa, jotta herätykset soivat aina ajallaan myös sovelluksen ollessa suljettuna.
+            <strong>Uutta herätystä ei voi luoda tai tallentaa (Käyttöoikeus puuttuu):</strong>
+            WakeUp luo järjestelmäherätykset suoraan Applen AlarmKit-rajapinnalla. Jos herätysoikeutta ei ole myönnetty, sovellus estää herätysten luonnin ja tallennuksen tarkoituksella, jotta mikään herätys ei jäisi soimatta. Voit ottaa oikeuden käyttöön avaamalla laitteen <strong>Asetukset → WakeUp → Herätykset</strong> ja sallimalla herätykset.
         </p>
 
         <p>
-            <strong>Aikavyöhykkeen vaihtaminen:</strong>
-            Toistuvat herätykset, joissa on väliaikainen poikkeus (kuten säädetty aika tai ohitettu kerta), ajastetaan Apple AlarmKitiin kiinteänä ajanhetkenä. Kun vaihdat aikavyöhykettä, avaa vain WakeUp ja herätyksesi päivittyvät automaattisesti uuteen paikallisaikaan.
+            <strong>Aikavyöhykkeen vaihtaminen (Toistuvat herätykset poikkeuksilla):</strong>
+            Toistuvat herätykset, joissa on tilapäinen poikkeus (kuten Quick Adjust +/- tai seuraavan herätyksen ohitus), ajastetaan Apple AlarmKitiin kiinteänä ajanhetkenä, eivätkä ne päivity taustalla itsestään. Saavuttuasi uuteen aikavyöhykkeeseen avaa WakeUp kerran, jolloin herätykset ja poikkeukset päivittyvät automaattisesti uuteen paikallisaikaan.
+        </p>
+
+        <p>
+            <strong>Herätysäänen voimakkuus (Ääni on liian hiljainen tai laite vain tärisee):</strong>
+            WakeUp käyttää laitteen järjestelmätason soitto- ja herätysvoimakkuutta. Jos herätysääni tuntuu liian hiljaiselta, säädä liukusäädintä kohdasta <strong>Asetukset → Äänet ja tuntuma → Soitto- ja ilmoitusäänet</strong>. (Vinkki: Jos 'Muuta painikkeilla' on päällä, äänenvoimakkuus on voinut vahingossa madaltua laitteen fyysisistä sivupainikkeista).
         </p>
     </div>
 

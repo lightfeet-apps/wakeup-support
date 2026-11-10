@@ -135,16 +135,21 @@
     </div>
 
     <div class="card">
-        <h2>Información útil</h2>
+        <h2>Solución de problemas e información útil</h2>
 
         <p>
-            <strong>Permisos de alarma:</strong>
-            WakeUp utiliza AlarmKit de Apple para programar alarmas fiables del sistema. Asegúrate de permitir las alarmas en Ajustes para que suenen siempre puntuales, incluso con la app cerrada.
+            <strong>No se puede crear o guardar una alarma (Falta de permisos):</strong>
+            WakeUp programa alarmas del sistema mediante AlarmKit de Apple. Si no se han concedido los permisos, la app impide intencionadamente crear o guardar alarmas para evitar que queden inactivas. Para habilitarlos, abre <strong>Ajustes → WakeUp → Alarmas</strong> en tu dispositivo y permite los permisos.
         </p>
 
         <p>
-            <strong>Cambio de zona horaria:</strong>
-            Las alarmas periódicas con excepciones temporales (como una hora ajustada o una alarma omitida) se programan en AlarmKit de Apple en un momento fijo en el tiempo. Al cambiar de zona horaria, simplemente abre WakeUp y tus alarmas se actualizarán automáticamente a la hora local.
+            <strong>Cambio de zona horaria (Alarmas periódicas con excepciones):</strong>
+            Las alarmas periódicas con modificaciones temporales (como Quick Adjust o la omisión de la siguiente alarma) se programan en AlarmKit de Apple en un momento fijo en el tiempo y no se actualizan en segundo plano por sí solas. Al llegar a una nueva zona horaria, abre WakeUp una vez y tus alarmas se sincronizarán automáticamente con la hora local.
+        </p>
+
+        <p>
+            <strong>Volumen de la alarma (El sonido es muy bajo o el dispositivo solo vibra):</strong>
+            WakeUp utiliza el volumen del sistema de tonos y avisos de tu dispositivo. Si la alarma suena demasiado baja, ajusta el control deslizante en <strong>Ajustes → Sonidos y vibraciones → Tono y alertas</strong>. (Consejo: Si la opción 'Ajustar con botones' está activada en iOS, el volumen puede haberse bajado por error con los botones físicos laterales).
         </p>
     </div>
 

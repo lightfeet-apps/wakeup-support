@@ -135,16 +135,21 @@
     </div>
 
     <div class="card">
-        <h2>Bon à savoir</h2>
+        <h2>Dépannage et bon à savoir</h2>
 
         <p>
-            <strong>Autorisations d’alarme :</strong>
-            WakeUp utilise AlarmKit d’Apple pour programmer des alarmes système fiables. Assurez-vous d’autoriser les alarmes dans Réglages afin qu’elles sonnent toujours à l’heure, même lorsque l’app est fermée.
+            <strong>Impossible de créer ou d’enregistrer une alarme (Autorisation manquante) :</strong>
+            WakeUp programme des alarmes système grâce à AlarmKit d’Apple. Si l’autorisation n’a pas été accordée, l’application empêche volontairement la création ou l’enregistrement d’alarmes pour éviter qu’une alarme ne sonne pas. Pour l'activer, ouvrez <strong>Réglages → WakeUp → Alarmes</strong> sur votre appareil et accordez l'autorisation.
         </p>
 
         <p>
-            <strong>Changement de fuseau horaire :</strong>
-            Les alarmes répétitives comportant des exceptions temporaires (comme une heure ajustée ou une alarme ignorée) sont programmées dans AlarmKit d’Apple à un moment précis. Lorsque vous changez de fuseau horaire, ouvrez simplement WakeUp pour que vos alarmes se mettent à jour automatiquement à votre nouvelle heure locale.
+            <strong>Changement de fuseau horaire (Alarmes répétitives avec exceptions) :</strong>
+            Les alarmes répétitives comportant un ajustement temporaire (comme Quick Adjust ou l’omission de la prochaine alarme) sont programmées dans AlarmKit d’Apple à un instant précis et ne se mettent pas à jour d’elles-mêmes en arrière-plan. Lorsque vous arrivez dans un nouveau fuseau horaire, ouvrez simplement WakeUp une fois pour que vos alarmes s’adaptent automatiquement à votre nouvelle heure locale.
+        </p>
+
+        <p>
+            <strong>Volume de l’alarme (Le son est trop faible ou l’appareil vibre uniquement) :</strong>
+            WakeUp utilise le volume système des sonneries et alertes de votre appareil. Si votre alarme sonne trop faiblement, réglez le curseur dans <strong>Réglages → Sons et vibrations → Sonnerie et alertes</strong>. (Astuce : Si l'option 'Utiliser les boutons' est activée dans iOS, le volume a pu être diminué par inadvertance à l'aide des boutons latéraux).
         </p>
     </div>
 
