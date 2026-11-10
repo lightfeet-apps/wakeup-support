@@ -188,20 +188,20 @@
         <h2 class="toc-title">Auf dieser Seite</h2>
         <ol>
             <li><a href="#faq-1">Klingelt der Wecker, wenn das Gerät stummgeschaltet ist, im „Nicht stören“-Modus ist oder die App geschlossen ist?</a></li>
-            <li><a href="#faq-2">Eigenen Weckton in WakeUp importieren</a></li>
-            <li><a href="#faq-3">Welche Anforderungen und Beschränkungen gelten für eigene Wecktöne?</a></li>
-            <li><a href="#faq-4">Wie ändere ich den Standardton oder aktualisiere alle Wecker auf einmal?</a></li>
+            <li><a href="#faq-2">Wie verfolge ich Wecker und den Countdown auf dem Sperrbildschirm oder in der Dynamic Island?</a></li>
+            <li><a href="#faq-3">Wie funktioniert die Funktion „Nächsten Wecker auslassen“ (Dismiss)?</a></li>
+            <li><a href="#faq-4">Wie funktioniert die Schnellanpassung (Quick Adjust +/-)?</a></li>
             <li><a href="#faq-5">Ich verreise. Was muss ich beachten?</a></li>
             <li><a href="#faq-6">Was sind Weckerkategorien und wie verwende ich sie?</a></li>
-            <li><a href="#faq-7">Wie kann ich meine Wecker sortieren?</a></li>
-            <li><a href="#faq-8">Wie bearbeite ich mehrere Wecker gleichzeitig?</a></li>
-            <li><a href="#faq-9">Wie funktioniert die Funktion „Nächsten Wecker auslassen“ (Dismiss)?</a></li>
-            <li><a href="#faq-10">Wie funktioniert die Schnellanpassung (Quick Adjust +/-)?</a></li>
-            <li><a href="#faq-11">Wie funktioniert das Pausieren eines wiederkehrenden Weckers?</a></li>
-            <li><a href="#faq-12">Wie passe ich die Schlummerdauer an oder deaktiviere das Schlummern?</a></li>
-            <li><a href="#faq-13">Wie ändere ich die Methode zur Uhrzeiteingabe (Zeiteditor)?</a></li>
-            <li><a href="#faq-14">Wie funktionieren die Hervorhebung des nächsten Weckers und der Countdown?</a></li>
-            <li><a href="#faq-15">Wie verfolge ich Wecker und den Countdown auf dem Sperrbildschirm oder in der Dynamic Island?</a></li>
+            <li><a href="#faq-7">Wie funktionieren die Hervorhebung des nächsten Weckers und der Countdown?</a></li>
+            <li><a href="#faq-8">Wie funktioniert das Pausieren eines wiederkehrenden Weckers?</a></li>
+            <li><a href="#faq-9">Wie ändere ich die Methode zur Uhrzeiteingabe (Zeiteditor)?</a></li>
+            <li><a href="#faq-10">Wie kann ich meine Wecker sortieren?</a></li>
+            <li><a href="#faq-11">Eigenen Weckton in WakeUp importieren</a></li>
+            <li><a href="#faq-12">Welche Anforderungen und Beschränkungen gelten für eigene Wecktöne?</a></li>
+            <li><a href="#faq-13">Wie ändere ich den Standardton oder aktualisiere alle Wecker auf einmal?</a></li>
+            <li><a href="#faq-14">Wie bearbeite ich mehrere Wecker gleichzeitig?</a></li>
+            <li><a href="#faq-15">Wie passe ich die Schlummerdauer an oder deaktiviere das Schlummern?</a></li>
             <li><a href="#faq-16">Wie ändere ich das Erscheinungsbild der App (Dunkel- oder Hellmodus)?</a></li>
             <li><a href="#faq-17">Welche Sprachen unterstützt WakeUp und wie ändere ich die Sprache?</a></li>
         </ol>
@@ -222,47 +222,45 @@
     </div>
 
     <div class="faq-item" id="faq-2">
-        <h2>Eigenen Weckton in WakeUp importieren</h2>
-        <ol>
-            <li>Suche die Audiodatei auf deinem Mac oder in der Musik-App.</li>
-            <li>Klicke in der Musik-App mit der rechten Maustaste auf den Titel und wähle <strong>Im Finder zeigen</strong>.</li>
-            <li>Kopiere die Audiodatei (<code>.m4a</code>, <code>.mp3</code> oder <code>.wav</code>) in einen <strong>iCloud Drive</strong>-Ordner oder sende sie per <strong>AirDrop</strong> an dein iPhone oder iPad.</li>
-            <li>Öffne auf deinem Gerät <strong>WakeUp → Einstellungen → Eigene Töne</strong>, tippe auf <strong>Audiodatei auswählen…</strong> und wähle die Datei in der <strong>Dateien</strong>-App aus.</li>
-        </ol>
-        <p><strong>Windows und andere Cloud-Dienste:</strong> Du kannst Audiodateien auch von einem Windows-PC importieren. Übertrage die Datei einfach über einen beliebigen Cloud-Dienst (z. B. iCloud.com, Google Drive, OneDrive oder Dropbox) oder sende sie per E-Mail an dich selbst und sichere sie in der <strong>Dateien</strong>-App.</p>
+        <h2>Wie verfolge ich Wecker und den Countdown auf dem Sperrbildschirm oder in der Dynamic Island?</h2>
+        <p>WakeUp nutzt die iOS Live-Aktivitäten (Live Activities) und die Dynamic Island über AlarmKit und ActivityKit, sodass du aktive Wecker und Schlummer-Countdowns direkt im Blick hast, ohne dein iPhone zu entsperren:</p>
+        <ul>
+            <li><strong>Dynamic Island:</strong> Zeigt ein kompaktes Weckersymbol und einen Live-Countdown oben auf dem Display. Halte die Dynamic Island gedrückt, um sie zu erweitern und Wecker-Details zu sehen.</li>
+            <li><strong>Sperrbildschirm & Always-On-Display:</strong> Zeigt ein übersichtliches Banner mit dem Weckerstatus und der verbleibenden Schlummerzeit direkt auf dem Sperrbildschirm.</li>
+            <li><strong>Automatische Aktivierung:</strong> Startet automatisch, wenn ein Wecker klingelt oder auf Schlummern gestellt wird, damit du stets über deine verbleibende Schlafzeit informiert bist.</li>
+        </ul>
+        <p><strong>So überprüfst du die Einstellungen:</strong> Öffne auf deinem iPhone <strong>Einstellungen → WakeUp</strong> und vergewissere dich, dass <strong>Live-Aktivitäten</strong> aktiviert ist. Prüfe zudem unter <strong>Einstellungen → Face ID & Code</strong>, dass <em>Live-Aktivitäten</em> im Bereich <em>Im Sperrzustand Zugriff erlauben</em> eingeschaltet ist.</p>
         <div class="note">
-            <strong>Hinweis:</strong> Du musst die importierte Audiodatei besitzen. Es werden nur DRM-freie Dateien unterstützt (z. B. gekaufte Musik oder eigene Aufnahmen). Geschützte Titel von Streaming-Diensten können nicht importiert werden.
+            <strong>Tipp:</strong> Du kannst die Schlummerfunktion direkt über das Banner auf dem Sperrbildschirm oder in der erweiterten Dynamic Island steuern, ohne die App zu öffnen.
         </div>
         <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
     </div>
 
     <div class="faq-item" id="faq-3">
-        <h2>Welche Anforderungen und Beschränkungen gelten für eigene Wecktöne?</h2>
-        <p>Du kannst deine Wecker mit deinen eigenen Audiodateien personalisieren. Hier sind die wichtigsten Vorgaben, unterstützten Formate und Verwaltungsfunktionen:</p>
+        <h2>Wie funktioniert die Funktion „Nächsten Wecker auslassen“ (Dismiss)?</h2>
+        <p>Mit „Nächsten Wecker auslassen“ kannst du ein einzelnes Klingeln eines wiederkehrenden Weckers überspringen (z. B. wenn du bereits wach bist oder frei hast), ohne deinen regulären Weckplan zu verändern:</p>
         <ul>
-            <li><strong>Ton-Limit:</strong> Du kannst bis zu 20 eigene Töne importieren. Wenn das Limit erreicht ist, lösche einen vorhandenen Ton, bevor du einen weiteren importierst.</li>
-            <li><strong>Unterstützte Formate:</strong> AIF, AIFF, CAF, M4A, MP3 und WAV (müssen DRM-frei sein).</li>
-            <li><strong>Automatisches Kürzen & Ausblenden:</strong> Töne, die länger als 30 Sekunden sind, werden automatisch auf 30 Sekunden gekürzt und am Ende mit einer sanften 2-Sekunden-Ausblendung (Fade-Out) versehen.</li>
-            <li><strong>Probehören & Umbenennen:</strong> Unter <strong>Einstellungen → Eigene Töne</strong> kannst du jeden Ton antippen, um ihn anzuhören, oder umbenennen.</li>
+            <li><strong>Wecker auslassen:</strong> Sobald die Weckzeit näher rückt, erscheint auf dem Weckereintrag die Taste <strong>Auslassen</strong> (Mondsichel-Symbol). Ein Fingertipp genügt, um das nächste Klingeln zu überspringen. WakeUp kehrt danach automatisch zum normalen Zeitplan zurück.</li>
+            <li><strong>Auslassen rückgängig machen:</strong> Wenn sich deine Pläne ändern, tippe auf der Weckerzeile auf <strong>Nächster Wecker wird ausgelassen</strong>, um den Wecker sofort wieder zu aktivieren.</li>
+            <li><strong>Sichtbarkeit der Taste:</strong> In den Weckereinstellungen kannst du unter <strong>Taste „Auslassen“ anzeigen</strong> festlegen, wie viele Stunden vor der Weckzeit (2, 4, 8, 12 oder 24 Stunden) die Taste in der Liste erscheint.</li>
         </ul>
-        <p><strong>Sicheres Löschen (Ton in Verwendung):</strong> Du kannst Töne jederzeit per Wischgeste löschen. Wenn ein zu löschender Ton aktuell für einen Wecker verwendet wird, fordert WakeUp dich auf, einen Ersatzton zu wählen, damit kein Wecker stumm bleibt.</p>
         <div class="note">
-            <strong>Tipp:</strong> Alle importierten Töne werden lokal in einem von Apple optimierten Audioformat gespeichert – für zuverlässige Wiedergabe ohne Internetverbindung.
+            <strong>Tipp:</strong> Du musst wiederkehrende Wecker nicht komplett deaktivieren und daran denken, sie wieder einzuschalten – das Auslassen betrifft nur das nächste Mal.
         </div>
         <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
     </div>
 
     <div class="faq-item" id="faq-4">
-        <h2>Wie ändere ich den Standardton oder aktualisiere alle Wecker auf einmal?</h2>
-        <p>In WakeUp kannst du einen Standardton für alle neu erstellten Wecker festlegen und auf Wunsch alle vorhandenen Wecker mit einem Fingertipp aktualisieren:</p>
+        <h2>Wie funktioniert die Schnellanpassung (Quick Adjust +/-)?</h2>
+        <p>Mit der Schnellanpassung kannst du die nächste Weckzeit eines wiederkehrenden Weckers einmalig vorverlegen oder nach hinten verschieben, ohne deinen regulären Zeitplan zu verändern:</p>
         <ul>
-            <li><strong>Standardton festlegen:</strong> Öffne <strong>WakeUp → Einstellungen → Standardton</strong> (unter <em>Weckervorgaben</em>) und wähle deinen gewünschten Ton, einen eigenen importierten Ton oder den <em>Systemstandard</em>.</li>
-            <li><strong>Auf alle vorhandenen Wecker anwenden:</strong> Aktiviere in der Tonauswahl die Option <strong>Auf alle vorhandenen Wecker anwenden</strong> und tippe auf <strong>Verwenden</strong> (oder <em>Anwenden</em>). WakeUp aktualisiert alle deine Wecker sofort.</li>
-            <li><strong>Nur für neue Wecker:</strong> Wenn du den Schalter deaktiviert lässt, gilt der neue Standardton nur für künftig erstellte Wecker; vorhandene Wecker bleiben unverändert.</li>
+            <li><strong>Weckzeit anpassen:</strong> Wenn ein Wecker für heute oder morgen geplant ist, erscheinen die Tasten <strong>-</strong> und <strong>+</strong> auf der Weckerzeile. Tippe darauf, um die Weckzeit schrittweise anzupassen.</li>
+            <li><strong>Anzeige und Zurücksetzen:</strong> Die Zeitverschiebung (z. B. <code>-10 min</code> oder <code>+20 min</code>) wird als Plakette auf der Weckerzeile angezeigt. Tippe darauf, um den Wecker sofort wieder auf die ursprüngliche Zeit zurückzusetzen.</li>
+            <li><strong>Automatischer Reset:</strong> Sobald der Wecker geklingelt hat, kehrt WakeUp für zukünftige Weckzeiten automatisch zum regulären Zeitplan zurück.</li>
+            <li><strong>Schrittgröße festlegen:</strong> In den Weckereinstellungen kannst du unter <strong>Schrittgröße</strong> bestimmen, um wie viele Minuten jeder Tastendruck die Zeit verschiebt: 5, 10, 15 oder 30 Minuten (Standard: 10 Minuten).</li>
         </ul>
-        <p><strong>Tonauswahl:</strong> Du kannst aus den integrierten WakeUp-Tönen, deinen importierten eigenen Tönen (<em>Meine Töne</em>) oder dem iOS-Systemstandard wählen.</p>
         <div class="note">
-            <strong>Tipp:</strong> Wenn du den Ton nur für bestimmte ausgewählte Wecker ändern möchtest, nutze stattdessen <strong>Mehrere bearbeiten…</strong> im Hauptmenü.
+            <strong>Tipp:</strong> Die Schnellanpassung ist ideal, wenn du morgen 15 Minuten länger schlafen möchtest oder etwas früher aufstehen musst, ohne den wöchentlichen Weckplan zu verändern.
         </div>
         <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
     </div>
@@ -297,6 +295,51 @@
     </div>
 
     <div class="faq-item" id="faq-7">
+        <h2>Wie funktionieren die Hervorhebung des nächsten Weckers und der Countdown?</h2>
+        <p>WakeUp kann den Wecker, der als Nächstes klingelt, in deiner Weckerliste automatisch hervorheben und einen Live-Countdown mit der verbleibenden Zeit anzeigen (z. B. <em>Nächster · 7 Std. 25 Min.</em>):</p>
+        <ul>
+            <li><strong>Visuelle Hervorhebung:</strong> Hebt die Zeile des nächsten anstehenden Weckers mit einem Akzent-Badge hervor, damit du ihn sofort im Blick hast.</li>
+            <li><strong>Live-Countdown:</strong> Zeigt die verbleibende Schlafzeit übersichtlich in Stunden und Minuten an und aktualisiert sich minütlich.</li>
+            <li><strong>Dynamisch und intelligent:</strong> Wenn du das nächste Klingeln auslässt, die Schnellanpassung verwendest oder ein Wecker pausiert ist, berechnet WakeUp die Zeit sofort neu und hebt den nächsten aktiven Wecker hervor.</li>
+        </ul>
+        <p><strong>So aktivierst oder deaktivierst du die Funktion:</strong> Öffne <strong>WakeUp → Einstellungen → Weckerliste</strong> und schalte <strong>Nächsten Wecker hervorheben</strong> (gekennzeichnet durch ein Stern-Symbol ⭐️) ein oder aus.</p>
+        <div class="note">
+            <strong>Tipp:</strong> Der Countdown berücksichtigt automatisch Sommerzeitumstellungen und Zeitzonenänderungen, sodass du stets die exakte verbleibende Restzeit siehst.
+        </div>
+        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
+    </div>
+
+    <div class="faq-item" id="faq-8">
+        <h2>Wie funktioniert das Pausieren eines wiederkehrenden Weckers?</h2>
+        <p>Mit der Pause-Funktion kannst du einen wiederkehrenden Wecker für einen bestimmten Zeitraum (z. B. während des Urlaubs oder auf Reisen) vorübergehend aussetzen, ohne ihn dauerhaft ausschalten zu müssen:</p>
+        <ul>
+            <li><strong>Pause planen:</strong> Öffne die Bearbeitungsansicht eines wiederkehrenden Weckers, klappe <strong>Erweiterte Einstellungen</strong> auf und aktiviere <strong>Wecker pausieren</strong>. Wähle das Start- und Enddatum im Kalender aus.</li>
+            <li><strong>Statusanzeige:</strong> In der Weckerliste wird der aktuelle Status angezeigt: <strong>Pause geplant</strong> vor Beginn der Pause und <strong>Pausiert bis einschließlich [Datum]</strong>, solange die Pause aktiv ist.</li>
+            <li><strong>Automatische Reaktivierung:</strong> Sobald der gewählte Zeitraum vorüber ist, nimmt WakeUp den Wecker ganz automatisch nach dem regulären Zeitplan wieder auf.</li>
+            <li><strong>Pause anpassen oder beenden:</strong> Du kannst die Daten jederzeit ändern oder die Pause beenden, indem du den Wecker öffnest und „Wecker pausieren“ ausschaltest.</li>
+        </ul>
+        <div class="note">
+            <strong>Tipp:</strong> Du musst nach dem Urlaub keine Angst haben, das Wiedereinschalten des Weckers zu vergessen – WakeUp reaktiviert ihn pünktlich von selbst.
+        </div>
+        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
+    </div>
+
+    <div class="faq-item" id="faq-9">
+        <h2>Wie ändere ich die Methode zur Uhrzeiteingabe (Zeiteditor)?</h2>
+        <p>WakeUp bietet drei verschiedene Möglichkeiten zur Eingabe der Weckzeit, sodass du die für dich angenehmste Methode wählen kannst:</p>
+        <ul>
+            <li><strong>Auswahlrad (Scroll Wheel):</strong> Das vertraute scrollbare iOS-Eingaberad (Standard).</li>
+            <li><strong>Ziffernblock (Number Pad):</strong> Die Weckzeit schnell und präzise direkt über Ziffern eingeben.</li>
+            <li><strong>Zifferblatt (Clock Dial):</strong> Ein anschauliches, rundes Zifferblatt, auf dem du die Zeit interaktiv einstellst.</li>
+        </ul>
+        <p><strong>So änderst du die Methode:</strong> Öffne <strong>WakeUp → Einstellungen → Uhrzeiteingabe</strong> (unter <em>Weckervorgaben</em>) und wähle deinen bevorzugten Editor. Die Einstellung wird bei jedem Erstellen und Bearbeiten von Weckern verwendet.</p>
+        <div class="note">
+            <strong>Tipp:</strong> Du kannst die Eingabemethode jederzeit in den Einstellungen wechseln, um auszuprobieren, was für dich am schnellsten funktioniert.
+        </div>
+        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
+    </div>
+
+    <div class="faq-item" id="faq-10">
         <h2>Wie kann ich meine Wecker sortieren?</h2>
         <p>Du kannst die Reihenfolge deiner Wecker in der Weckerliste anpassen, indem du oben rechts auf die Menüschaltfläche (•••) tippst:</p>
         <ul>
@@ -312,7 +355,53 @@
         <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
     </div>
 
-    <div class="faq-item" id="faq-8">
+    <div class="faq-item" id="faq-11">
+        <h2>Eigenen Weckton in WakeUp importieren</h2>
+        <ol>
+            <li>Suche die Audiodatei auf deinem Mac oder in der Musik-App.</li>
+            <li>Klicke in der Musik-App mit der rechten Maustaste auf den Titel und wähle <strong>Im Finder zeigen</strong>.</li>
+            <li>Kopiere die Audiodatei (<code>.m4a</code>, <code>.mp3</code> oder <code>.wav</code>) in einen <strong>iCloud Drive</strong>-Ordner oder sende sie per <strong>AirDrop</strong> an dein iPhone oder iPad.</li>
+            <li>Öffne auf deinem Gerät <strong>WakeUp → Einstellungen → Eigene Töne</strong>, tippe auf <strong>Audiodatei auswählen…</strong> und wähle die Datei in der <strong>Dateien</strong>-App aus.</li>
+        </ol>
+        <p><strong>Windows und andere Cloud-Dienste:</strong> Du kannst Audiodateien auch von einem Windows-PC importieren. Übertrage die Datei einfach über einen beliebigen Cloud-Dienst (z. B. iCloud.com, Google Drive, OneDrive oder Dropbox) oder sende sie per E-Mail an dich selbst und sichere sie in der <strong>Dateien</strong>-App.</p>
+        <div class="note">
+            <strong>Hinweis:</strong> Du musst die importierte Audiodatei besitzen. Es werden nur DRM-freie Dateien unterstützt (z. B. gekaufte Musik oder eigene Aufnahmen). Geschützte Titel von Streaming-Diensten können nicht importiert werden.
+        </div>
+        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
+    </div>
+
+    <div class="faq-item" id="faq-12">
+        <h2>Welche Anforderungen und Beschränkungen gelten für eigene Wecktöne?</h2>
+        <p>Du kannst deine Wecker mit deinen eigenen Audiodateien personalisieren. Hier sind die wichtigsten Vorgaben, unterstützten Formate und Verwaltungsfunktionen:</p>
+        <ul>
+            <li><strong>Ton-Limit:</strong> Du kannst bis zu 20 eigene Töne importieren. Wenn das Limit erreicht ist, lösche einen vorhandenen Ton, bevor du einen weiteren importierst.</li>
+            <li><strong>Unterstützte Formate:</strong> AIF, AIFF, CAF, M4A, MP3 und WAV (müssen DRM-frei sein).</li>
+            <li><strong>Automatisches Kürzen & Ausblenden:</strong> Töne, die länger als 30 Sekunden sind, werden automatisch auf 30 Sekunden gekürzt und am Ende mit einer sanften 2-Sekunden-Ausblendung (Fade-Out) versehen.</li>
+            <li><strong>Probehören & Umbenennen:</strong> Unter <strong>Einstellungen → Eigene Töne</strong> kannst du jeden Ton antippen, um ihn anzuhören, oder umbenennen.</li>
+        </ul>
+        <p><strong>Sicheres Löschen (Ton in Verwendung):</strong> Du kannst Töne jederzeit per Wischgeste löschen. Wenn ein zu löschender Ton aktuell für einen Wecker verwendet wird, fordert WakeUp dich auf, einen Ersatzton zu wählen, damit kein Wecker stumm bleibt.</p>
+        <div class="note">
+            <strong>Tipp:</strong> Alle importierten Töne werden lokal in einem von Apple optimierten Audioformat gespeichert – für zuverlässige Wiedergabe ohne Internetverbindung.
+        </div>
+        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
+    </div>
+
+    <div class="faq-item" id="faq-13">
+        <h2>Wie ändere ich den Standardton oder aktualisiere alle Wecker auf einmal?</h2>
+        <p>In WakeUp kannst du einen Standardton für alle neu erstellten Wecker festlegen und auf Wunsch alle vorhandenen Wecker mit einem Fingertipp aktualisieren:</p>
+        <ul>
+            <li><strong>Standardton festlegen:</strong> Öffne <strong>WakeUp → Einstellungen → Standardton</strong> (unter <em>Weckervorgaben</em>) und wähle deinen gewünschten Ton, einen eigenen importierten Ton oder den <em>Systemstandard</em>.</li>
+            <li><strong>Auf alle vorhandenen Wecker anwenden:</strong> Aktiviere in der Tonauswahl die Option <strong>Auf alle vorhandenen Wecker anwenden</strong> und tippe auf <strong>Verwenden</strong> (oder <em>Anwenden</em>). WakeUp aktualisiert alle deine Wecker sofort.</li>
+            <li><strong>Nur für neue Wecker:</strong> Wenn du den Schalter deaktiviert lässt, gilt der neue Standardton nur für künftig erstellte Wecker; vorhandene Wecker bleiben unverändert.</li>
+        </ul>
+        <p><strong>Tonauswahl:</strong> Du kannst aus den integrierten WakeUp-Tönen, deinen importierten eigenen Tönen (<em>Meine Töne</em>) oder dem iOS-Systemstandard wählen.</p>
+        <div class="note">
+            <strong>Tipp:</strong> Wenn du den Ton nur für bestimmte ausgewählte Wecker ändern möchtest, nutze stattdessen <strong>Mehrere bearbeiten…</strong> im Hauptmenü.
+        </div>
+        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
+    </div>
+
+    <div class="faq-item" id="faq-14">
         <h2>Wie bearbeite ich mehrere Wecker gleichzeitig?</h2>
         <p>Mit der Funktion „Mehrere Wecker bearbeiten“ kannst du Einstellungen für mehrere Wecker gleichzeitig anpassen, ohne jeden Wecker einzeln öffnen zu müssen:</p>
         <ul>
@@ -328,51 +417,7 @@
         <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
     </div>
 
-    <div class="faq-item" id="faq-9">
-        <h2>Wie funktioniert die Funktion „Nächsten Wecker auslassen“ (Dismiss)?</h2>
-        <p>Mit „Nächsten Wecker auslassen“ kannst du ein einzelnes Klingeln eines wiederkehrenden Weckers überspringen (z. B. wenn du bereits wach bist oder frei hast), ohne deinen regulären Weckplan zu verändern:</p>
-        <ul>
-            <li><strong>Wecker auslassen:</strong> Sobald die Weckzeit näher rückt, erscheint auf dem Weckereintrag die Taste <strong>Auslassen</strong> (Mondsichel-Symbol). Ein Fingertipp genügt, um das nächste Klingeln zu überspringen. WakeUp kehrt danach automatisch zum normalen Zeitplan zurück.</li>
-            <li><strong>Auslassen rückgängig machen:</strong> Wenn sich deine Pläne ändern, tippe auf der Weckerzeile auf <strong>Nächster Wecker wird ausgelassen</strong>, um den Wecker sofort wieder zu aktivieren.</li>
-            <li><strong>Sichtbarkeit der Taste:</strong> In den Weckereinstellungen kannst du unter <strong>Taste „Auslassen“ anzeigen</strong> festlegen, wie viele Stunden vor der Weckzeit (2, 4, 8, 12 oder 24 Stunden) die Taste in der Liste erscheint.</li>
-        </ul>
-        <div class="note">
-            <strong>Tipp:</strong> Du musst wiederkehrende Wecker nicht komplett deaktivieren und daran denken, sie wieder einzuschalten – das Auslassen betrifft nur das nächste Mal.
-        </div>
-        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
-    </div>
-
-    <div class="faq-item" id="faq-10">
-        <h2>Wie funktioniert die Schnellanpassung (Quick Adjust +/-)?</h2>
-        <p>Mit der Schnellanpassung kannst du die nächste Weckzeit eines wiederkehrenden Weckers einmalig vorverlegen oder nach hinten verschieben, ohne deinen regulären Zeitplan zu verändern:</p>
-        <ul>
-            <li><strong>Weckzeit anpassen:</strong> Wenn ein Wecker für heute oder morgen geplant ist, erscheinen die Tasten <strong>-</strong> und <strong>+</strong> auf der Weckerzeile. Tippe darauf, um die Weckzeit schrittweise anzupassen.</li>
-            <li><strong>Anzeige und Zurücksetzen:</strong> Die Zeitverschiebung (z. B. <code>-10 min</code> oder <code>+20 min</code>) wird als Plakette auf der Weckerzeile angezeigt. Tippe darauf, um den Wecker sofort wieder auf die ursprüngliche Zeit zurückzusetzen.</li>
-            <li><strong>Automatischer Reset:</strong> Sobald der Wecker geklingelt hat, kehrt WakeUp für zukünftige Weckzeiten automatisch zum regulären Zeitplan zurück.</li>
-            <li><strong>Schrittgröße festlegen:</strong> In den Weckereinstellungen kannst du unter <strong>Schrittgröße</strong> bestimmen, um wie viele Minuten jeder Tastendruck die Zeit verschiebt: 5, 10, 15 oder 30 Minuten (Standard: 10 Minuten).</li>
-        </ul>
-        <div class="note">
-            <strong>Tipp:</strong> Die Schnellanpassung ist ideal, wenn du morgen 15 Minuten länger schlafen möchtest oder etwas früher aufstehen musst, ohne den wöchentlichen Weckplan zu verändern.
-        </div>
-        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
-    </div>
-
-    <div class="faq-item" id="faq-11">
-        <h2>Wie funktioniert das Pausieren eines wiederkehrenden Weckers?</h2>
-        <p>Mit der Pause-Funktion kannst du einen wiederkehrenden Wecker für einen bestimmten Zeitraum (z. B. während des Urlaubs oder auf Reisen) vorübergehend aussetzen, ohne ihn dauerhaft ausschalten zu müssen:</p>
-        <ul>
-            <li><strong>Pause planen:</strong> Öffne die Bearbeitungsansicht eines wiederkehrenden Weckers, klappe <strong>Erweiterte Einstellungen</strong> auf und aktiviere <strong>Wecker pausieren</strong>. Wähle das Start- und Enddatum im Kalender aus.</li>
-            <li><strong>Statusanzeige:</strong> In der Weckerliste wird der aktuelle Status angezeigt: <strong>Pause geplant</strong> vor Beginn der Pause und <strong>Pausiert bis einschließlich [Datum]</strong>, solange die Pause aktiv ist.</li>
-            <li><strong>Automatische Reaktivierung:</strong> Sobald der gewählte Zeitraum vorüber ist, nimmt WakeUp den Wecker ganz automatisch nach dem regulären Zeitplan wieder auf.</li>
-            <li><strong>Pause anpassen oder beenden:</strong> Du kannst die Daten jederzeit ändern oder die Pause beenden, indem du den Wecker öffnest und „Wecker pausieren“ ausschaltest.</li>
-        </ul>
-        <div class="note">
-            <strong>Tipp:</strong> Du musst nach dem Urlaub keine Angst haben, das Wiedereinschalten des Weckers zu vergessen – WakeUp reaktiviert ihn pünktlich von selbst.
-        </div>
-        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
-    </div>
-
-    <div class="faq-item" id="faq-12">
+    <div class="faq-item" id="faq-15">
         <h2>Wie passe ich die Schlummerdauer an oder deaktiviere das Schlummern?</h2>
         <p>Im Gegensatz zur vorinstallierten Apple-Uhr, bei der die Schlummerzeit fest auf 9 Minuten eingestellt ist, bietet WakeUp volle Flexibilität für jeden einzelnen Wecker oder ermöglicht das komplette Deaktivieren:</p>
         <ul>
@@ -383,51 +428,6 @@
         <p><strong>So stellst du die Dauer ein:</strong> Tippe auf einen Wecker zum Bearbeiten, scrolle zum Bereich <strong>Schlummern</strong>, stelle sicher, dass der Schalter aktiv ist, und wähle die gewünschten Minuten unter <strong>Schlummerdauer</strong> (+/-).</p>
         <div class="note">
             <strong>Tipp:</strong> Während des Schlummerns zeigt WakeUp den Live-Countdown direkt in der Sperrbildschirm-Live-Aktivität und in der Dynamic Island an.
-        </div>
-        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
-    </div>
-
-    <div class="faq-item" id="faq-13">
-        <h2>Wie ändere ich die Methode zur Uhrzeiteingabe (Zeiteditor)?</h2>
-        <p>WakeUp bietet drei verschiedene Möglichkeiten zur Eingabe der Weckzeit, sodass du die für dich angenehmste Methode wählen kannst:</p>
-        <ul>
-            <li><strong>Auswahlrad (Scroll Wheel):</strong> Das vertraute scrollbare iOS-Eingaberad (Standard).</li>
-            <li><strong>Ziffernblock (Number Pad):</strong> Die Weckzeit schnell und präzise direkt über Ziffern eingeben.</li>
-            <li><strong>Zifferblatt (Clock Dial):</strong> Ein anschauliches, rundes Zifferblatt, auf dem du die Zeit interaktiv einstellst.</li>
-        </ul>
-        <p><strong>So änderst du die Methode:</strong> Öffne <strong>WakeUp → Einstellungen → Uhrzeiteingabe</strong> (unter <em>Weckervorgaben</em>) und wähle deinen bevorzugten Editor. Die Einstellung wird bei jedem Erstellen und Bearbeiten von Weckern verwendet.</p>
-        <div class="note">
-            <strong>Tipp:</strong> Du kannst die Eingabemethode jederzeit in den Einstellungen wechseln, um auszuprobieren, was für dich am schnellsten funktioniert.
-        </div>
-        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
-    </div>
-
-    <div class="faq-item" id="faq-14">
-        <h2>Wie funktionieren die Hervorhebung des nächsten Weckers und der Countdown?</h2>
-        <p>WakeUp kann den Wecker, der als Nächstes klingelt, in deiner Weckerliste automatisch hervorheben und einen Live-Countdown mit der verbleibenden Zeit anzeigen (z. B. <em>Nächster · 7 Std. 25 Min.</em>):</p>
-        <ul>
-            <li><strong>Visuelle Hervorhebung:</strong> Hebt die Zeile des nächsten anstehenden Weckers mit einem Akzent-Badge hervor, damit du ihn sofort im Blick hast.</li>
-            <li><strong>Live-Countdown:</strong> Zeigt die verbleibende Schlafzeit übersichtlich in Stunden und Minuten an und aktualisiert sich minütlich.</li>
-            <li><strong>Dynamisch und intelligent:</strong> Wenn du das nächste Klingeln auslässt, die Schnellanpassung verwendest oder ein Wecker pausiert ist, berechnet WakeUp die Zeit sofort neu und hebt den nächsten aktiven Wecker hervor.</li>
-        </ul>
-        <p><strong>So aktivierst oder deaktivierst du die Funktion:</strong> Öffne <strong>WakeUp → Einstellungen → Weckerliste</strong> und schalte <strong>Nächsten Wecker hervorheben</strong> (gekennzeichnet durch ein Stern-Symbol ⭐️) ein oder aus.</p>
-        <div class="note">
-            <strong>Tipp:</strong> Der Countdown berücksichtigt automatisch Sommerzeitumstellungen und Zeitzonenänderungen, sodass du stets die exakte verbleibende Restzeit siehst.
-        </div>
-        <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
-    </div>
-
-    <div class="faq-item" id="faq-15">
-        <h2>Wie verfolge ich Wecker und den Countdown auf dem Sperrbildschirm oder in der Dynamic Island?</h2>
-        <p>WakeUp nutzt die iOS Live-Aktivitäten (Live Activities) und die Dynamic Island über AlarmKit und ActivityKit, sodass du aktive Wecker und Schlummer-Countdowns direkt im Blick hast, ohne dein iPhone zu entsperren:</p>
-        <ul>
-            <li><strong>Dynamic Island:</strong> Zeigt ein kompaktes Weckersymbol und einen Live-Countdown oben auf dem Display. Halte die Dynamic Island gedrückt, um sie zu erweitern und Wecker-Details zu sehen.</li>
-            <li><strong>Sperrbildschirm & Always-On-Display:</strong> Zeigt ein übersichtliches Banner mit dem Weckerstatus und der verbleibenden Schlummerzeit direkt auf dem Sperrbildschirm.</li>
-            <li><strong>Automatische Aktivierung:</strong> Startet automatisch, wenn ein Wecker klingelt oder auf Schlummern gestellt wird, damit du stets über deine verbleibende Schlafzeit informiert bist.</li>
-        </ul>
-        <p><strong>So überprüfst du die Einstellungen:</strong> Öffne auf deinem iPhone <strong>Einstellungen → WakeUp</strong> und vergewissere dich, dass <strong>Live-Aktivitäten</strong> aktiviert ist. Prüfe zudem unter <strong>Einstellungen → Face ID & Code</strong>, dass <em>Live-Aktivitäten</em> im Bereich <em>Im Sperrzustand Zugriff erlauben</em> eingeschaltet ist.</p>
-        <div class="note">
-            <strong>Tipp:</strong> Du kannst die Schlummerfunktion direkt über das Banner auf dem Sperrbildschirm oder in der erweiterten Dynamic Island steuern, ohne die App zu öffnen.
         </div>
         <a href="#top" class="back-to-top">↑ Zurück nach oben</a>
     </div>

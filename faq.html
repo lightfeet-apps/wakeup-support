@@ -188,20 +188,20 @@
         <h2 class="toc-title">On this page</h2>
         <ol>
             <li><a href="#faq-1">Will my alarm ring if my device is on silent, in Do Not Disturb, or the app is closed?</a></li>
-            <li><a href="#faq-2">How to import custom alarm sounds to WakeUp</a></li>
-            <li><a href="#faq-3">What are the requirements and limits for custom alarm sounds?</a></li>
-            <li><a href="#faq-4">How do I set the default alarm sound or update all alarms at once?</a></li>
+            <li><a href="#faq-2">How do Live Activities and Dynamic Island work with WakeUp?</a></li>
+            <li><a href="#faq-3">How does Dismiss Next Alarm work?</a></li>
+            <li><a href="#faq-4">How does Quick Adjust (+/-) work?</a></li>
             <li><a href="#faq-5">I am traveling to a different time zone. What should I keep in mind?</a></li>
             <li><a href="#faq-6">What are alarm categories and how do I use them?</a></li>
-            <li><a href="#faq-7">How can I sort my alarms?</a></li>
-            <li><a href="#faq-8">How do I edit multiple alarms at once (Bulk Edit)?</a></li>
-            <li><a href="#faq-9">How does Dismiss Next Alarm work?</a></li>
-            <li><a href="#faq-10">How does Quick Adjust (+/-) work?</a></li>
-            <li><a href="#faq-11">How does pausing a repeating alarm work?</a></li>
-            <li><a href="#faq-12">How do I adjust the snooze duration or disable snooze?</a></li>
-            <li><a href="#faq-13">How do I change the time input method (Time Editor)?</a></li>
-            <li><a href="#faq-14">How does the next alarm highlight and countdown timer work?</a></li>
-            <li><a href="#faq-15">How do Live Activities and Dynamic Island work with WakeUp?</a></li>
+            <li><a href="#faq-7">How does the next alarm highlight and countdown timer work?</a></li>
+            <li><a href="#faq-8">How does pausing a repeating alarm work?</a></li>
+            <li><a href="#faq-9">How do I change the time input method (Time Editor)?</a></li>
+            <li><a href="#faq-10">How can I sort my alarms?</a></li>
+            <li><a href="#faq-11">How to import custom alarm sounds to WakeUp</a></li>
+            <li><a href="#faq-12">What are the requirements and limits for custom alarm sounds?</a></li>
+            <li><a href="#faq-13">How do I set the default alarm sound or update all alarms at once?</a></li>
+            <li><a href="#faq-14">How do I edit multiple alarms at once (Bulk Edit)?</a></li>
+            <li><a href="#faq-15">How do I adjust the snooze duration or disable snooze?</a></li>
             <li><a href="#faq-16">How do I change the app appearance (Dark Mode or Light Mode)?</a></li>
             <li><a href="#faq-17">What languages does WakeUp support, and how do I change the language?</a></li>
         </ol>
@@ -222,47 +222,45 @@
     </div>
 
     <div class="faq-item" id="faq-2">
-        <h2>How to import custom alarm sounds to WakeUp</h2>
-        <ol>
-            <li>Locate the audio file on your Mac, or find it in your Music app.</li>
-            <li>If using the Music app, right-click the track and select <strong>Show in Finder</strong>.</li>
-            <li>Copy the audio file (<code>.m4a</code>, <code>.mp3</code>, or <code>.wav</code>) to an <strong>iCloud Drive</strong> folder, or send it to your iPhone or iPad via <strong>AirDrop</strong>.</li>
-            <li>On your device, open <strong>WakeUp → Settings → Custom Sounds</strong>, tap <strong>Choose Audio File…</strong>, and select the file from the <strong>Files</strong> app.</li>
-        </ol>
-        <p><strong>Windows and other cloud services:</strong> You can also import audio files from a Windows PC. Simply transfer the file to your device using any cloud service (such as iCloud.com, Google Drive, OneDrive, or Dropbox) or send it to yourself via email, and save it to the <strong>Files</strong> app.</p>
+        <h2>How do Live Activities and Dynamic Island work with WakeUp?</h2>
+        <p>WakeUp integrates directly with iOS Live Activities and the Dynamic Island via AlarmKit and ActivityKit, allowing you to monitor active alarms and snooze countdowns at a glance without unlocking your iPhone:</p>
+        <ul>
+            <li><strong>Dynamic Island:</strong> Displays a compact alarm icon and real-time countdown at the top of your screen. Touch and hold the Dynamic Island to expand it and view detailed alarm controls.</li>
+            <li><strong>Lock Screen & Always-On Display:</strong> Shows a clean, live banner with the active alarm status and exact remaining snooze countdown right on your lock screen.</li>
+            <li><strong>Automatic Activation:</strong> Starts seamlessly when an alarm alerts or is snoozed, so you always know exactly how much sleep time is left.</li>
+        </ul>
+        <p><strong>How to ensure Live Activities are enabled:</strong> On your iPhone, open <strong>Settings → WakeUp</strong> and verify that <strong>Live Activities</strong> is switched on. Additionally, check <strong>Settings → Face ID & Passcode</strong> and ensure <em>Live Activities</em> is enabled under <em>Allow Access When Locked</em>.</p>
         <div class="note">
-            <strong>Note:</strong> You must own the audio file you import. Only DRM-free audio (such as music you have purchased or your own recordings) is supported. Protected tracks from streaming services cannot be imported.
+            <strong>Tip:</strong> You can interact with or monitor snoozed alarms directly from the Lock Screen banner or expanded Dynamic Island without having to open the app.
         </div>
         <a href="#top" class="back-to-top">↑ Back to top</a>
     </div>
 
     <div class="faq-item" id="faq-3">
-        <h2>What are the requirements and limits for custom alarm sounds?</h2>
-        <p>WakeUp allows you to personalize your alarms with your own audio files. Here are the key rules, supported formats, and sound management features:</p>
+        <h2>How does Dismiss Next Alarm work?</h2>
+        <p>Dismiss Next Alarm lets you skip only the upcoming occurrence of a repeating alarm (for example, if you woke up early or have a day off) without altering your regular schedule:</p>
         <ul>
-            <li><strong>Import Limit:</strong> You can import up to 20 custom sounds. If you reach the limit, delete an existing sound before importing another one.</li>
-            <li><strong>Supported Formats:</strong> AIF, AIFF, CAF, M4A, MP3, and WAV (must be DRM-free audio files).</li>
-            <li><strong>Automatic Shortening & Fade-Out:</strong> Sounds longer than 30 seconds are automatically shortened to 30 seconds, with a smooth 2-second fade-out applied at the end for an optimal alarm experience.</li>
-            <li><strong>Preview & Renaming:</strong> In <strong>Settings → Custom Sounds</strong>, tap any sound to preview it or tap and hold to rename it.</li>
+            <li><strong>Dismissing an alarm:</strong> As the alarm time approaches, a <strong>Dismiss</strong> button (crescent moon icon) appears on the alarm row. Tapping it skips the next alarm, and WakeUp automatically returns to your regular schedule afterward.</li>
+            <li><strong>Restoring an alarm:</strong> If your plans change, tap the <strong>Next alarm is dismissed</strong> button that appears on the alarm row to restore the alarm immediately.</li>
+            <li><strong>Button visibility window:</strong> In the alarm editor, you can adjust <strong>Show Dismiss Button</strong> to control how many hours before the alarm (2, 4, 8, 12, or 24 hours) the Dismiss button appears on your screen.</li>
         </ul>
-        <p><strong>Safe Deletion (Sound in Use):</strong> You can delete sounds at any time by swiping. If you delete a sound that is currently assigned to one or more alarms, WakeUp safeguards your alarms by prompting you to choose a replacement sound so your alarms never ring silently.</p>
         <div class="note">
-            <strong>Tip:</strong> All imported sounds are converted and stored locally on your device in Apple's optimized audio format, ensuring fast playback and zero network dependency.
+            <strong>Tip:</strong> You never have to turn off a repeating alarm and remember to turn it back on – dismissing only affects the single next occurrence.
         </div>
         <a href="#top" class="back-to-top">↑ Back to top</a>
     </div>
 
     <div class="faq-item" id="faq-4">
-        <h2>How do I set the default alarm sound or update all alarms at once?</h2>
-        <p>WakeUp allows you to choose a default alarm sound for all newly created alarms, and even update every existing alarm in your list with a single tap:</p>
+        <h2>How does Quick Adjust (+/-) work?</h2>
+        <p>Quick Adjust lets you move only the next occurrence of a repeating alarm earlier or later without changing your regular schedule:</p>
         <ul>
-            <li><strong>Setting a default sound:</strong> Open <strong>WakeUp → Settings → Default Sound</strong> (under <em>Alarm Defaults</em>) and select your preferred built-in sound, custom audio file, or <em>System Default</em>.</li>
-            <li><strong>Updating all existing alarms:</strong> In the sound picker, switch on <strong>Apply to All Existing Alarms</strong> and tap <strong>Use</strong> (or <em>Apply</em>). WakeUp will update every alarm in your list instantly without needing manual editing.</li>
-            <li><strong>Individual customizations preserved:</strong> If you leave the toggle off, your new default sound will only apply to future alarms you create, leaving existing alarms unchanged.</li>
+            <li><strong>Adjusting the time:</strong> When an alarm is set for today or tomorrow, <strong>-</strong> and <strong>+</strong> buttons appear on the alarm row. Tap them to nudge the upcoming alarm earlier or later step by step.</li>
+            <li><strong>Viewing and restoring:</strong> The adjusted offset (such as <code>-10 min</code> or <code>+20 min</code>) appears as a badge on the alarm row. Tap this badge anytime to instantly restore the alarm to its original time.</li>
+            <li><strong>Automatic reset:</strong> Once the alarm rings, WakeUp automatically returns to your regular schedule for all future occurrences.</li>
+            <li><strong>Adjustment Step:</strong> In the alarm editor, you can customize the <strong>Adjustment Step</strong> to change the increment to 5, 10, 15, or 30 minutes (10 minutes is default).</li>
         </ul>
-        <p><strong>Sound options:</strong> You can select any of WakeUp's bundled sounds, your imported custom sounds from <em>My Sounds</em>, or the iOS system default.</p>
         <div class="note">
-            <strong>Tip:</strong> If you ever want to change sounds for just a few specific alarms rather than all of them, use <strong>Bulk Edit</strong> from the main alarm list menu instead.
+            <strong>Tip:</strong> Quick Adjust is ideal when you need 15 minutes of extra sleep tomorrow or have to get up slightly earlier without altering your recurring routine.
         </div>
         <a href="#top" class="back-to-top">↑ Back to top</a>
     </div>
@@ -297,6 +295,51 @@
     </div>
 
     <div class="faq-item" id="faq-7">
+        <h2>How does the next alarm highlight and countdown timer work?</h2>
+        <p>WakeUp can automatically highlight the next alarm scheduled to ring in your main alarm list and display a live countdown showing exactly how much time remains (for example, <em>Next · 7 hr 25 min</em>):</p>
+        <ul>
+            <li><strong>Visual Highlight:</strong> Marks the row of the upcoming alarm with a dedicated accent badge so you can identify it at a glance.</li>
+            <li><strong>Live Countdown:</strong> Displays the remaining sleep time in hours and minutes, updating smoothly every minute.</li>
+            <li><strong>Dynamic & Smart:</strong> If you dismiss the next occurrence, adjust it earlier/later, or pause an alarm, WakeUp immediately recalculates and highlights the next active alarm.</li>
+        </ul>
+        <p><strong>How to enable or disable it:</strong> Open <strong>WakeUp → Settings → Alarm List</strong> and toggle <strong>Highlight Next Alarm</strong> (indicated with a star icon ⭐️). When turned on, the badge appears directly under the alarm time in your main list.</p>
+        <div class="note">
+            <strong>Tip:</strong> The countdown automatically accounts for Daylight Saving Time transitions and time zone differences, giving you an exact, dependable count of remaining hours and minutes until your alarm sounds.
+        </div>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-8">
+        <h2>How does pausing a repeating alarm work?</h2>
+        <p>Pausing allows you to temporarily suspend a repeating alarm for a specific date range (such as vacations, holidays, or business trips) without disabling the alarm entirely:</p>
+        <ul>
+            <li><strong>Scheduling a pause:</strong> Open the editor for any repeating alarm, expand <strong>Advanced Settings</strong>, and turn on <strong>Pause Alarm</strong>. Choose your desired start and end dates from the calendar.</li>
+            <li><strong>Viewing pause status:</strong> The alarm list displays clear status indicators: <strong>Pause scheduled</strong> before the pause begins, and <strong>Paused through [date]</strong> while the pause is currently active.</li>
+            <li><strong>Automatic resumption:</strong> Once the pause period ends, WakeUp automatically reactivates the alarm according to its regular recurring schedule.</li>
+            <li><strong>Editing or cancelling:</strong> You can adjust the dates or cancel the pause at any time by opening the alarm editor and turning off Pause Alarm.</li>
+        </ul>
+        <div class="note">
+            <strong>Tip:</strong> You never have to worry about forgetting to turn your morning alarm back on after a vacation – WakeUp automatically resumes right on schedule.
+        </div>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-9">
+        <h2>How do I change the time input method (Time Editor)?</h2>
+        <p>WakeUp offers three distinct ways to set your alarm time, letting you pick whichever input method feels most comfortable for you:</p>
+        <ul>
+            <li><strong>Scroll Wheel:</strong> The familiar iOS scrolling wheel picker (default).</li>
+            <li><strong>Number Pad:</strong> Quickly type the exact alarm time using numbers.</li>
+            <li><strong>Clock Dial:</strong> An intuitive, visual round clock face where you set the time by turning the hands.</li>
+        </ul>
+        <p><strong>How to change it:</strong> Open <strong>WakeUp → Settings → Time Input</strong> (under <em>Alarm Defaults</em>) and choose your preferred editor. Your choice will be used whenever you create or edit alarms.</p>
+        <div class="note">
+            <strong>Tip:</strong> You can switch between input methods at any time in Settings to see which one feels quickest and easiest for you.
+        </div>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-10">
         <h2>How can I sort my alarms?</h2>
         <p>You can customize how your alarms are ordered in the alarm list by tapping the menu button (•••) in the top corner of the main screen:</p>
         <ul>
@@ -312,7 +355,53 @@
         <a href="#top" class="back-to-top">↑ Back to top</a>
     </div>
 
-    <div class="faq-item" id="faq-8">
+    <div class="faq-item" id="faq-11">
+        <h2>How to import custom alarm sounds to WakeUp</h2>
+        <ol>
+            <li>Locate the audio file on your Mac, or find it in your Music app.</li>
+            <li>If using the Music app, right-click the track and select <strong>Show in Finder</strong>.</li>
+            <li>Copy the audio file (<code>.m4a</code>, <code>.mp3</code>, or <code>.wav</code>) to an <strong>iCloud Drive</strong> folder, or send it to your iPhone or iPad via <strong>AirDrop</strong>.</li>
+            <li>On your device, open <strong>WakeUp → Settings → Custom Sounds</strong>, tap <strong>Choose Audio File…</strong>, and select the file from the <strong>Files</strong> app.</li>
+        </ol>
+        <p><strong>Windows and other cloud services:</strong> You can also import audio files from a Windows PC. Simply transfer the file to your device using any cloud service (such as iCloud.com, Google Drive, OneDrive, or Dropbox) or send it to yourself via email, and save it to the <strong>Files</strong> app.</p>
+        <div class="note">
+            <strong>Note:</strong> You must own the audio file you import. Only DRM-free audio (such as music you have purchased or your own recordings) is supported. Protected tracks from streaming services cannot be imported.
+        </div>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-12">
+        <h2>What are the requirements and limits for custom alarm sounds?</h2>
+        <p>WakeUp allows you to personalize your alarms with your own audio files. Here are the key rules, supported formats, and sound management features:</p>
+        <ul>
+            <li><strong>Import Limit:</strong> You can import up to 20 custom sounds. If you reach the limit, delete an existing sound before importing another one.</li>
+            <li><strong>Supported Formats:</strong> AIF, AIFF, CAF, M4A, MP3, and WAV (must be DRM-free audio files).</li>
+            <li><strong>Automatic Shortening & Fade-Out:</strong> Sounds longer than 30 seconds are automatically shortened to 30 seconds, with a smooth 2-second fade-out applied at the end for an optimal alarm experience.</li>
+            <li><strong>Preview & Renaming:</strong> In <strong>Settings → Custom Sounds</strong>, tap any sound to preview it or tap and hold to rename it.</li>
+        </ul>
+        <p><strong>Safe Deletion (Sound in Use):</strong> You can delete sounds at any time by swiping. If you delete a sound that is currently assigned to one or more alarms, WakeUp safeguards your alarms by prompting you to choose a replacement sound so your alarms never ring silently.</p>
+        <div class="note">
+            <strong>Tip:</strong> All imported sounds are converted and stored locally on your device in Apple's optimized audio format, ensuring fast playback and zero network dependency.
+        </div>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-13">
+        <h2>How do I set the default alarm sound or update all alarms at once?</h2>
+        <p>WakeUp allows you to choose a default alarm sound for all newly created alarms, and even update every existing alarm in your list with a single tap:</p>
+        <ul>
+            <li><strong>Setting a default sound:</strong> Open <strong>WakeUp → Settings → Default Sound</strong> (under <em>Alarm Defaults</em>) and select your preferred built-in sound, custom audio file, or <em>System Default</em>.</li>
+            <li><strong>Updating all existing alarms:</strong> In the sound picker, switch on <strong>Apply to All Existing Alarms</strong> and tap <strong>Use</strong> (or <em>Apply</em>). WakeUp will update every alarm in your list instantly without needing manual editing.</li>
+            <li><strong>Individual customizations preserved:</strong> If you leave the toggle off, your new default sound will only apply to future alarms you create, leaving existing alarms unchanged.</li>
+        </ul>
+        <p><strong>Sound options:</strong> You can select any of WakeUp's bundled sounds, your imported custom sounds from <em>My Sounds</em>, or the iOS system default.</p>
+        <div class="note">
+            <strong>Tip:</strong> If you ever want to change sounds for just a few specific alarms rather than all of them, use <strong>Bulk Edit</strong> from the main alarm list menu instead.
+        </div>
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+    </div>
+
+    <div class="faq-item" id="faq-14">
         <h2>How do I edit multiple alarms at once (Bulk Edit)?</h2>
         <p>Bulk Edit allows you to update settings across multiple alarms simultaneously without editing each alarm individually:</p>
         <ul>
@@ -328,51 +417,7 @@
         <a href="#top" class="back-to-top">↑ Back to top</a>
     </div>
 
-    <div class="faq-item" id="faq-9">
-        <h2>How does Dismiss Next Alarm work?</h2>
-        <p>Dismiss Next Alarm lets you skip only the upcoming occurrence of a repeating alarm (for example, if you woke up early or have a day off) without altering your regular schedule:</p>
-        <ul>
-            <li><strong>Dismissing an alarm:</strong> As the alarm time approaches, a <strong>Dismiss</strong> button (crescent moon icon) appears on the alarm row. Tapping it skips the next alarm, and WakeUp automatically returns to your regular schedule afterward.</li>
-            <li><strong>Restoring an alarm:</strong> If your plans change, tap the <strong>Next alarm is dismissed</strong> button that appears on the alarm row to restore the alarm immediately.</li>
-            <li><strong>Button visibility window:</strong> In the alarm editor, you can adjust <strong>Show Dismiss Button</strong> to control how many hours before the alarm (2, 4, 8, 12, or 24 hours) the Dismiss button appears on your screen.</li>
-        </ul>
-        <div class="note">
-            <strong>Tip:</strong> You never have to turn off a repeating alarm and remember to turn it back on – dismissing only affects the single next occurrence.
-        </div>
-        <a href="#top" class="back-to-top">↑ Back to top</a>
-    </div>
-
-    <div class="faq-item" id="faq-10">
-        <h2>How does Quick Adjust (+/-) work?</h2>
-        <p>Quick Adjust lets you move only the next occurrence of a repeating alarm earlier or later without changing your regular schedule:</p>
-        <ul>
-            <li><strong>Adjusting the time:</strong> When an alarm is set for today or tomorrow, <strong>-</strong> and <strong>+</strong> buttons appear on the alarm row. Tap them to nudge the upcoming alarm earlier or later step by step.</li>
-            <li><strong>Viewing and restoring:</strong> The adjusted offset (such as <code>-10 min</code> or <code>+20 min</code>) appears as a badge on the alarm row. Tap this badge anytime to instantly restore the alarm to its original time.</li>
-            <li><strong>Automatic reset:</strong> Once the alarm rings, WakeUp automatically returns to your regular schedule for all future occurrences.</li>
-            <li><strong>Adjustment Step:</strong> In the alarm editor, you can customize the <strong>Adjustment Step</strong> to change the increment to 5, 10, 15, or 30 minutes (10 minutes is default).</li>
-        </ul>
-        <div class="note">
-            <strong>Tip:</strong> Quick Adjust is ideal when you need 15 minutes of extra sleep tomorrow or have to get up slightly earlier without altering your recurring routine.
-        </div>
-        <a href="#top" class="back-to-top">↑ Back to top</a>
-    </div>
-
-    <div class="faq-item" id="faq-11">
-        <h2>How does pausing a repeating alarm work?</h2>
-        <p>Pausing allows you to temporarily suspend a repeating alarm for a specific date range (such as vacations, holidays, or business trips) without disabling the alarm entirely:</p>
-        <ul>
-            <li><strong>Scheduling a pause:</strong> Open the editor for any repeating alarm, expand <strong>Advanced Settings</strong>, and turn on <strong>Pause Alarm</strong>. Choose your desired start and end dates from the calendar.</li>
-            <li><strong>Viewing pause status:</strong> The alarm list displays clear status indicators: <strong>Pause scheduled</strong> before the pause begins, and <strong>Paused through [date]</strong> while the pause is currently active.</li>
-            <li><strong>Automatic resumption:</strong> Once the pause period ends, WakeUp automatically reactivates the alarm according to its regular recurring schedule.</li>
-            <li><strong>Editing or cancelling:</strong> You can adjust the dates or cancel the pause at any time by opening the alarm editor and turning off Pause Alarm.</li>
-        </ul>
-        <div class="note">
-            <strong>Tip:</strong> You never have to worry about forgetting to turn your morning alarm back on after a vacation – WakeUp automatically resumes right on schedule.
-        </div>
-        <a href="#top" class="back-to-top">↑ Back to top</a>
-    </div>
-
-    <div class="faq-item" id="faq-12">
+    <div class="faq-item" id="faq-15">
         <h2>How do I adjust the snooze duration or disable snooze?</h2>
         <p>Unlike Apple's built-in Clock app, which fixes snooze to exactly 9 minutes, WakeUp gives you full control over snooze duration for each individual alarm, or lets you turn it off completely:</p>
         <ul>
@@ -383,51 +428,6 @@
         <p><strong>How to adjust it:</strong> Tap an alarm to edit it, scroll to the <strong>Snooze</strong> section, ensure the <em>Snooze</em> toggle is on, and use the <strong>Snooze Duration</strong> stepper (+/-) to set your desired minutes.</p>
         <div class="note">
             <strong>Tip:</strong> When an alarm is snoozing, WakeUp shows the live countdown in the Lock Screen Live Activity and Dynamic Island, so you always know exactly when it will alert again.
-        </div>
-        <a href="#top" class="back-to-top">↑ Back to top</a>
-    </div>
-
-    <div class="faq-item" id="faq-13">
-        <h2>How do I change the time input method (Time Editor)?</h2>
-        <p>WakeUp offers three distinct ways to set your alarm time, letting you pick whichever input method feels most comfortable for you:</p>
-        <ul>
-            <li><strong>Scroll Wheel:</strong> The familiar iOS scrolling wheel picker (default).</li>
-            <li><strong>Number Pad:</strong> Quickly type the exact alarm time using numbers.</li>
-            <li><strong>Clock Dial:</strong> An intuitive, visual round clock face where you set the time by turning the hands.</li>
-        </ul>
-        <p><strong>How to change it:</strong> Open <strong>WakeUp → Settings → Time Input</strong> (under <em>Alarm Defaults</em>) and choose your preferred editor. Your choice will be used whenever you create or edit alarms.</p>
-        <div class="note">
-            <strong>Tip:</strong> You can switch between input methods at any time in Settings to see which one feels quickest and easiest for you.
-        </div>
-        <a href="#top" class="back-to-top">↑ Back to top</a>
-    </div>
-
-    <div class="faq-item" id="faq-14">
-        <h2>How does the next alarm highlight and countdown timer work?</h2>
-        <p>WakeUp can automatically highlight the next alarm scheduled to ring in your main alarm list and display a live countdown showing exactly how much time remains (for example, <em>Next · 7 hr 25 min</em>):</p>
-        <ul>
-            <li><strong>Visual Highlight:</strong> Marks the row of the upcoming alarm with a dedicated accent badge so you can identify it at a glance.</li>
-            <li><strong>Live Countdown:</strong> Displays the remaining sleep time in hours and minutes, updating smoothly every minute.</li>
-            <li><strong>Dynamic & Smart:</strong> If you dismiss the next occurrence, adjust it earlier/later, or pause an alarm, WakeUp immediately recalculates and highlights the next active alarm.</li>
-        </ul>
-        <p><strong>How to enable or disable it:</strong> Open <strong>WakeUp → Settings → Alarm List</strong> and toggle <strong>Highlight Next Alarm</strong> (indicated with a star icon ⭐️). When turned on, the badge appears directly under the alarm time in your main list.</p>
-        <div class="note">
-            <strong>Tip:</strong> The countdown automatically accounts for Daylight Saving Time transitions and time zone differences, giving you an exact, dependable count of remaining hours and minutes until your alarm sounds.
-        </div>
-        <a href="#top" class="back-to-top">↑ Back to top</a>
-    </div>
-
-    <div class="faq-item" id="faq-15">
-        <h2>How do Live Activities and Dynamic Island work with WakeUp?</h2>
-        <p>WakeUp integrates directly with iOS Live Activities and the Dynamic Island via AlarmKit and ActivityKit, allowing you to monitor active alarms and snooze countdowns at a glance without unlocking your iPhone:</p>
-        <ul>
-            <li><strong>Dynamic Island:</strong> Displays a compact alarm icon and real-time countdown at the top of your screen. Touch and hold the Dynamic Island to expand it and view detailed alarm controls.</li>
-            <li><strong>Lock Screen & Always-On Display:</strong> Shows a clean, live banner with the active alarm status and exact remaining snooze countdown right on your lock screen.</li>
-            <li><strong>Automatic Activation:</strong> Starts seamlessly when an alarm alerts or is snoozed, so you always know exactly how much sleep time is left.</li>
-        </ul>
-        <p><strong>How to ensure Live Activities are enabled:</strong> On your iPhone, open <strong>Settings → WakeUp</strong> and verify that <strong>Live Activities</strong> is switched on. Additionally, check <strong>Settings → Face ID & Passcode</strong> and ensure <em>Live Activities</em> is enabled under <em>Allow Access When Locked</em>.</p>
-        <div class="note">
-            <strong>Tip:</strong> You can interact with or monitor snoozed alarms directly from the Lock Screen banner or expanded Dynamic Island without having to open the app.
         </div>
         <a href="#top" class="back-to-top">↑ Back to top</a>
     </div>

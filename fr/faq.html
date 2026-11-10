@@ -188,20 +188,20 @@
         <h2 class="toc-title">Sur cette page</h2>
         <ol>
             <li><a href="#faq-1">Mon alarme sonnera-t-elle si mon appareil est en silencieux, en mode Ne pas déranger ou si l'app est fermée ?</a></li>
-            <li><a href="#faq-2">Comment importer votre propre son d'alarme dans WakeUp</a></li>
-            <li><a href="#faq-3">Quelles sont les exigences et limites pour les sons d'alarme personnalisés ?</a></li>
-            <li><a href="#faq-4">Comment changer le son par défaut ou mettre à jour toutes les alarmes en une fois ?</a></li>
+            <li><a href="#faq-2">Comment suivre les alarmes et le compte à rebours sur l'écran verrouillé ou dans la Dynamic Island ?</a></li>
+            <li><a href="#faq-3">Comment fonctionne la fonction pour ignorer la prochaine alarme (Dismiss) ?</a></li>
+            <li><a href="#faq-4">Comment fonctionne l'ajustement rapide (Quick Adjust +/-) ?</a></li>
             <li><a href="#faq-5">Je voyage. Que dois-je savoir ?</a></li>
             <li><a href="#faq-6">Que sont les catégories d'alarmes et comment les utiliser ?</a></li>
-            <li><a href="#faq-7">Comment trier mes alarmes ?</a></li>
-            <li><a href="#faq-8">Comment modifier plusieurs alarmes à la fois ?</a></li>
-            <li><a href="#faq-9">Comment fonctionne la fonction pour ignorer la prochaine alarme (Dismiss) ?</a></li>
-            <li><a href="#faq-10">Comment fonctionne l'ajustement rapide (Quick Adjust +/-) ?</a></li>
-            <li><a href="#faq-11">Comment fonctionne la mise en pause d'une alarme récurrente ?</a></li>
-            <li><a href="#faq-12">Comment régler la durée du rappel ou désactiver le rappel d'alarme ?</a></li>
-            <li><a href="#faq-13">Comment changer le mode de saisie de l'heure (éditeur d'heure) ?</a></li>
-            <li><a href="#faq-14">Comment fonctionnent la mise en évidence de la prochaine alarme et le compte à rebours ?</a></li>
-            <li><a href="#faq-15">Comment suivre les alarmes et le compte à rebours sur l'écran verrouillé ou dans la Dynamic Island ?</a></li>
+            <li><a href="#faq-7">Comment fonctionnent la mise en évidence de la prochaine alarme et le compte à rebours ?</a></li>
+            <li><a href="#faq-8">Comment fonctionne la mise en pause d'une alarme récurrente ?</a></li>
+            <li><a href="#faq-9">Comment changer le mode de saisie de l'heure (éditeur d'heure) ?</a></li>
+            <li><a href="#faq-10">Comment trier mes alarmes ?</a></li>
+            <li><a href="#faq-11">Comment importer votre propre son d'alarme dans WakeUp</a></li>
+            <li><a href="#faq-12">Quelles sont les exigences et limites pour les sons d'alarme personnalisés ?</a></li>
+            <li><a href="#faq-13">Comment changer le son par défaut ou mettre à jour toutes les alarmes en une fois ?</a></li>
+            <li><a href="#faq-14">Comment modifier plusieurs alarmes à la fois ?</a></li>
+            <li><a href="#faq-15">Comment régler la durée du rappel ou désactiver le rappel d'alarme ?</a></li>
             <li><a href="#faq-16">Comment modifier l'apparence de l'application (mode sombre ou clair) ?</a></li>
             <li><a href="#faq-17">Quelles langues sont prises en charge par WakeUp et comment changer la langue ?</a></li>
         </ol>
@@ -222,47 +222,45 @@
     </div>
 
     <div class="faq-item" id="faq-2">
-        <h2>Comment importer votre propre son d'alarme dans WakeUp</h2>
-        <ol>
-            <li>Localisez le fichier audio sur votre Mac ou dans votre application Musique.</li>
-            <li>Si vous utilisez l'application Musique, faites un clic droit sur le morceau et sélectionnez <strong>Afficher dans le Finder</strong>.</li>
-            <li>Copiez le fichier audio (<code>.m4a</code>, <code>.mp3</code> ou <code>.wav</code>) dans un dossier <strong>iCloud Drive</strong> ou transférez-le via <strong>AirDrop</strong> sur votre iPhone ou iPad.</li>
-            <li>Sur votre appareil, ouvrez <strong>WakeUp → Réglages → Sons personnalisés</strong>, touchez <strong>Choisir un fichier audio…</strong> et sélectionnez le fichier dans l'application <strong>Fichiers</strong>.</li>
-        </ol>
-        <p><strong>Windows et autres services cloud :</strong> Vous pouvez également importer des fichiers audio depuis un PC Windows. Transférez simplement le fichier sur votre iPhone ou iPad via n'importe quel service cloud (comme iCloud.com, Google Drive, OneDrive ou Dropbox) ou envoyez-le-vous par e-mail, puis enregistrez-le dans l'application <strong>Fichiers</strong>.</p>
+        <h2>Comment suivre les alarmes et le compte à rebours sur l'écran verrouillé ou dans la Dynamic Island ?</h2>
+        <p>WakeUp intègre les Activités en direct (Live Activities) d'iOS et la Dynamic Island via AlarmKit et ActivityKit pour suivre vos alarmes actives et le compte à rebours du rappel d'alarme sans déverrouiller votre iPhone :</p>
+        <ul>
+            <li><strong>Dynamic Island :</strong> Affiche une icône d'alarme orange et un compte à rebours en temps réel en haut de l'écran. Touchez et maintenez la Dynamic Island pour l'agrandir et afficher les détails.</li>
+            <li><strong>Écran verrouillé et écran toujours activé :</strong> Affiche une bannière claire avec l'état de l'alarme et le temps restant du rappel directement sur votre écran verrouillé.</li>
+            <li><strong>Activation automatique :</strong> Se déclenche automatiquement lorsqu'une alarme sonne ou passe en rappel d'alarme, vous permettant de savoir exactement combien de temps de sommeil il vous reste.</li>
+        </ul>
+        <p><strong>Comment vérifier l'activation des Activités en direct :</strong> Sur votre iPhone, accédez à <strong>Réglages → WakeUp</strong> et assurez-vous que <strong>Activités en direct</strong> est activé. Vérifiez également dans <strong>Réglages → Face ID et code</strong> que <em>Activités en direct</em> est autorisé sous <em>Autoriser l'accès en mode verrouillé</em>.</p>
         <div class="note">
-            <strong>Remarque :</strong> Vous devez posséder le fichier audio importé. Seuls les fichiers sans DRM (tels que la musique achetée ou vos propres enregistrements) sont pris en charge. Les morceaux protégés provenant de services de streaming ne peuvent pas être importés.
+            <strong>Astuce :</strong> Vous pouvez suivre ou gérer le rappel d'alarme directement depuis la bannière de l'écran verrouillé ou depuis la Dynamic Island sans ouvrir l'application.
         </div>
         <a href="#top" class="back-to-top">↑ Haut de page</a>
     </div>
 
     <div class="faq-item" id="faq-3">
-        <h2>Quelles sont les exigences et limites pour les sons d'alarme personnalisés ?</h2>
-        <p>Vous pouvez personnaliser vos alarmes avec vos propres fichiers audio. Voici les règles essentielles, les formats compatibles et les fonctions de gestion :</p>
+        <h2>Comment fonctionne la fonction pour ignorer la prochaine alarme (Dismiss) ?</h2>
+        <p>La fonction Ignorer la prochaine alarme vous permet de passer uniquement la prochaine sonnerie d'une alarme récurrente (par exemple si vous êtes déjà réveillé ou en congé) sans modifier votre programme habituel :</p>
         <ul>
-            <li><strong>Limite de sons :</strong> Vous pouvez importer jusqu'à 20 sons personnalisés. Une fois la limite atteinte, supprimez un son avant d'en importer un nouveau.</li>
-            <li><strong>Formats pris en charge :</strong> AIF, AIFF, CAF, M4A, MP3 et WAV (sans protection DRM).</li>
-            <li><strong>Raccourcissement automatique et fondu :</strong> Les sons de plus de 30 secondes sont automatiquement raccourcis à 30 secondes avec un fondu de sortie fluide de 2 secondes à la fin.</li>
-            <li><strong>Écoute et renommage :</strong> Dans <strong>Réglages → Sons personnalisés</strong>, touchez un son pour l'écouter ou renommez-le à tout moment.</li>
+            <li><strong>Ignorer une alarme :</strong> Lorsque l'heure de l'alarme approche, un bouton <strong>Ignorer</strong> (icône de croissant de lune) apparaît sur la ligne de l'alarme. En le touchant, la prochaine sonnerie est ignorée et WakeUp reprend automatiquement son rythme normal ensuite.</li>
+            <li><strong>Rétablir l'alarme :</strong> Si vos plans changent, touchez <strong>La prochaine alarme est ignorée</strong> sur la ligne de l'alarme pour la réactiver immédiatement.</li>
+            <li><strong>Délai d'affichage du bouton :</strong> Dans l'éditeur d'alarme, vous pouvez régler <strong>Afficher le bouton Ignorer</strong> pour choisir combien d'heures à l'avance (2, 4, 8, 12 ou 24 heures) le bouton apparaît dans la liste.</li>
         </ul>
-        <p><strong>Suppression sécurisée (Son en cours d’utilisation) :</strong> Vous pouvez supprimer des sons en balayant. Si vous supprimez un son actuellement utilisé par une alarme, WakeUp vous invite à choisir un son de remplacement pour éviter qu'une alarme ne devienne silencieuse.</p>
         <div class="note">
-            <strong>Astuce :</strong> Tous les sons importés sont convertis et stockés localement sur votre appareil dans un format optimisé par Apple, garantissant une lecture immédiate et sans connexion réseau.
+            <strong>Astuce :</strong> Vous n'avez plus besoin d'éteindre une alarme récurrente puis de penser à la rallumer : l'annulation ne s'applique qu'à la prochaine occurrence.
         </div>
         <a href="#top" class="back-to-top">↑ Haut de page</a>
     </div>
 
     <div class="faq-item" id="faq-4">
-        <h2>Comment changer le son par défaut ou mettre à jour toutes les alarmes en une fois ?</h2>
-        <p>WakeUp vous permet de choisir un son par défaut pour toutes vos nouvelles alarmes et même de mettre à jour toutes vos alarmes existantes en un seul geste :</p>
+        <h2>Comment fonctionne l'ajustement rapide (Quick Adjust +/-) ?</h2>
+        <p>L'ajustement rapide vous permet d'avancer ou de reculer uniquement la prochaine sonnerie d'une alarme récurrente sans modifier votre planning régulier :</p>
         <ul>
-            <li><strong>Définir le son par défaut :</strong> Ouvrez <strong>WakeUp → Réglages → Son par défaut</strong> (dans <em>Réglages par défaut des alarmes</em>) et sélectionnez votre son favori, un son personnalisé ou le <em>Système par défaut</em>.</li>
-            <li><strong>Appliquer à toutes les alarmes existantes :</strong> Dans le sélecteur de son, activez <strong>Appliquer à toutes les alarmes existantes</strong> et appuyez sur <strong>Utiliser</strong> (ou <em>Appliquer</em>). WakeUp met à jour toutes vos alarmes immédiatement.</li>
-            <li><strong>Uniquement pour les nouvelles alarmes :</strong> Si vous laissez l'option désactivée, le son par défaut ne s'appliquera qu'aux futures alarmes que vous créerez, sans modifier les existantes.</li>
+            <li><strong>Ajuster l'heure :</strong> Lorsqu'une alarme est prévue pour aujourd'hui ou demain, les boutons <strong>-</strong> et <strong>+</strong> apparaissent sur la ligne de l'alarme. Touchez-les pour décaler l'heure pas à pas.</li>
+            <li><strong>Afficher et rétablir :</strong> Le décalage (par exemple <code>-10 min</code> ou <code>+20 min</code>) s'affiche sous forme de badge sur la ligne de l'alarme. Touchez ce badge à tout moment pour rétablir instantanément l'heure d'origine.</li>
+            <li><strong>Retour automatique :</strong> Dès que l'alarme a sonné, WakeUp reprend automatiquement votre rythme régulier habituel.</li>
+            <li><strong>Intervalle d’ajustement :</strong> Dans l'éditeur d'alarme, vous pouvez régler l'<strong>Intervalle d’ajustement</strong> sur 5, 10, 15 ou 30 minutes (10 minutes par défaut).</li>
         </ul>
-        <p><strong>Options de son :</strong> Vous pouvez choisir parmi les sons intégrés de WakeUp, vos fichiers personnalisés dans <em>Mes sons</em> ou le son par défaut d'iOS.</p>
         <div class="note">
-            <strong>Astuce :</strong> Si vous souhaitez modifier le son de quelques alarmes spécifiques seulement, utilisez plutôt l'option <strong>Modification groupée…</strong> dans le menu principal.
+            <strong>Astuce :</strong> L'ajustement rapide est idéal pour dormir 15 minutes de plus demain ou vous lever un peu plus tôt sans dérégler votre routine.
         </div>
         <a href="#top" class="back-to-top">↑ Haut de page</a>
     </div>
@@ -297,6 +295,51 @@
     </div>
 
     <div class="faq-item" id="faq-7">
+        <h2>Comment fonctionnent la mise en évidence de la prochaine alarme et le compte à rebours ?</h2>
+        <p>WakeUp peut mettre automatiquement en évidence la prochaine alarme qui sonnera dans votre liste d'alarmes et afficher un compte à rebours en direct du temps restant (par exemple, <em>Prochaine · 7 h 25 min</em>) :</p>
+        <ul>
+            <li><strong>Mise en valeur visuelle :</strong> Marque la ligne de la toute prochaine alarme avec un badge distinctif pour la repérer d'un coup d'œil.</li>
+            <li><strong>Compte à rebours en temps réel :</strong> Affiche le temps de sommeil restant en heures et minutes, mis à jour chaque minute.</li>
+            <li><strong>Intelligent et dynamique :</strong> Si vous ignorez la prochaine alarme, utilisez l'ajustement rapide ou mettez une alarme en pause, WakeUp recalcule instantanément et met en valeur la prochaine alarme active.</li>
+        </ul>
+        <p><strong>Comment activer ou désactiver cette fonction :</strong> Ouvrez <strong>WakeUp → Réglages → Liste des alarmes</strong> et activez ou désactivez <strong>Mettre en évidence la prochaine alarme</strong> (marqué d'une icône d'étoile ⭐️).</p>
+        <div class="note">
+            <strong>Astuce :</strong> Le compte à rebours prend automatiquement en charge les passages à l'heure d'été/d'hiver ainsi que les fuseaux horaires pour un affichage toujours précis du temps restant.
+        </div>
+        <a href="#top" class="back-to-top">↑ Haut de page</a>
+    </div>
+
+    <div class="faq-item" id="faq-8">
+        <h2>Comment fonctionne la mise en pause d'une alarme récurrente ?</h2>
+        <p>La mise en pause vous permet de suspendre temporairement une alarme récurrente pour une plage de dates précise (par exemple pendant vos vacances ou vos déplacements) sans devoir la désactiver entièrement :</p>
+        <ul>
+            <li><strong>Programmer une pause :</strong> Ouvrez l'éditeur d'une alarme récurrente, développez <strong>Réglages avancés</strong> et activez <strong>Suspendre l’alarme</strong>. Sélectionnez les dates de début et de fin dans le calendrier.</li>
+            <li><strong>Suivre l'état de la pause :</strong> La liste des alarmes affiche des indicateurs clairs : <strong>Pause programmée</strong> avant le début de la pause et <strong>En pause jusqu’au [date]</strong> pendant que la pause est en cours.</li>
+            <li><strong>Reprise automatique :</strong> Dès que la période choisie prend fin, WakeUp réactive automatiquement l'alarme selon son horaire habituel.</li>
+            <li><strong>Modifier ou annuler :</strong> Vous pouvez modifier les dates ou annuler la pause à tout moment en ouvrant l'alarme et en désactivant Suspendre l’alarme.</li>
+        </ul>
+        <div class="note">
+            <strong>Astuce :</strong> Plus besoin de penser à réactiver votre réveil au retour de vacances : WakeUp reprend son fonctionnement tout seul dès la fin de la pause.
+        </div>
+        <a href="#top" class="back-to-top">↑ Haut de page</a>
+    </div>
+
+    <div class="faq-item" id="faq-9">
+        <h2>Comment changer le mode de saisie de l'heure (éditeur d'heure) ?</h2>
+        <p>WakeUp propose trois façons différentes de régler l'heure de vos alarmes pour s'adapter à vos préférences :</p>
+        <ul>
+            <li><strong>Molette de défilement (Scroll Wheel) :</strong> Le sélecteur défilant classique d'iOS (par défaut).</li>
+            <li><strong>Pavé numérique (Number Pad) :</strong> Saisissez directement l'heure exacte avec les chiffres.</li>
+            <li><strong>Cadran d’horloge (Clock Dial) :</strong> Un cadran d'horloge visuel et intuitif sur lequel vous réglez l'heure avec les aiguilles.</li>
+        </ul>
+        <p><strong>Comment modifier le mode :</strong> Ouvrez <strong>WakeUp → Réglages → Saisie de l’heure</strong> (dans <em>Réglages par défaut des alarmes</em>) et choisissez votre éditeur préféré. Votre choix s'appliquera chaque fois que vous créez ou modifiez une alarme.</p>
+        <div class="note">
+            <strong>Astuce :</strong> Vous pouvez changer de mode de saisie à tout moment dans les Réglages pour trouver celui qui vous convient le mieux.
+        </div>
+        <a href="#top" class="back-to-top">↑ Haut de page</a>
+    </div>
+
+    <div class="faq-item" id="faq-10">
         <h2>Comment trier mes alarmes ?</h2>
         <p>Vous pouvez personnaliser l'ordre de vos alarmes dans la liste en touchant le bouton de menu (•••) dans le coin supérieur de l'écran principal :</p>
         <ul>
@@ -312,7 +355,53 @@
         <a href="#top" class="back-to-top">↑ Haut de page</a>
     </div>
 
-    <div class="faq-item" id="faq-8">
+    <div class="faq-item" id="faq-11">
+        <h2>Comment importer votre propre son d'alarme dans WakeUp</h2>
+        <ol>
+            <li>Localisez le fichier audio sur votre Mac ou dans votre application Musique.</li>
+            <li>Si vous utilisez l'application Musique, faites un clic droit sur le morceau et sélectionnez <strong>Afficher dans le Finder</strong>.</li>
+            <li>Copiez le fichier audio (<code>.m4a</code>, <code>.mp3</code> ou <code>.wav</code>) dans un dossier <strong>iCloud Drive</strong> ou transférez-le via <strong>AirDrop</strong> sur votre iPhone ou iPad.</li>
+            <li>Sur votre appareil, ouvrez <strong>WakeUp → Réglages → Sons personnalisés</strong>, touchez <strong>Choisir un fichier audio…</strong> et sélectionnez le fichier dans l'application <strong>Fichiers</strong>.</li>
+        </ol>
+        <p><strong>Windows et autres services cloud :</strong> Vous pouvez également importer des fichiers audio depuis un PC Windows. Transférez simplement le fichier sur votre iPhone ou iPad via n'importe quel service cloud (comme iCloud.com, Google Drive, OneDrive ou Dropbox) ou envoyez-le-vous par e-mail, puis enregistrez-le dans l'application <strong>Fichiers</strong>.</p>
+        <div class="note">
+            <strong>Remarque :</strong> Vous devez posséder le fichier audio importé. Seuls les fichiers sans DRM (tels que la musique achetée ou vos propres enregistrements) sont pris en charge. Les morceaux protégés provenant de services de streaming ne peuvent pas être importés.
+        </div>
+        <a href="#top" class="back-to-top">↑ Haut de page</a>
+    </div>
+
+    <div class="faq-item" id="faq-12">
+        <h2>Quelles sont les exigences et limites pour les sons d'alarme personnalisés ?</h2>
+        <p>Vous pouvez personnaliser vos alarmes avec vos propres fichiers audio. Voici les règles essentielles, les formats compatibles et les fonctions de gestion :</p>
+        <ul>
+            <li><strong>Limite de sons :</strong> Vous pouvez importer jusqu'à 20 sons personnalisés. Une fois la limite atteinte, supprimez un son avant d'en importer un nouveau.</li>
+            <li><strong>Formats pris en charge :</strong> AIF, AIFF, CAF, M4A, MP3 et WAV (sans protection DRM).</li>
+            <li><strong>Raccourcissement automatique et fondu :</strong> Les sons de plus de 30 secondes sont automatiquement raccourcis à 30 secondes avec un fondu de sortie fluide de 2 secondes à la fin.</li>
+            <li><strong>Écoute et renommage :</strong> Dans <strong>Réglages → Sons personnalisés</strong>, touchez un son pour l'écouter ou renommez-le à tout moment.</li>
+        </ul>
+        <p><strong>Suppression sécurisée (Son en cours d’utilisation) :</strong> Vous pouvez supprimer des sons en balayant. Si vous supprimez un son actuellement utilisé par une alarme, WakeUp vous invite à choisir un son de remplacement pour éviter qu'une alarme ne devienne silencieuse.</p>
+        <div class="note">
+            <strong>Astuce :</strong> Tous les sons importés sont convertis et stockés localement sur votre appareil dans un format optimisé par Apple, garantissant une lecture immédiate et sans connexion réseau.
+        </div>
+        <a href="#top" class="back-to-top">↑ Haut de page</a>
+    </div>
+
+    <div class="faq-item" id="faq-13">
+        <h2>Comment changer le son par défaut ou mettre à jour toutes les alarmes en une fois ?</h2>
+        <p>WakeUp vous permet de choisir un son par défaut pour toutes vos nouvelles alarmes et même de mettre à jour toutes vos alarmes existantes en un seul geste :</p>
+        <ul>
+            <li><strong>Définir le son par défaut :</strong> Ouvrez <strong>WakeUp → Réglages → Son par défaut</strong> (dans <em>Réglages par défaut des alarmes</em>) et sélectionnez votre son favori, un son personnalisé ou le <em>Système par défaut</em>.</li>
+            <li><strong>Appliquer à toutes les alarmes existantes :</strong> Dans le sélecteur de son, activez <strong>Appliquer à toutes les alarmes existantes</strong> et appuyez sur <strong>Utiliser</strong> (ou <em>Appliquer</em>). WakeUp met à jour toutes vos alarmes immédiatement.</li>
+            <li><strong>Uniquement pour les nouvelles alarmes :</strong> Si vous laissez l'option désactivée, le son par défaut ne s'appliquera qu'aux futures alarmes que vous créerez, sans modifier les existantes.</li>
+        </ul>
+        <p><strong>Options de son :</strong> Vous pouvez choisir parmi les sons intégrés de WakeUp, vos fichiers personnalisés dans <em>Mes sons</em> ou le son par défaut d'iOS.</p>
+        <div class="note">
+            <strong>Astuce :</strong> Si vous souhaitez modifier le son de quelques alarmes spécifiques seulement, utilisez plutôt l'option <strong>Modification groupée…</strong> dans le menu principal.
+        </div>
+        <a href="#top" class="back-to-top">↑ Haut de page</a>
+    </div>
+
+    <div class="faq-item" id="faq-14">
         <h2>Comment modifier plusieurs alarmes à la fois ?</h2>
         <p>La modification de plusieurs alarmes vous permet de mettre à jour les réglages de plusieurs alarmes en une seule fois, sans devoir les modifier individuellement :</p>
         <ul>
@@ -328,51 +417,7 @@
         <a href="#top" class="back-to-top">↑ Haut de page</a>
     </div>
 
-    <div class="faq-item" id="faq-9">
-        <h2>Comment fonctionne la fonction pour ignorer la prochaine alarme (Dismiss) ?</h2>
-        <p>La fonction Ignorer la prochaine alarme vous permet de passer uniquement la prochaine sonnerie d'une alarme récurrente (par exemple si vous êtes déjà réveillé ou en congé) sans modifier votre programme habituel :</p>
-        <ul>
-            <li><strong>Ignorer une alarme :</strong> Lorsque l'heure de l'alarme approche, un bouton <strong>Ignorer</strong> (icône de croissant de lune) apparaît sur la ligne de l'alarme. En le touchant, la prochaine sonnerie est ignorée et WakeUp reprend automatiquement son rythme normal ensuite.</li>
-            <li><strong>Rétablir l'alarme :</strong> Si vos plans changent, touchez <strong>La prochaine alarme est ignorée</strong> sur la ligne de l'alarme pour la réactiver immédiatement.</li>
-            <li><strong>Délai d'affichage du bouton :</strong> Dans l'éditeur d'alarme, vous pouvez régler <strong>Afficher le bouton Ignorer</strong> pour choisir combien d'heures à l'avance (2, 4, 8, 12 ou 24 heures) le bouton apparaît dans la liste.</li>
-        </ul>
-        <div class="note">
-            <strong>Astuce :</strong> Vous n'avez plus besoin d'éteindre une alarme récurrente puis de penser à la rallumer : l'annulation ne s'applique qu'à la prochaine occurrence.
-        </div>
-        <a href="#top" class="back-to-top">↑ Haut de page</a>
-    </div>
-
-    <div class="faq-item" id="faq-10">
-        <h2>Comment fonctionne l'ajustement rapide (Quick Adjust +/-) ?</h2>
-        <p>L'ajustement rapide vous permet d'avancer ou de reculer uniquement la prochaine sonnerie d'une alarme récurrente sans modifier votre planning régulier :</p>
-        <ul>
-            <li><strong>Ajuster l'heure :</strong> Lorsqu'une alarme est prévue pour aujourd'hui ou demain, les boutons <strong>-</strong> et <strong>+</strong> apparaissent sur la ligne de l'alarme. Touchez-les pour décaler l'heure pas à pas.</li>
-            <li><strong>Afficher et rétablir :</strong> Le décalage (par exemple <code>-10 min</code> ou <code>+20 min</code>) s'affiche sous forme de badge sur la ligne de l'alarme. Touchez ce badge à tout moment pour rétablir instantanément l'heure d'origine.</li>
-            <li><strong>Retour automatique :</strong> Dès que l'alarme a sonné, WakeUp reprend automatiquement votre rythme régulier habituel.</li>
-            <li><strong>Intervalle d’ajustement :</strong> Dans l'éditeur d'alarme, vous pouvez régler l'<strong>Intervalle d’ajustement</strong> sur 5, 10, 15 ou 30 minutes (10 minutes par défaut).</li>
-        </ul>
-        <div class="note">
-            <strong>Astuce :</strong> L'ajustement rapide est idéal pour dormir 15 minutes de plus demain ou vous lever un peu plus tôt sans dérégler votre routine.
-        </div>
-        <a href="#top" class="back-to-top">↑ Haut de page</a>
-    </div>
-
-    <div class="faq-item" id="faq-11">
-        <h2>Comment fonctionne la mise en pause d'une alarme récurrente ?</h2>
-        <p>La mise en pause vous permet de suspendre temporairement une alarme récurrente pour une plage de dates précise (par exemple pendant vos vacances ou vos déplacements) sans devoir la désactiver entièrement :</p>
-        <ul>
-            <li><strong>Programmer une pause :</strong> Ouvrez l'éditeur d'une alarme récurrente, développez <strong>Réglages avancés</strong> et activez <strong>Suspendre l’alarme</strong>. Sélectionnez les dates de début et de fin dans le calendrier.</li>
-            <li><strong>Suivre l'état de la pause :</strong> La liste des alarmes affiche des indicateurs clairs : <strong>Pause programmée</strong> avant le début de la pause et <strong>En pause jusqu’au [date]</strong> pendant que la pause est en cours.</li>
-            <li><strong>Reprise automatique :</strong> Dès que la période choisie prend fin, WakeUp réactive automatiquement l'alarme selon son horaire habituel.</li>
-            <li><strong>Modifier ou annuler :</strong> Vous pouvez modifier les dates ou annuler la pause à tout moment en ouvrant l'alarme et en désactivant Suspendre l’alarme.</li>
-        </ul>
-        <div class="note">
-            <strong>Astuce :</strong> Plus besoin de penser à réactiver votre réveil au retour de vacances : WakeUp reprend son fonctionnement tout seul dès la fin de la pause.
-        </div>
-        <a href="#top" class="back-to-top">↑ Haut de page</a>
-    </div>
-
-    <div class="faq-item" id="faq-12">
+    <div class="faq-item" id="faq-15">
         <h2>Comment régler la durée du rappel ou désactiver le rappel d'alarme ?</h2>
         <p>Contrairement à l'application Horloge d'Apple où le rappel est bloqué à 9 minutes, WakeUp vous offre un contrôle total sur la durée du rappel pour chaque alarme, ou vous permet de le désactiver complètement :</p>
         <ul>
@@ -383,51 +428,6 @@
         <p><strong>Comment ajuster la durée :</strong> Touchez une alarme pour la modifier, faites défiler jusqu'à la section <strong>Rappel</strong>, activez l'interrupteur et réglez les minutes sous <strong>Durée du rappel</strong> (+/-).</p>
         <div class="note">
             <strong>Astuce :</strong> Lorsqu'une alarme est en rappel, WakeUp affiche le compte à rebours en temps réel sur l'écran verrouillé et dans la Dynamic Island.
-        </div>
-        <a href="#top" class="back-to-top">↑ Haut de page</a>
-    </div>
-
-    <div class="faq-item" id="faq-13">
-        <h2>Comment changer le mode de saisie de l'heure (éditeur d'heure) ?</h2>
-        <p>WakeUp propose trois façons différentes de régler l'heure de vos alarmes pour s'adapter à vos préférences :</p>
-        <ul>
-            <li><strong>Molette de défilement (Scroll Wheel) :</strong> Le sélecteur défilant classique d'iOS (par défaut).</li>
-            <li><strong>Pavé numérique (Number Pad) :</strong> Saisissez directement l'heure exacte avec les chiffres.</li>
-            <li><strong>Cadran d’horloge (Clock Dial) :</strong> Un cadran d'horloge visuel et intuitif sur lequel vous réglez l'heure avec les aiguilles.</li>
-        </ul>
-        <p><strong>Comment modifier le mode :</strong> Ouvrez <strong>WakeUp → Réglages → Saisie de l’heure</strong> (dans <em>Réglages par défaut des alarmes</em>) et choisissez votre éditeur préféré. Votre choix s'appliquera chaque fois que vous créez ou modifiez une alarme.</p>
-        <div class="note">
-            <strong>Astuce :</strong> Vous pouvez changer de mode de saisie à tout moment dans les Réglages pour trouver celui qui vous convient le mieux.
-        </div>
-        <a href="#top" class="back-to-top">↑ Haut de page</a>
-    </div>
-
-    <div class="faq-item" id="faq-14">
-        <h2>Comment fonctionnent la mise en évidence de la prochaine alarme et le compte à rebours ?</h2>
-        <p>WakeUp peut mettre automatiquement en évidence la prochaine alarme qui sonnera dans votre liste d'alarmes et afficher un compte à rebours en direct du temps restant (par exemple, <em>Prochaine · 7 h 25 min</em>) :</p>
-        <ul>
-            <li><strong>Mise en valeur visuelle :</strong> Marque la ligne de la toute prochaine alarme avec un badge distinctif pour la repérer d'un coup d'œil.</li>
-            <li><strong>Compte à rebours en temps réel :</strong> Affiche le temps de sommeil restant en heures et minutes, mis à jour chaque minute.</li>
-            <li><strong>Intelligent et dynamique :</strong> Si vous ignorez la prochaine alarme, utilisez l'ajustement rapide ou mettez une alarme en pause, WakeUp recalcule instantanément et met en valeur la prochaine alarme active.</li>
-        </ul>
-        <p><strong>Comment activer ou désactiver cette fonction :</strong> Ouvrez <strong>WakeUp → Réglages → Liste des alarmes</strong> et activez ou désactivez <strong>Mettre en évidence la prochaine alarme</strong> (marqué d'une icône d'étoile ⭐️).</p>
-        <div class="note">
-            <strong>Astuce :</strong> Le compte à rebours prend automatiquement en charge les passages à l'heure d'été/d'hiver ainsi que les fuseaux horaires pour un affichage toujours précis du temps restant.
-        </div>
-        <a href="#top" class="back-to-top">↑ Haut de page</a>
-    </div>
-
-    <div class="faq-item" id="faq-15">
-        <h2>Comment suivre les alarmes et le compte à rebours sur l'écran verrouillé ou dans la Dynamic Island ?</h2>
-        <p>WakeUp intègre les Activités en direct (Live Activities) d'iOS et la Dynamic Island via AlarmKit et ActivityKit pour suivre vos alarmes actives et le compte à rebours du rappel d'alarme sans déverrouiller votre iPhone :</p>
-        <ul>
-            <li><strong>Dynamic Island :</strong> Affiche une icône d'alarme orange et un compte à rebours en temps réel en haut de l'écran. Touchez et maintenez la Dynamic Island pour l'agrandir et afficher les détails.</li>
-            <li><strong>Écran verrouillé et écran toujours activé :</strong> Affiche une bannière claire avec l'état de l'alarme et le temps restant du rappel directement sur votre écran verrouillé.</li>
-            <li><strong>Activation automatique :</strong> Se déclenche automatiquement lorsqu'une alarme sonne ou passe en rappel d'alarme, vous permettant de savoir exactement combien de temps de sommeil il vous reste.</li>
-        </ul>
-        <p><strong>Comment vérifier l'activation des Activités en direct :</strong> Sur votre iPhone, accédez à <strong>Réglages → WakeUp</strong> et assurez-vous que <strong>Activités en direct</strong> est activé. Vérifiez également dans <strong>Réglages → Face ID et code</strong> que <em>Activités en direct</em> est autorisé sous <em>Autoriser l'accès en mode verrouillé</em>.</p>
-        <div class="note">
-            <strong>Astuce :</strong> Vous pouvez suivre ou gérer le rappel d'alarme directement depuis la bannière de l'écran verrouillé ou depuis la Dynamic Island sans ouvrir l'application.
         </div>
         <a href="#top" class="back-to-top">↑ Haut de page</a>
     </div>
