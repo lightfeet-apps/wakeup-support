@@ -278,9 +278,9 @@
 
     <div class="faq-item" id="faq-1">
         <h2>Will my alarm ring if my device is on silent, in Do Not Disturb, or the app is closed?</h2>
-        <p><strong>Yes, absolutely.</strong> WakeUp is powered by Apple's native <strong>AlarmKit</strong> framework, which schedules your alarms as full system alarms:</p>
+        <p><strong>Yes.</strong> WakeUp uses Apple's native <strong>AlarmKit</strong> framework to schedule your alarms as system alarms:</p>
         <ul>
-            <li><strong>App closed:</strong> Your alarms will always ring on time whether WakeUp is open, running in the background, or completely closed. You do not need to keep the app open overnight.</li>
+            <li><strong>App closed:</strong> Alarms are scheduled directly with iOS, so they ring whether WakeUp is open, running in the background, or closed. You do not need to keep the app open overnight.</li>
             <li><strong>Silent mode & mute switch:</strong> System alarms override silent mode, ringing with audio even when your device is silenced.</li>
             <li><strong>Do Not Disturb & Focus modes:</strong> Alarms ring normally even when Do Not Disturb, Sleep Focus, or any other Focus mode is active.</li>
         </ul>
@@ -310,11 +310,11 @@
         <p>WakeUp is built specifically around Apple's native <strong>AlarmKit</strong> framework, which was introduced in iOS 26:</p>
         <ul>
             <li><strong>Native system alarms:</strong> Prior to iOS 26, third-party apps were unable to schedule true system alarms. They had to rely on standard notifications (which can be muted by silent switches or delayed) or require leaving the screen on overnight.</li>
-            <li><strong>Zero compromises on reliability:</strong> AlarmKit allows WakeUp to create alarms that integrate directly into iOS, guaranteeing they ring with audio even when your device is muted, in Do Not Disturb, or when the app is completely closed.</li>
+            <li><strong>System-level integration:</strong> AlarmKit allows WakeUp to create alarms that integrate directly into iOS, so they can sound with audio even when your device is muted, in Do Not Disturb, or when the app is closed.</li>
             <li><strong>Modern system integration:</strong> iOS 26 and AlarmKit also power WakeUp's lock screen countdowns, Live Activities, and Dynamic Island presentations.</li>
         </ul>
         <div class="note">
-            <strong>Note:</strong> To ensure complete alarm reliability without workarounds, WakeUp requires an iPhone or iPad running iOS 26 or later.
+            <strong>Note:</strong> To provide native system alarms without legacy workarounds, WakeUp requires an iPhone or iPad running iOS 26 or later.
         </div>
         <a href="#top" class="back-to-top">↑ Back to top</a>
     </div>

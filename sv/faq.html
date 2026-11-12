@@ -278,9 +278,9 @@
 
     <div class="faq-item" id="faq-1">
         <h2>Ringer alarmet om enheten är i ljudlöst läge, i Stör ej eller om appen är stängd?</h2>
-        <p><strong>Ja, absolut.</strong> WakeUp använder Apples <strong>AlarmKit</strong>, vilket innebär att dina alarm schemaläggs som fullständiga systemalarm:</p>
+        <p><strong>Ja.</strong> WakeUp använder Apples inbyggda <strong>AlarmKit</strong>, vilket innebär att dina alarm schemaläggs som systemalarm:</p>
         <ul>
-            <li><strong>Stängd app:</strong> Dina alarm ringer alltid i tid oavsett om WakeUp är öppet, körs i bakgrunden eller är helt stängt. Du behöver inte ha appen öppen över natten.</li>
+            <li><strong>Stängd app:</strong> Larmen schemaläggs på systemnivå och ringer oavsett om WakeUp är öppet, körs i bakgrunden eller är helt stängt. Du behöver inte ha appen öppen över natten.</li>
             <li><strong>Ljudlöst läge och tyst reglage:</strong> Systemalarm åsidosätter ljudlöst läge och ringer med full ljudvolym även när enheten är satt på ljudlös.</li>
             <li><strong>Stör ej och Fokus-lägen:</strong> Alarm ringer som vanligt även när Stör ej, Stilla natt eller något annat Fokus-läge är aktivt.</li>
         </ul>
@@ -310,11 +310,11 @@
         <p>WakeUp är särskilt utvecklat för att använda Apples inbyggda <strong>AlarmKit</strong>-ramverk, som introducerades i iOS 26:</p>
         <ul>
             <li><strong>Äkta systemalarm:</strong> Före iOS 26 kunde tredjepartsappar inte schemalägga riktiga systemalarm. De tvingades använda vanliga notiser (som kan tystas av ljudlöst läge eller fördröjas) eller kräva att skärmen lämnades på över natten.</li>
-            <li><strong>Inga kompromisser med pålitligheten:</strong> AlarmKit gör att WakeUp kan schemalägga alarm som integreras direkt i iOS, vilket garanterar att de ringer med ljud även när enheten är i ljudlöst läge, Stör ej är aktivt eller appen är helt stängd.</li>
+            <li><strong>Systemintegrerade alarm:</strong> AlarmKit gör att WakeUp kan schemalägga alarm som integreras direkt i iOS, så att de kan ringa med ljud även när enheten är i ljudlöst läge, Stör ej är aktivt eller appen är stängd.</li>
             <li><strong>Modern systemintegration:</strong> iOS 26 och AlarmKit driver även WakeUps nedräkningar på låsskärmen, Live-aktiviteter och Dynamic Island.</li>
         </ul>
         <div class="note">
-            <strong>Obs:</strong> För att garantera maximal tillförlitlighet utan osäkra nödlösningar kräver WakeUp en iPhone eller iPad med iOS 26 eller senare.
+            <strong>Obs:</strong> För att kunna erbjuda äkta systemalarm utan föråldrade nödlösningar kräver WakeUp en iPhone eller iPad med iOS 26 eller senare.
         </div>
         <a href="#top" class="back-to-top">↑ Tillbaka till toppen</a>
     </div>
@@ -458,7 +458,7 @@
         </ul>
         <p><strong>Säker borttagning (Ljudet används):</strong> Du kan när som helst ta bort ljud genom att svepa. Om ett ljud du tar bort används av ett aktivt alarm ber WakeUp dig välja ett ersättande ljud så att alarmet aldrig förblir tyst.</p>
         <div class="note">
-            <strong>Tips:</strong> Importerade ljud optimeras och sparas lokalt på din enhet så att de alltid spelas upp blixtsnabbt och helt utan nätverksberoende.
+            <strong>Tips:</strong> Importerade ljud optimeras och sparas lokalt på din enhet, vilket ger snabb uppspelning utan nätverksberoende.
         </div>
         <a href="#top" class="back-to-top">↑ Tillbaka till toppen</a>
     </div>

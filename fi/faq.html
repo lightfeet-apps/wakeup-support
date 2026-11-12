@@ -278,9 +278,9 @@
 
     <div class="faq-item" id="faq-1">
         <h2>Soiko herätys, jos laite on äänettömällä, Älä häiritse -tilassa tai sovellus on suljettu?</h2>
-        <p><strong>Kyllä, ehdottomasti.</strong> WakeUp käyttää Applen <strong>AlarmKit</strong>-kehystä, jonka ansiosta herätykset ajastetaan aitoina järjestelmäherätyksinä:</p>
+        <p><strong>Kyllä.</strong> WakeUp käyttää Applen <strong>AlarmKit</strong>-kehystä, jonka ansiosta herätykset ajastetaan järjestelmätason herätyksinä:</p>
         <ul>
-            <li><strong>Sovellus suljettuna:</strong> Herätykset soivat aina ajallaan riippumatta siitä, onko sovellus auki, taustalla vai kokonaan suljettuna. Sovellusta ei tarvitse pitää auki yön yli.</li>
+            <li><strong>Sovellus suljettuna:</strong> Herätykset ajastetaan suoraan järjestelmätasolla, joten ne soivat riippumatta siitä, onko sovellus auki, taustalla vai suljettuna. Sovellusta ei tarvitse pitää auki yön yli.</li>
             <li><strong>Äänetön tila ja mykistyskytkin:</strong> Järjestelmäherätykset ohittavat laitteen mykistyksen ja soivat herätysäänellä myös silloin, kun laite on asetettu äänettömälle.</li>
             <li><strong>Älä häiritse ja Keskity-tilat:</strong> Herätykset hälyttävät normaalisti myös silloin, kun Älä häiritse, Nukkuminen tai jokin muu Keskity-tila on päällä.</li>
         </ul>
@@ -310,11 +310,11 @@
         <p>WakeUp on rakennettu hyödyntämään Applen <strong>AlarmKit</strong>-teknologiaa, joka esiteltiin iOS 26 -käyttöjärjestelmässä:</p>
         <ul>
             <li><strong>Aidot järjestelmäherätykset:</strong> Ennen iOS 26:ta kolmansien osapuolten sovellukset eivät voineet asettaa aitoja järjestelmäherätyksiä. Niiden oli turvauduttava tavallisiin ilmoituksiin (jotka saattoivat vaimentua mykistyksellä tai viivästyä) tai vaadittava näytön pitämistä auki yön yli.</li>
-            <li><strong>Täysi luotettavuus ilman kompromisseja:</strong> AlarmKit mahdollistaa herätykset, jotka integroituvat suoraan iOS:n herätysjärjestelmään ja soivat herätysäänellä myös silloin, kun laite on mykistetty, Älä häiritse -tilassa tai sovellus kokonaan suljettu.</li>
+            <li><strong>Järjestelmätason toiminta:</strong> AlarmKit mahdollistaa herätykset, jotka integroituvat suoraan iOS:n herätysjärjestelmään ja voivat soida herätysäänellä myös silloin, kun laite on mykistetty, Älä häiritse -tilassa tai sovellus suljettu.</li>
             <li><strong>Modernit järjestelmätoiminnot:</strong> iOS 26 ja AlarmKit mahdollistavat myös lukitusnäytön ajastimet, Live-toiminnot (Live Activities) ja Dynamic Island -integraation.</li>
         </ul>
         <div class="note">
-            <strong>Huomio:</strong> Ehdottoman toimintavarmuuden takaamiseksi WakeUp vaatii iPhonen tai iPadin, jossa on asennettuna iOS 26 tai uudempi.
+            <strong>Huomio:</strong> Aitojen järjestelmäherätysten tarjoamiseksi ilman vanhoja kiertotapoja WakeUp vaatii iPhonen tai iPadin, jossa on asennettuna iOS 26 tai uudempi.
         </div>
         <a href="#top" class="back-to-top">↑ Takaisin alkuun</a>
     </div>
